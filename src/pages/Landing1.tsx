@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CheckCircle2, Clock, Target, Users, Briefcase, Award, TrendingUp, Code, Rocket, Shield } from "lucide-react";
 import ffLogo from "@/assets/ff-logo.png";
 
 /**
@@ -19,26 +20,6 @@ import ffLogo from "@/assets/ff-logo.png";
 const ACCENT = "#00bfff";
 const TYPEFORM_URL = "#eligibility"; // TODO
 const MICRO_VSL = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&mute=1"; // TODO
-
-function Pill({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="inline-flex items-center rounded-full bg-white px-3 py-1 border border-slate-200 shadow-sm text-sm">
-      {children}
-    </span>
-  );
-}
-
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div
-      className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]"
-      style={{ willChange: "transform, box-shadow, border-color" }}
-    >
-      <h4 className="mb-1 font-semibold text-slate-900">{title}</h4>
-      <div className="text-sm leading-relaxed text-slate-600">{children}</div>
-    </div>
-  );
-}
 
 function CTAButton({ children }: { children: React.ReactNode }) {
   return (
@@ -140,14 +121,21 @@ export default function Landing1() {
       {/* Header */}
       <header className="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src={ffLogo} alt="FrontendFuture Logo" className="w-10 h-10" />
-          <span className="text-xl font-extrabold">🧠 FrontendFuture</span>
+          <img src={ffLogo} alt="FrontendFuture Logo" className="w-12 h-12 rounded-full" />
+          <div className="flex flex-col">
+            <span className="text-xl font-extrabold text-slate-900">FrontendFuture</span>
+            <span className="text-xs text-slate-600 flex items-center gap-1">
+              <Award className="w-3 h-3" style={{ color: ACCENT }} />
+              Ex-Amazon led
+            </span>
+          </div>
         </div>
         <a
           href={TYPEFORM_URL}
-          className="hidden sm:inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold shadow"
+          className="hidden sm:inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg transition-all"
           style={{ backgroundColor: ACCENT, color: "#00131a" }}
         >
+          <Rocket className="w-4 h-4" />
           Check eligibility
         </a>
       </header>
@@ -169,15 +157,38 @@ export default function Landing1() {
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">
-            <span>Flexible schedule</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Target className="w-4 h-4" style={{ color: ACCENT }} />
+              Flexible schedule
+            </span>
             <span>•</span>
-            <span>6–10 hours per week</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Clock className="w-4 h-4" style={{ color: ACCENT }} />
+              6–10 hours per week
+            </span>
             <span>•</span>
-            <span>Job-guarantee mentorship*</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Shield className="w-4 h-4" style={{ color: ACCENT }} />
+              Job-guarantee mentorship*
+            </span>
           </div>
 
           <div className="mt-6">
-            <CTAButton>See if I qualify</CTAButton>
+            <a
+              href={TYPEFORM_URL}
+              className="cta-btn group inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base font-semibold text-[#00131a] shadow transition-transform duration-150 will-change-transform"
+            >
+              <Rocket className="w-5 h-5" />
+              <span className="transition-transform duration-150 group-hover:-translate-y-0.5">See if I qualify</span>
+              <svg
+                className="h-4 w-4 transition-transform duration-150 group-hover:translate-x-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M7 3l7 7-7 7" />
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -186,7 +197,12 @@ export default function Landing1() {
       {/* Why this works */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-3 text-2xl font-bold">Why this works</h3>
+          <div className="flex items-start gap-3 mb-3">
+            <TrendingUp className="w-7 h-7 flex-shrink-0" style={{ color: ACCENT }} />
+            <div>
+              <h3 className="text-2xl font-bold">Why this works</h3>
+            </div>
+          </div>
           <p className="text-lg font-semibold text-slate-900 mb-2">
             Hiring managers hire proof, not resumes.
           </p>
@@ -200,18 +216,34 @@ export default function Landing1() {
       <section className="mx-auto max-w-6xl px-4 py-10">
         <h3 className="mb-6 text-2xl font-bold">What makes us different</h3>
         <div className="grid gap-4 sm:grid-cols-2">
-          <Card title="Real projects.">
-            No tutorials. You'll work with real limits, specs, and performance targets—just like an actual job.
-          </Card>
-          <Card title="Weekly 1-on-1 mentorship.">
-            Short calls. Clear feedback. Every week you'll know exactly what to improve next.
-          </Card>
-          <Card title="Career packaging.">
-            We help you showcase your projects, rewrite your resume, and reach hiring managers directly.
-          </Card>
-          <Card title="Job-guarantee mentorship.">
-            Complete your milestones and outreach plan—if you don't get paid interviews, we refund or extend your mentorship per terms.
-          </Card>
+          <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
+            <div className="flex items-start gap-3 mb-2">
+              <Code className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <h4 className="font-semibold text-slate-900">Real projects.</h4>
+            </div>
+            <div className="text-sm leading-relaxed text-slate-600">No tutorials. You'll work with real limits, specs, and performance targets—just like an actual job.</div>
+          </div>
+          <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
+            <div className="flex items-start gap-3 mb-2">
+              <Users className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <h4 className="font-semibold text-slate-900">Weekly 1-on-1 mentorship.</h4>
+            </div>
+            <div className="text-sm leading-relaxed text-slate-600">Short calls. Clear feedback. Every week you'll know exactly what to improve next.</div>
+          </div>
+          <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
+            <div className="flex items-start gap-3 mb-2">
+              <Briefcase className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <h4 className="font-semibold text-slate-900">Career packaging.</h4>
+            </div>
+            <div className="text-sm leading-relaxed text-slate-600">We help you showcase your projects, rewrite your resume, and reach hiring managers directly.</div>
+          </div>
+          <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
+            <div className="flex items-start gap-3 mb-2">
+              <Shield className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <h4 className="font-semibold text-slate-900">Job-guarantee mentorship.</h4>
+            </div>
+            <div className="text-sm leading-relaxed text-slate-600">Complete your milestones and outreach plan—if you don't get paid interviews, we refund or extend your mentorship per terms.</div>
+          </div>
         </div>
       </section>
 
@@ -236,22 +268,25 @@ export default function Landing1() {
       {/* After graduation */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-4 text-xl font-bold">After graduation:</h3>
-          <ul className="space-y-2 text-slate-700">
-            <li className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+          <div className="flex items-start gap-3 mb-4">
+            <Rocket className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
+            <h3 className="text-xl font-bold">After graduation:</h3>
+          </div>
+          <ul className="space-y-3 text-slate-700">
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>Resume, LinkedIn & portfolio built with you</span>
             </li>
-            <li className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>1-on-1 interview prep and strategy</span>
             </li>
-            <li className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>Support sending your first applications</span>
             </li>
-            <li className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+            <li className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>Pay-talk guidance when offers come</span>
             </li>
           </ul>
@@ -261,18 +296,21 @@ export default function Landing1() {
       {/* Who It's For */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-4 text-2xl font-bold">Who It's For</h3>
+          <div className="flex items-start gap-3 mb-4">
+            <Target className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
+            <h3 className="text-2xl font-bold">Who It's For</h3>
+          </div>
           <div className="space-y-3 text-slate-700">
-            <p className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+            <p className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>Professionals who want remote web work while keeping their current job</span>
             </p>
-            <p className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+            <p className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>People ready to commit 6–10 hours per week to a proven roadmap</span>
             </p>
-            <p className="flex items-start gap-2">
-              <span style={{ color: ACCENT }}>✅</span>
+            <p className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
               <span>Doers who value mentorship and real-world proof over theory</span>
             </p>
             <p className="mt-4 text-sm">
@@ -310,9 +348,10 @@ export default function Landing1() {
             </div>
             <a
               href={TYPEFORM_URL}
-              className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow hover:shadow-lg transition-all"
             >
-              Check Eligibility →
+              <Rocket className="w-5 h-5" />
+              Check Eligibility
             </a>
           </div>
         </section>
