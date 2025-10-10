@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-12 text-center">
+            <div className="mt-12 text-center pt-4">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"

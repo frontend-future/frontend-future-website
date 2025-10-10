@@ -68,7 +68,7 @@ const SuccessStories = () => {
 
   const stats = [
     { label: "Average Starting Salary", value: "$128K" },
-    { label: "Job Placement Rate", value: "100%" },
+    { label: "People Served", value: "1000+" },
     { label: "Average Age of Students", value: "35-55" },
     { label: "Remote Positions", value: "98%" }
   ];
@@ -154,11 +154,11 @@ const SuccessStories = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="p-6 space-y-2">
                 <p className="text-sm text-muted-foreground">Entry Level (0-2 years)</p>
-                <p className="text-3xl font-bold text-accent">$100K-$130K</p>
+                <p className="text-3xl font-bold text-accent">$80K-$120K</p>
               </Card>
               <Card className="p-6 space-y-2">
                 <p className="text-sm text-muted-foreground">Mid Level (2-5 years)</p>
-                <p className="text-3xl font-bold text-accent">$130K-$180K</p>
+                <p className="text-3xl font-bold text-accent">$120K-$180K</p>
               </Card>
               <Card className="p-6 space-y-2">
                 <p className="text-sm text-muted-foreground">Senior Level (5+ years)</p>
@@ -179,15 +179,17 @@ const SuccessStories = () => {
             <p className="text-xl text-muted-foreground">
               Join hundreds of career changers who've successfully made the transition
             </p>
-            <a
-              href="https://start.frontendfuture.pro/landing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
-                Apply Now →
-              </Button>
-            </a>
+            <div className="pt-4">
+              <a
+                href="https://start.frontendfuture.pro/landing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
+                  Apply Now →
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
