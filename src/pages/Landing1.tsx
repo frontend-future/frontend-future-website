@@ -141,8 +141,7 @@ export default function Landing1() {
       <header className="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img src={ffLogo} alt="FrontendFuture Logo" className="w-10 h-10" />
-          <span className="text-xl font-extrabold">FrontendFuture</span>
-          <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 text-xs text-emerald-700">Ex‑Amazon led</span>
+          <span className="text-xl font-extrabold">🧠 FrontendFuture</span>
         </div>
         <a
           href={TYPEFORM_URL}
@@ -156,153 +155,130 @@ export default function Landing1() {
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl items-start gap-10 px-4 pb-6 pt-2 lg:grid-cols-2">
         <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: ACCENT }}>
-            For working professionals
+          <p className="mb-3 text-sm text-slate-600">
+            Ex-Amazon–led mentorship for working professionals
           </p>
           <h1 className="text-4xl font-extrabold leading-tight md:text-5xl">
-            Train with us. <span style={{ color: ACCENT }}>We'll also help you get the job.</span>
+            Train with us. Build real web work. <span style={{ color: ACCENT }}>Land a remote frontend developer job.</span>
           </h1>
-          <p className="mt-4 text-lg text-slate-700">
-            Learn the web work people see and click (the front of a site or app). <span className="font-semibold">12 weeks • 6–10 hours/week • $5,000</span> (financing available).
+          <p className="mt-4 text-xl font-semibold text-slate-700">
+            Learn the work people see and click.
+          </p>
+          <p className="mt-3 text-base text-slate-600">
+            In just 12 weeks, you'll design, build, and ship real-world projects that match what hiring managers look for.
           </p>
 
-          <div className="mt-5 flex flex-wrap items-center gap-3 text-sm">
-            <Pill>Tuition $5,000 · financing available</Pill>
-            <Pill>Time: 6–10 hrs/week</Pill>
-            <Pill>Job‑guarantee mentorship*</Pill>
+          <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">
+            <span>Flexible schedule</span>
+            <span>•</span>
+            <span>6–10 hours per week</span>
+            <span>•</span>
+            <span>Job-guarantee mentorship*</span>
           </div>
 
-          <div className="mt-6 flex items-center gap-4">
+          <div className="mt-6">
             <CTAButton>See if I qualify</CTAButton>
-            {showVideoDefault && (
-              <button
-                onClick={() => setShowVideo((s) => !s)}
-                className="underline underline-offset-4"
-                style={{ color: ACCENT }}
-              >
-                {showVideo ? "Hide" : "Show"} 90‑sec video
-              </button>
-            )}
-          </div>
-
-          <p className="mt-5 text-sm text-slate-700">
-            <span className="font-semibold">Not for:</span> unemployed, students, less than 6 hours a week, or not ready to invest $5,000.
-          </p>
-
-          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-600">
-            <span>Led by ex‑Amazon engineer</span>
-            <span>•</span>
-            <span>Built to job standards</span>
-            <span>•</span>
-            <span>Simple rules = job‑guarantee mentorship*</span>
           </div>
         </div>
 
-        {showVideoDefault && showVideo && (
-          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow">
-            <div className="aspect-video">
-              <iframe
-                className="h-full w-full"
-                src={MICRO_VSL}
-                title="Overview"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-            <div className="flex items-center justify-between border-t border-slate-100 p-4">
-              <p className="text-sm text-slate-600">Who it's for. What you build. How the guarantee works.</p>
-              <a
-                href={TYPEFORM_URL}
-                className="rounded-xl px-4 py-2 text-sm font-semibold"
-                style={{ backgroundColor: "#e6f9ff", color: "#00384d" }}
-              >
-                Apply
-              </a>
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Why this works */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-2 text-2xl font-bold">Why this works</h3>
+          <h3 className="mb-3 text-2xl font-bold">Why this works</h3>
+          <p className="text-lg font-semibold text-slate-900 mb-2">
+            Hiring managers hire proof, not resumes.
+          </p>
           <p className="text-slate-700">
-            Most job posts get hundreds of clicks. Filters throw people out. <strong>Proof wins.</strong> We help you make proof fast and put it in front of hiring managers.
+            Most job posts get hundreds of applicants—filters reject almost everyone. We help you build proof that passes those filters and puts you directly in front of decision-makers.
           </p>
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 py-10 sm:grid-cols-3">
-        <Card title="Real projects">Your work looks like a real job, not homework. We use real limits and targets.</Card>
-        <Card title="Weekly 1‑on‑1s">Short calls and quick feedback so you don't get stuck. Clear next steps each week.</Card>
-        <Card title="Get in front of the right people">We package your work and guide you to reach hiring managers.</Card>
+      {/* What makes us different */}
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <h3 className="mb-6 text-2xl font-bold">What makes us different</h3>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card title="Real projects.">
+            No tutorials. You'll work with real limits, specs, and performance targets—just like an actual job.
+          </Card>
+          <Card title="Weekly 1-on-1 mentorship.">
+            Short calls. Clear feedback. Every week you'll know exactly what to improve next.
+          </Card>
+          <Card title="Career packaging.">
+            We help you showcase your projects, rewrite your resume, and reach hiring managers directly.
+          </Card>
+          <Card title="Job-guarantee mentorship.">
+            Complete your milestones and outreach plan—if you don't get paid interviews, we refund or extend your mentorship per terms.
+          </Card>
+        </div>
       </section>
 
-      {/* 12‑week plan */}
+      {/* 12-Week Roadmap */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-4 text-2xl font-bold">12‑week plan</h3>
-          <div className="grid gap-6 text-sm text-slate-700 md:grid-cols-3">
-            <div>
-              <h4 className="mb-1 font-semibold text-slate-900">Weeks 1–3</h4>
-              <p>Refresh basics. Build a product page that loads fast and converts.</p>
-            </div>
-            <div>
-              <h4 className="mb-1 font-semibold text-slate-900">Weeks 4–7</h4>
-              <p>Build a small app with login and a dashboard. Show real state and charts.</p>
-            </div>
-            <div>
-              <h4 className="mb-1 font-semibold text-slate-900">Weeks 8–12</h4>
-              <p>Speed up a project, write short case notes, and start targeted outreach.</p>
-            </div>
+          <h3 className="mb-4 text-2xl font-bold">12-Week Roadmap</h3>
+          <div className="space-y-3 text-slate-700">
+            <p>
+              <span className="font-semibold text-slate-900">Weeks 1–3:</span> Refresh fundamentals. Build a fast, conversion-optimized product page.
+            </p>
+            <p>
+              <span className="font-semibold text-slate-900">Weeks 4–7:</span> Develop a small web app with login, dashboard, and real-time data.
+            </p>
+            <p>
+              <span className="font-semibold text-slate-900">Weeks 8–12:</span> Optimize performance, document your work, and begin targeted outreach.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* DFY */}
+      {/* After graduation */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-2 text-2xl font-bold">After you pass training (done‑for‑you push)</h3>
-          <ul className="list-disc space-y-2 pl-6 text-sm text-slate-700">
-            <li>
-              <strong>Resume, LinkedIn, cover letter</strong> built with you
+          <h3 className="mb-4 text-xl font-bold">After graduation:</h3>
+          <ul className="space-y-2 text-slate-700">
+            <li className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>Resume, LinkedIn & portfolio built with you</span>
             </li>
-            <li>
-              <strong>1‑on‑1 interview practice</strong>
+            <li className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>1-on-1 interview prep and strategy</span>
             </li>
-            <li>
-              We help send your <strong>first three applications</strong>
+            <li className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>Support sending your first applications</span>
             </li>
-            <li>
-              <strong>Pay‑talk help</strong> when offers come
+            <li className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>Pay-talk guidance when offers come</span>
             </li>
           </ul>
         </div>
       </section>
 
-      {/* Guarantee */}
+      {/* Who It's For */}
       <section className="mx-auto max-w-6xl px-4 py-10">
-        <div
-          className="rounded-2xl p-6 shadow-sm md:p-8"
-          style={{ backgroundColor: "#ecfaff", border: `1px solid ${ACCENT}` }}
-        >
-          <h3 className="mb-2 text-2xl font-bold" style={{ color: "#00384d" }}>
-            Job‑guarantee mentorship (simple rules)
-          </h3>
-          <ul className="list-disc space-y-2 pl-6 text-sm text-slate-800">
-            <li>Finish the 3 projects and weekly check‑ins</li>
-            <li>Do the outreach plan each week</li>
-            <li>Show up to mentor calls and use the notes</li>
-          </ul>
-          <p className="mt-3 text-xs text-slate-700">
-            Meet the rules and don't get paid interviews? We refund/extend per <a href="#" className="underline" style={{ color: ACCENT }}>
-              terms
-            </a>
-            .
-          </p>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <h3 className="mb-4 text-2xl font-bold">Who It's For</h3>
+          <div className="space-y-3 text-slate-700">
+            <p className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>Professionals who want remote web work while keeping their current job</span>
+            </p>
+            <p className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>People ready to commit 6–10 hours per week to a proven roadmap</span>
+            </p>
+            <p className="flex items-start gap-2">
+              <span style={{ color: ACCENT }}>✅</span>
+              <span>Doers who value mentorship and real-world proof over theory</span>
+            </p>
+            <p className="mt-4 text-sm">
+              <span className="font-semibold">Not for:</span> unemployed applicants, full-time students, or anyone unable to commit weekly hours.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -310,25 +286,42 @@ export default function Landing1() {
       <section className="mx-auto max-w-6xl px-4 py-10">
         <h3 className="mb-6 text-2xl font-bold">FAQs</h3>
         <div className="grid gap-4 md:grid-cols-2">
-          <FAQItem q="Who is this for?" a="People with jobs who want remote web work and can do 6–10 hrs/week." />
-          <FAQItem q="Do I need a degree?" a="No. We focus on proof of skill." />
-          <FAQItem q="Time & tuition" a="6–10 hrs/week for 12 weeks. Tuition $5,000; financing available." />
-          <FAQItem q="Is the guarantee real?" a="Yes. Follow the simple rules. If you don't get paid interviews, we refund or extend per terms." />
+          <FAQItem q="Do I need a degree?" a="No. We focus on evidence of skill, not credentials." />
+          <FAQItem q="Is the job guarantee real?" a="Yes—meet the milestones, follow the plan, and we stand behind you." />
+          <FAQItem q="Can I do this with a full-time job?" a="Absolutely. The program is built around a flexible 6–10 hour weekly schedule." />
         </div>
       </section>
 
       {/* CTA banner with shimmer */}
       <section className="mx-auto max-w-6xl px-4 pb-16">
-        <CTABanner />
+        <section
+          className="rounded-2xl p-6 md:p-8 shadow-sm"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, rgba(0,191,255,0.12), rgba(0,191,255,0.24), rgba(0,191,255,0.12))",
+            backgroundSize: "200% 200%",
+            animation: "shimmer 8s ease-in-out infinite",
+          }}
+        >
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 className="text-2xl font-bold text-[#00131a]">Ready to see if you qualify?</h3>
+              <p className="text-[#00131a]/80">Takes 2 minutes. Working professionals only.</p>
+            </div>
+            <a
+              href={TYPEFORM_URL}
+              className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow"
+            >
+              Check Eligibility →
+            </a>
+          </div>
+        </section>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-slate-200 px-4 py-10 text-center text-xs text-slate-500">
-        <p className="mx-auto max-w-4xl">
-          EARNINGS DISCLAIMER: Results vary. No income is promised. Your outcome depends on your effort, skill, and the job market.
-        </p>
         <div className="mt-4">
-          © 2025 Turbo Scale, LLC — FrontendFuture · <a href="#" className="underline">Terms</a> · <a href="#" className="underline">Privacy</a>
+          © 2025 Turbo Scale, LLC — FrontendFuture · <a href="/terms" className="underline">Terms</a> · <a href="/privacy" className="underline">Privacy</a> · <a href="/accessibility" className="underline">Accessibility</a> · <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="underline">Watch more on YouTube</a>
         </div>
       </footer>
     </main>
