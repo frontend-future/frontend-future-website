@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Check, Code, Briefcase, TrendingUp } from "lucide-react";
+import { Check, Code, Briefcase, TrendingUp, X } from "lucide-react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const Home = () => {
   return (
@@ -98,6 +99,145 @@ const Home = () => {
                   Start Your Transformation →
                 </Button>
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              Why Frontend Development Wins
+            </h2>
+            <div className="bg-background rounded-lg shadow-lg overflow-hidden border">
+              <Table>
+                <TableHeader>
+                  <TableRow className="bg-muted/50">
+                    <TableHead className="w-1/3 font-bold text-foreground"></TableHead>
+                    <TableHead className="w-1/3 font-bold text-foreground text-center">
+                      <div className="flex items-center justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent" />
+                        <span>Frontend Development</span>
+                      </div>
+                    </TableHead>
+                    <TableHead className="w-1/3 font-bold text-foreground text-center">
+                      <div className="flex items-center justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive" />
+                        <span>Other Paths (e.g. Cyber, PM, IT)</span>
+                      </div>
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="font-semibold">Time to Break In</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>12 weeks to portfolio + job interviews</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>12–24 months of certs, MBAs, or grinding</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-semibold">Proof of Skill</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>Visible portfolio projects you can show employers</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>No real proof (certs, resumes, buzzwords only)</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-semibold">Remote Lifestyle Fit</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>High % of remote-first roles</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>Many require on-site / hybrid (especially Cyber + PM)</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-semibold">Income Potential</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>$80K–$120K starting → $150K+ within a few years</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>IT stuck at $40K–$60K, PM requires years, bizopps inconsistent</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-semibold">Barrier to Entry</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>No degree required, skills &gt; pedigree</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>Degree, clearance, MBA, or years of "experience"</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-semibold">Family & Freedom Friendly</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>Control schedule, more time for travel/kids/health</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>Commutes, stress, or unstable income</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-semibold">Guaranteed Path</TableCell>
+                    <TableCell className="text-center">
+                      <div className="flex items-start justify-center gap-2">
+                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                        <span>Mentorship + insider referrals + job guarantee</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-center text-muted-foreground">
+                      <div className="flex items-start justify-center gap-2">
+                        <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <span>"Figure it out yourself," zero guarantees</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
             </div>
           </div>
         </div>
