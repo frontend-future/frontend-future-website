@@ -80,10 +80,10 @@ const SuccessStories = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Real Career Changers, <span className="text-accent">Real Results</span>
+              Real People, <span className="text-accent">Real Results</span>
             </h1>
             <p className="text-xl text-white/90">
-              Meet the men who transformed their careers and lives
+              Meet the students who transformed their careers and lives
             </p>
           </div>
         </div>
