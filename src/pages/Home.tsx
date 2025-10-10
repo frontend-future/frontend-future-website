@@ -14,7 +14,7 @@ const Home = () => {
               In As Little As 12 Weeks
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-              Join career changers aged 35-55 who've gone from $40-70K ceilings to $100K+ remote tech careers
+              Without a degree and without quitting their day job.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
