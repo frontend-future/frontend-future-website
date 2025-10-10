@@ -145,7 +145,7 @@ const Home = () => {
                     <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span>Visible portfolio projects you can show employers</span>
+                        <span>Guaranteed Internship experience + portfolio</span>
                       </div>
                     </TableCell>
                     <TableCell className="text-center text-muted-foreground">
