@@ -1,44 +1,44 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Code, Layout, Smartphone, Briefcase, FileCheck, Trophy } from "lucide-react";
+import { Code, Layout, Smartphone, Briefcase, FileCheck, Monitor, Users } from "lucide-react";
 
 const HowItWorks = () => {
   const steps = [
     {
+      icon: Monitor,
+      title: "Setup & Professional Website",
+      weeks: "Week 1",
+      description: "Setup your computer for success in frontend development. Build your own professional personal website that you can show to potential employers.",
+    },
+    {
       icon: Code,
       title: "HTML & CSS Fundamentals",
-      weeks: "Weeks 1-2",
+      weeks: "Weeks 2-4",
       description: "Master the building blocks of web development. Learn to create beautiful, responsive layouts from scratch.",
     },
     {
       icon: Smartphone,
       title: "JavaScript Mastery",
-      weeks: "Weeks 3-5",
+      weeks: "Weeks 5-7",
       description: "Become proficient in JavaScript - the language that powers modern web applications. Build interactive features and logic.",
     },
     {
       icon: Layout,
       title: "React Development",
-      weeks: "Weeks 6-8",
-      description: "Learn React, the industry-standard framework. Build complex, production-ready applications used by top tech companies.",
-    },
-    {
-      icon: Briefcase,
-      title: "Guaranteed Internship",
-      weeks: "Weeks 9-10",
-      description: "Apply your skills in a real-world setting. Gain hands-on experience working on actual projects with mentorship.",
+      weeks: "Weeks 8-10",
+      description: "Learn React, the industry-standard framework. Build complex, production-ready applications used by top tech companies. Create portfolio projects you can share with employers.",
     },
     {
       icon: FileCheck,
       title: "Interview Preparation",
-      weeks: "Week 11",
-      description: "Master technical interviews, portfolio presentation, and salary negotiation. We prepare you for every aspect of the job search.",
+      weeks: "Weeks 11-12",
+      description: "Master LinkedIn optimization, resume building, and what to expect in interviews. Start applying to jobs and hearing back from employers.",
     },
     {
-      icon: Trophy,
-      title: "Job Placement Support",
-      weeks: "Week 12+",
-      description: "We don't stop until you land your role. Ongoing support, introductions to hiring partners, and application strategy.",
+      icon: Users,
+      title: "Guaranteed Internship",
+      weeks: "Weeks 13-24",
+      description: "The reason most bootcamp grads fail is that they learn the skills but don't have 'proof of experience' to land that first role. We shortcut that by guaranteeing internship experience you can share with future employers.",
     },
   ];
 
@@ -49,10 +49,10 @@ const HowItWorks = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Your 12-Week Path to a <span className="text-accent">Six-Figure Career</span>
+              Your 24-Week Path to a <span className="text-accent">Six-Figure Career</span>
             </h1>
             <p className="text-xl text-white/90">
-              A structured, proven curriculum designed specifically for career changers
+              A structured, proven curriculum with guaranteed internship designed specifically for career changers
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ const HowItWorks = () => {
                 <p className="text-muted-foreground">Job placement support</p>
               </div>
               <div className="space-y-2">
-                <p className="text-4xl font-bold text-accent">12</p>
+                <p className="text-4xl font-bold text-accent">24</p>
                 <p className="text-muted-foreground">Weeks to career change</p>
               </div>
             </div>
