@@ -48,18 +48,16 @@ const Footer = () => {
           </nav>
 
           {/* Social Links */}
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-sm text-muted-foreground">Watch us on YouTube</p>
-            <a
-              href="https://www.youtube.com/@frontendfuture"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-accent transition-colors"
-              aria-label="Visit our YouTube channel"
-            >
-              <Youtube size={24} />
-            </a>
-          </div>
+          <a
+            href="https://www.youtube.com/@frontendfuture"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
+            aria-label="Visit our YouTube channel"
+          >
+            <span>Watch more on YouTube</span>
+            <Youtube size={20} />
+          </a>
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground text-center">
