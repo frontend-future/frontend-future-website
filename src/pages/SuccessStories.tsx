@@ -12,7 +12,7 @@ const SuccessStories = () => {
       newRole: "Full-Stack JavaScript Developer",
       newSalary: "$92K",
       quote: "I used to dread going back on shift in healthcare. The stress was overwhelming. Now I'm a lot less stressed about work, and most of my struggles have to do with not working too much on my side projects. Programming is empowering.",
-      location: "Ocala, Florida"
+      location: "Remote"
     },
     {
       name: "Aaron",
@@ -40,7 +40,7 @@ const SuccessStories = () => {
       previousRole: "College English Teacher",
       previousSalary: "$35K",
       newRole: "Software Developer (Part-Time Remote)",
-      newSalary: "$65K",
+      newSalary: "$78K",
       quote: "As a mom of four, I needed flexibility. I found a job within a week of posting on Twitter. Now I work part-time and remotely. My lunch breaks are with my family. When I'm finished work I'm already home and ready for the next activity.",
       location: "Remote"
     },
@@ -50,7 +50,7 @@ const SuccessStories = () => {
       previousRole: "Professional Dancer & Comedian",
       previousSalary: "$22K",
       newRole: "Full-Stack Software Engineer",
-      newSalary: "$78K",
+      newSalary: "$85K",
       quote: "I was struggling as an artist and became really depressed, questioning the whole purpose of my life. Learning to code gave me a new sense of purpose. It's both one of the hardest and most rewarding things I've done. I surprise myself having dreams about code.",
       location: "Remote"
     },
@@ -71,7 +71,7 @@ const SuccessStories = () => {
       previousSalary: "$28K",
       newRole: "Full-Stack Developer & Designer",
       newSalary: "$95K+",
-      quote: "Since I was a kid, I dreamed about having enough freedom to travel. Working as a remote freelancer, I'm able to do it. Thanks to this career, I don't need to stress about money. I'm a minimalist and I managed to buy an apartment with cash.",
+      quote: "Since I was a kid, I dreamed about having freedom to travel. Working as a remote freelancer, I'm able to do it. Thanks to this career, I don't need to stress about money. I'm a minimalist and I managed to buy an apartment with cash.",
       location: "Remote"
     },
     {
@@ -80,7 +80,7 @@ const SuccessStories = () => {
       previousRole: "Physics Student",
       previousSalary: "$0",
       newRole: "Full-Stack JavaScript Contractor",
-      newSalary: "$98K",
+      newSalary: "$105K",
       quote: "I'm in the very lucky position to make six figures while only working 6 or 7 months a year. I have several months of vacation with my family. As a contractor you can make high rates once you have your skills in place and gained some experience.",
       location: "Remote"
     },
@@ -90,9 +90,9 @@ const SuccessStories = () => {
       previousRole: "Hearing Aid Specialist",
       previousSalary: "$52K",
       newRole: "Junior Rails Developer",
-      newSalary: "$72K",
+      newSalary: "$82K",
       quote: "I worked in sales for 10 years. The industry was changing and I regretted not pursuing coding earlier. I no longer have to commute an hour in traffic each way. I work from home now - my lunch breaks are with my family and I'm excited to go to work.",
-      location: "Washington D.C. Area"
+      location: "Remote"
     },
     {
       name: "Vincent",
@@ -100,7 +100,7 @@ const SuccessStories = () => {
       previousRole: "Office Administrator",
       previousSalary: "$38K",
       newRole: "Junior Software Engineer",
-      newSalary: "$54K",
+      newSalary: "$80K",
       quote: "My salary increased by over 40% and I work 100% remotely. I've done warehouse work, office admin, ESL teacher - this job is the first I've ever had where I've been excited to go to work. I no longer dread another boring day.",
       location: "Remote"
     },
@@ -110,7 +110,7 @@ const SuccessStories = () => {
       previousRole: "Furniture Maker & Project Manager",
       previousSalary: "$45K",
       newRole: "Web Developer",
-      newSalary: "$85K",
+      newSalary: "$90K",
       quote: "After a decade in construction, I was thinking more about the tech world than my current job. That's when I knew I wanted to make the switch. The difference in culture was important - the tech industry shares ideas to raise the bar collectively.",
       location: "Remote"
     },
@@ -120,7 +120,7 @@ const SuccessStories = () => {
       previousRole: "Technical Recruiter",
       previousSalary: "$42K",
       newRole: "Software Engineer",
-      newSalary: "$78K",
+      newSalary: "$85K",
       quote: "I found the recruitment job unfulfilling, but I enjoyed chatting with candidates about what they were building. I realized I could get paid to tap into that sense of accomplishment I felt every time I solved a problem. Money was a motivation, but not the sole one.",
       location: "Remote"
     }
