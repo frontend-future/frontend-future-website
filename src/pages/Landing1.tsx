@@ -4,6 +4,7 @@ import { CheckCircle2, Clock, Target, Users, Briefcase, Award, TrendingUp, Code,
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import ffLogo from "@/assets/ff-logo.png";
 import HeroDynamicSection from "@/components/HeroDynamicSection";
+import SalaryChart from "@/components/SalaryChart";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -355,6 +356,9 @@ export default function Landing1() {
           </div>
         </div>
       </section>
+
+      {/* Salary Data Chart */}
+      <SalaryChart />
 
       {/* Comparison Table */}
       <section className="mx-auto max-w-6xl px-4 py-10">
