@@ -8,7 +8,7 @@ const HowItWorks = () => {
       icon: Monitor,
       title: "Setup & Professional Website",
       weeks: "Week 1",
-      description: "Setup your computer for success in frontend development. Build your own professional personal website that you can show to potential employers.",
+      description: "Setup your computer for success in frontend development. You'll have built your own professional personal website that you can show to potential employers (yes, even if you've never coded before).",
     },
     {
       icon: Code,
