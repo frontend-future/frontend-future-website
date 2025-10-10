@@ -129,7 +129,6 @@ const SuccessStories = () => {
   const stats = [
     { label: "Average Starting Salary", value: "$128K" },
     { label: "People Served", value: "1000+" },
-    { label: "Job Placement Rate", value: "100%" },
     { label: "Satisfaction Guarantee", value: "100%" }
   ];
 
