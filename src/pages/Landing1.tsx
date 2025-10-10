@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Clock, DollarSign, Award, Target, Users, BookOpen, TrendingUp, CheckCircle2, Briefcase, Rocket, Star, Shield } from "lucide-react";
+import ffLogo from "@/assets/ff-logo.png";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -15,18 +17,22 @@ const ACCENT = "#00bfff"; // accent color
 const TYPEFORM_URL = "#eligibility"; // TODO: drop your Typeform/GHL link
 const MICRO_VSL = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&mute=1"; // TODO: replace or remove
 
-function Pill({ children }: { children: React.ReactNode }) {
+function Pill({ children, icon: Icon }: { children: React.ReactNode; icon?: any }) {
   return (
-    <span className="inline-flex items-center rounded-full bg-white px-3 py-1 border border-slate-200 shadow-sm text-sm">
+    <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 border border-slate-200 shadow-sm text-sm">
+      {Icon && <Icon className="w-4 h-4" style={{ color: ACCENT }} />}
       {children}
     </span>
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({ title, children, icon: Icon }: { title: string; children: React.ReactNode; icon?: any }) {
   return (
     <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
-      <h4 className="font-semibold mb-1 text-slate-900">{title}</h4>
+      <div className="flex items-start gap-3 mb-2">
+        {Icon && <Icon className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />}
+        <h4 className="font-semibold text-slate-900">{title}</h4>
+      </div>
       <div className="text-sm text-slate-600 leading-relaxed">{children}</div>
     </div>
   );
@@ -41,14 +47,19 @@ export default function Landing1() {
       {/* Header */}
       <header className="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
+          <img src={ffLogo} alt="FrontendFuture Logo" className="w-10 h-10" />
           <span className="text-xl font-extrabold">FrontendFuture</span>
-          <span className="text-xs px-2 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Ex‑Amazon led</span>
+          <span className="text-xs px-2 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+            <Award className="w-3 h-3" />
+            Ex‑Amazon led
+          </span>
         </div>
         <a
           href={TYPEFORM_URL}
           className="hidden sm:inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold shadow"
           style={{ backgroundColor: ACCENT, color: "#00131a" }}
         >
+          <CheckCircle2 className="w-4 h-4" />
           Check eligibility
         </a>
       </header>
@@ -65,17 +76,18 @@ export default function Landing1() {
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm">
-            <Pill>Tuition $5,000 · financing available</Pill>
-            <Pill>Time: 6–10 hrs/week</Pill>
-            <Pill>Job‑guarantee mentorship*</Pill>
+            <Pill icon={DollarSign}>Tuition $5,000 · financing available</Pill>
+            <Pill icon={Clock}>Time: 6–10 hrs/week</Pill>
+            <Pill icon={Shield}>Job‑guarantee mentorship*</Pill>
           </div>
 
           <div className="mt-6 flex gap-4 items-center">
             <a
               href={TYPEFORM_URL}
-              className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-base font-semibold shadow"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-base font-semibold shadow"
               style={{ backgroundColor: ACCENT, color: "#00131a" }}
             >
+              <Rocket className="w-5 h-5" />
               See if I qualify (2 min)
             </a>
             {showVideoDefault && (
@@ -94,12 +106,12 @@ export default function Landing1() {
           </p>
 
           {/* Tiny proof strip */}
-          <div className="mt-4 text-xs text-slate-600 flex flex-wrap gap-x-4 gap-y-1">
-            <span>Led by ex‑Amazon engineer</span>
+          <div className="mt-4 text-xs text-slate-600 flex flex-wrap gap-x-4 gap-y-1 items-center">
+            <span className="flex items-center gap-1"><Star className="w-3 h-3" style={{ color: ACCENT }} />Led by ex‑Amazon engineer</span>
             <span>•</span>
-            <span>Built to job standards</span>
+            <span className="flex items-center gap-1"><Target className="w-3 h-3" style={{ color: ACCENT }} />Built to job standards</span>
             <span>•</span>
-            <span>Simple rules = job‑guarantee mentorship*</span>
+            <span className="flex items-center gap-1"><Shield className="w-3 h-3" style={{ color: ACCENT }} />Simple rules = job‑guarantee mentorship*</span>
           </div>
         </div>
 
@@ -133,20 +145,23 @@ export default function Landing1() {
       {/* Why this works */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-          <h3 className="text-2xl font-bold mb-2">Why this works</h3>
+          <div className="flex items-start gap-3 mb-2">
+            <TrendingUp className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
+            <h3 className="text-2xl font-bold">Why this works</h3>
+          </div>
           <p className="text-slate-700">Most job posts get hundreds of clicks. Filters throw people out. <strong>Proof wins.</strong> We help you make proof fast and put it in front of hiring managers.</p>
         </div>
       </section>
 
       {/* Simple benefits */}
       <section className="mx-auto max-w-6xl px-4 py-10 grid sm:grid-cols-3 gap-4">
-        <Card title="Real projects">
+        <Card title="Real projects" icon={Briefcase}>
           Your work looks like a real job, not homework. We use real limits and targets.
         </Card>
-        <Card title="Weekly 1‑on‑1s">
+        <Card title="Weekly 1‑on‑1s" icon={Users}>
           Short calls and quick feedback so you don't get stuck. Clear next steps each week.
         </Card>
-        <Card title="Get in front of the right people">
+        <Card title="Get in front of the right people" icon={Target}>
           We package your work and guide you to reach hiring managers.
         </Card>
       </section>
@@ -154,18 +169,30 @@ export default function Landing1() {
       {/* 12‑week plan */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-          <h3 className="text-2xl font-bold mb-4">12‑week plan</h3>
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6" style={{ color: ACCENT }} />
+            <h3 className="text-2xl font-bold">12‑week plan</h3>
+          </div>
           <div className="grid md:grid-cols-3 gap-6 text-sm text-slate-700">
             <div>
-              <h4 className="font-semibold text-slate-900 mb-1">Weeks 1–3</h4>
+              <h4 className="font-semibold text-slate-900 mb-1 flex items-center gap-2">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold" style={{ backgroundColor: "#e6f9ff", color: ACCENT }}>1</span>
+                Weeks 1–3
+              </h4>
               <p>Refresh basics. Build a product page that loads fast and converts.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-900 mb-1">Weeks 4–7</h4>
+              <h4 className="font-semibold text-slate-900 mb-1 flex items-center gap-2">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold" style={{ backgroundColor: "#e6f9ff", color: ACCENT }}>2</span>
+                Weeks 4–7
+              </h4>
               <p>Build a small app with login and a dashboard. Show real state and charts.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-900 mb-1">Weeks 8–12</h4>
+              <h4 className="font-semibold text-slate-900 mb-1 flex items-center gap-2">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold" style={{ backgroundColor: "#e6f9ff", color: ACCENT }}>3</span>
+                Weeks 8–12
+              </h4>
               <p>Speed up a project, write short case notes, and start targeted outreach.</p>
             </div>
           </div>
@@ -175,12 +202,27 @@ export default function Landing1() {
       {/* DFY after you pass */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-          <h3 className="text-2xl font-bold mb-2">After you pass training (done‑for‑you push)</h3>
-          <ul className="list-disc pl-6 text-sm text-slate-700 space-y-2">
-            <li><strong>Resume, LinkedIn, cover letter</strong> built with you</li>
-            <li><strong>1‑on‑1 interview practice</strong></li>
-            <li>We help send your <strong>first three applications</strong></li>
-            <li><strong>Pay‑talk help</strong> when offers come</li>
+          <div className="flex items-start gap-3 mb-3">
+            <Rocket className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
+            <h3 className="text-2xl font-bold">After you pass training (done‑for‑you push)</h3>
+          </div>
+          <ul className="space-y-3 text-sm text-slate-700">
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span><strong>Resume, LinkedIn, cover letter</strong> built with you</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span><strong>1‑on‑1 interview practice</strong></span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span>We help send your <strong>first three applications</strong></span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span><strong>Pay‑talk help</strong> when offers come</span>
+            </li>
           </ul>
         </div>
       </section>
@@ -188,11 +230,23 @@ export default function Landing1() {
       {/* Guarantee */}
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl p-6 md:p-8 shadow-sm" style={{ backgroundColor: "#ecfaff", border: `1px solid ${ACCENT}` }}>
-          <h3 className="text-2xl font-bold mb-2" style={{ color: "#00384d" }}>Job‑guarantee mentorship (simple rules)</h3>
-          <ul className="list-disc pl-6 text-sm space-y-2 text-slate-800">
-            <li>Finish the 3 projects and weekly check‑ins</li>
-            <li>Do the outreach plan each week</li>
-            <li>Show up to mentor calls and use the notes</li>
+          <div className="flex items-start gap-3 mb-3">
+            <Shield className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
+            <h3 className="text-2xl font-bold" style={{ color: "#00384d" }}>Job‑guarantee mentorship (simple rules)</h3>
+          </div>
+          <ul className="space-y-2 text-sm text-slate-800">
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span>Finish the 3 projects and weekly check‑ins</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span>Do the outreach plan each week</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: ACCENT }} />
+              <span>Show up to mentor calls and use the notes</span>
+            </li>
           </ul>
           <p className="text-xs mt-3 text-slate-700">Meet the rules and don't get paid interviews? We refund/extend per <a href="#" className="underline" style={{ color: ACCENT }}>terms</a>.</p>
         </div>
@@ -209,10 +263,14 @@ export default function Landing1() {
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4" style={{ backgroundColor: ACCENT }}>
           <div>
-            <h3 className="text-2xl font-bold" style={{ color: "#00131a" }}>Ready to see if you fit?</h3>
+            <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: "#00131a" }}>
+              <Rocket className="w-6 h-6" />
+              Ready to see if you fit?
+            </h3>
             <p className="opacity-90" style={{ color: "#00131a" }}>Takes 2 minutes. Employed people only. Tuition $5,000.</p>
           </div>
-          <a href={TYPEFORM_URL} className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-semibold shadow" style={{ color: "#00384d" }}>
+          <a href={TYPEFORM_URL} className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-base font-semibold shadow" style={{ color: "#00384d" }}>
+            <CheckCircle2 className="w-5 h-5" />
             Check eligibility
           </a>
         </div>
