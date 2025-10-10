@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold text-accent">
-              Frontend Future
+              FrontendFuture
             </span>
           </Link>
 

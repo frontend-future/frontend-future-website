@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-lg font-bold text-accent">
-              Frontend Future
+              FrontendFuture
             </span>
           </Link>
 
