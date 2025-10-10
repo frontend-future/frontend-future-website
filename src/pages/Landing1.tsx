@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, Clock, Target, Users, Briefcase, Award, TrendingUp, Code, Rocket, Shield } from "lucide-react";
+import { CheckCircle2, Clock, Target, Users, Briefcase, Award, TrendingUp, Code, Rocket, Shield, X } from "lucide-react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import ffLogo from "@/assets/ff-logo.png";
 import HeroDynamicSection from "@/components/HeroDynamicSection";
 
@@ -319,6 +320,166 @@ export default function Landing1() {
               <span className="font-semibold">Not for:</span> unemployed applicants, full-time students, or anyone unable to commit weekly hours.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Why Frontend Development */}
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <h3 className="mb-6 text-2xl font-bold">Why Frontend Development?</h3>
+          <div className="grid gap-4">
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">High demand with remote opportunities worldwide</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Six-figure salaries standard in the industry</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">No degree required - skills matter more than credentials</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Perfect for career changers at any age</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Work-life balance with flexible schedules</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Future-proof career with continuous growth</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <h3 className="mb-6 text-2xl font-bold">Why Frontend Development Wins</h3>
+        <div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+          <Table>
+            <TableHeader>
+              <TableRow className="bg-slate-50">
+                <TableHead className="w-1/3 font-bold text-slate-900"></TableHead>
+                <TableHead className="w-1/3 font-bold text-slate-900 text-center" style={{ backgroundColor: "rgba(0,191,255,0.1)" }}>
+                  Frontend Development
+                </TableHead>
+                <TableHead className="w-1/3 font-bold text-slate-900 text-center">
+                  Other Paths (e.g. Cyber, PM, IT)
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell className="font-semibold">Time to Break In</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>12 weeks to portfolio + job interviews</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>12–24 months of certs, MBAs, or grinding</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Proof of Skill</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>Guaranteed Internship experience + portfolio</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>No real proof (certs, resumes, buzzwords only)</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Remote Lifestyle Fit</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>High % of remote-first roles</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>Many require on-site / hybrid (especially Cyber + PM)</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Income Potential</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>$80K–$120K starting → $150K+ within a few years</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>IT stuck at $40K–$60K, PM requires years, bizopps inconsistent</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Barrier to Entry</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>No degree required, skills &gt; pedigree</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>Degree, clearance, MBA, or years of "experience"</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Family & Freedom Friendly</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>Control schedule, more time for travel/kids/health</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>Commutes, stress, or unstable income</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-semibold">Guaranteed Path</TableCell>
+                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <div className="flex items-start justify-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <span>Mentorship + insider referrals + job guarantee</span>
+                  </div>
+                </TableCell>
+                <TableCell className="text-center text-slate-600">
+                  <div className="flex items-start justify-center gap-2">
+                    <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span>"Figure it out yourself," zero guarantees</span>
+                  </div>
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
         </div>
       </section>
 
