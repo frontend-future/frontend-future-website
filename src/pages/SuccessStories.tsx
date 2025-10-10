@@ -9,37 +9,37 @@ const SuccessStories = () => {
       age: 42,
       previousRole: "Firefighter & Nurse",
       previousSalary: "$55K",
-      newRole: "Full-Stack JavaScript Developer",
+      newRole: "Frontend Developer",
       newSalary: "$92K",
       quote: "I used to dread going back on shift in healthcare. The stress was overwhelming. Now I'm a lot less stressed about work, and most of my struggles have to do with not working too much on my side projects. Programming is empowering.",
       location: "Remote"
     },
     {
-      name: "Aaron",
+      name: "Aaron J.",
       age: 31,
       previousRole: "English Teacher",
       previousSalary: "$18K",
-      newRole: "Software Engineer at Uber (Remote)",
+      newRole: "Frontend Engineer at Uber (Remote)",
       newSalary: "$140K",
       quote: "I was a broke teacher struggling to save money. From beginning to code it took me about 8 months to land a job at Uber. I put myself in a position where I couldn't fail. Now I work remotely and have the flexibility to work on my own projects.",
       location: "Remote"
     },
     {
-      name: "Annie",
+      name: "Annie M.",
       age: 29,
       previousRole: "Designer & Teacher",
       previousSalary: "$32K",
-      newRole: "Front-End Engineering Lead",
+      newRole: "Frontend Engineering Lead",
       newSalary: "$115K",
-      quote: "I was working multiple dead-end jobs in survival mode. It was the darkest period of my life. For the first time in years, I no longer have to think about ordering from the cheapest items on a menu. I got promoted to Front-End Engineering Lead after just 10 months.",
+      quote: "I was working multiple dead-end jobs in survival mode. It was the darkest period of my life. For the first time in years, I no longer have to think about ordering from the cheapest items on a menu. I got promoted to Frontend Engineering Lead after just 10 months.",
       location: "Toronto, Canada"
     },
     {
-      name: "Bekah",
+      name: "Bekah H.",
       age: 38,
       previousRole: "College English Teacher",
       previousSalary: "$35K",
-      newRole: "Software Developer (Part-Time Remote)",
+      newRole: "Frontend Developer (Part-Time Remote)",
       newSalary: "$78K",
       quote: "As a mom of four, I needed flexibility. I found a job within a week of posting on Twitter. Now I work part-time and remotely. My lunch breaks are with my family. When I'm finished work I'm already home and ready for the next activity.",
       location: "Remote"
@@ -49,7 +49,7 @@ const SuccessStories = () => {
       age: 27,
       previousRole: "Professional Dancer & Comedian",
       previousSalary: "$22K",
-      newRole: "Full-Stack Software Engineer",
+      newRole: "Frontend Engineer",
       newSalary: "$85K",
       quote: "I was struggling as an artist and became really depressed, questioning the whole purpose of my life. Learning to code gave me a new sense of purpose. It's both one of the hardest and most rewarding things I've done. I surprise myself having dreams about code.",
       location: "Remote"
@@ -59,7 +59,7 @@ const SuccessStories = () => {
       age: 22,
       previousRole: "Recent University Graduate",
       previousSalary: "$0",
-      newRole: "Freelance WordPress Developer",
+      newRole: "Freelance Developer",
       newSalary: "$120K+",
       quote: "I worked my way up to six-figures in 2017, seven years after I started. It takes consistent hard and smart work over time. The main thing developers need to know is that it's possible to get there by going down the freelance route.",
       location: "Remote"
@@ -69,17 +69,17 @@ const SuccessStories = () => {
       age: 35,
       previousRole: "Various Jobs",
       previousSalary: "$28K",
-      newRole: "Full-Stack Developer & Designer",
+      newRole: "Full-Stack Engineer",
       newSalary: "$95K+",
       quote: "Since I was a kid, I dreamed about having freedom to travel. Working as a remote freelancer, I'm able to do it. Thanks to this career, I don't need to stress about money. I'm a minimalist and I managed to buy an apartment with cash.",
       location: "Remote"
     },
     {
-      name: "Johannes",
+      name: "Johannes K.",
       age: 47,
       previousRole: "Physics Student",
       previousSalary: "$0",
-      newRole: "Full-Stack JavaScript Contractor",
+      newRole: "Frontend Developer (Contractor)",
       newSalary: "$105K",
       quote: "I'm in the very lucky position to make six figures while only working 6 or 7 months a year. I have several months of vacation with my family. As a contractor you can make high rates once you have your skills in place and gained some experience.",
       location: "Remote"
@@ -89,17 +89,17 @@ const SuccessStories = () => {
       age: 41,
       previousRole: "Hearing Aid Specialist",
       previousSalary: "$52K",
-      newRole: "Junior Rails Developer",
+      newRole: "Frontend Developer",
       newSalary: "$82K",
       quote: "I worked in sales for 10 years. The industry was changing and I regretted not pursuing coding earlier. I no longer have to commute an hour in traffic each way. I work from home now - my lunch breaks are with my family and I'm excited to go to work.",
       location: "Remote"
     },
     {
-      name: "Vincent",
+      name: "Vincent K.",
       age: 28,
       previousRole: "Office Administrator",
       previousSalary: "$38K",
-      newRole: "Junior Software Engineer",
+      newRole: "Frontend Engineer",
       newSalary: "$80K",
       quote: "My salary increased by over 40% and I work 100% remotely. I've done warehouse work, office admin, ESL teacher - this job is the first I've ever had where I've been excited to go to work. I no longer dread another boring day.",
       location: "Remote"
@@ -109,7 +109,7 @@ const SuccessStories = () => {
       age: 34,
       previousRole: "Furniture Maker & Project Manager",
       previousSalary: "$45K",
-      newRole: "Web Developer",
+      newRole: "Frontend Developer",
       newSalary: "$90K",
       quote: "After a decade in construction, I was thinking more about the tech world than my current job. That's when I knew I wanted to make the switch. The difference in culture was important - the tech industry shares ideas to raise the bar collectively.",
       location: "London, UK"
@@ -119,7 +119,7 @@ const SuccessStories = () => {
       age: 25,
       previousRole: "Technical Recruiter",
       previousSalary: "$42K",
-      newRole: "Software Engineer",
+      newRole: "Frontend Engineer",
       newSalary: "$85K",
       quote: "I found the recruitment job unfulfilling, but I enjoyed chatting with candidates about what they were building. I realized I could get paid to tap into that sense of accomplishment I felt every time I solved a problem. Money was a motivation, but not the sole one.",
       location: "Remote"
