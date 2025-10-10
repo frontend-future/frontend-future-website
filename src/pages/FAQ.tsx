@@ -96,7 +96,7 @@ const FAQ = () => {
             <p className="text-xl text-muted-foreground">
               We're here to help you make an informed decision
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"

@@ -179,7 +179,7 @@ const SuccessStories = () => {
             <p className="text-xl text-muted-foreground">
               Join hundreds of career changers who've successfully made the transition
             </p>
-            <div className="pt-4">
+            <div className="pt-6">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"

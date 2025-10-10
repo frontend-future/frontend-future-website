@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-12 text-center pt-4">
+            <div className="mt-12 text-center pt-6">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"
@@ -113,15 +113,17 @@ const Home = () => {
             <p className="text-xl text-white/90">
               Join hundreds of career changers who've successfully transitioned to high-paying tech careers
             </p>
-            <a
-              href="https://start.frontendfuture.pro/landing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6">
-                Apply Now →
-              </Button>
-            </a>
+            <div className="pt-6">
+              <a
+                href="https://start.frontendfuture.pro/landing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6">
+                  Apply Now →
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
