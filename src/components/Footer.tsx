@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -45,6 +46,19 @@ const Footer = () => {
               Accessibility
             </Link>
           </nav>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.youtube.com/@frontendfuture"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-accent transition-colors"
+              aria-label="Visit our YouTube channel"
+            >
+              <Youtube size={24} />
+            </a>
+          </div>
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground text-center">
