@@ -59,7 +59,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-semibold">$100K+ Average</h3>
               <p className="text-muted-foreground">
-                Our graduates average six-figure salaries in remote roles
+                Frontend developers average six-figure salaries in remote roles
               </p>
             </div>
           </div>
