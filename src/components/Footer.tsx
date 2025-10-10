@@ -48,7 +48,8 @@ const Footer = () => {
           </nav>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-sm text-muted-foreground">Watch us on YouTube</p>
             <a
               href="https://www.youtube.com/@frontendfuture"
               target="_blank"
