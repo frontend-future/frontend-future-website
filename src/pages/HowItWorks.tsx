@@ -32,7 +32,7 @@ const HowItWorks = () => {
       icon: FileCheck,
       title: "Interview Preparation",
       weeks: "Weeks 11-12",
-      description: "Master LinkedIn optimization, resume building, and what to expect in interviews. Start applying to jobs and hearing back from employers.",
+      description: "Our team will optimize your LinkedIn, polish your resume, and train you on how to crush your interviews. Start applying to jobs and hearing back from employers.",
     },
     {
       icon: Users,
@@ -49,7 +49,7 @@ const HowItWorks = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Your 24-Week Path to a <span className="text-accent">Six-Figure Career</span>
+              Your 12-Week Path to a <span className="text-accent">Six-Figure Career</span>
             </h1>
             <p className="text-xl text-white/90">
               A structured, proven curriculum with guaranteed internship designed specifically for career changers
@@ -109,7 +109,7 @@ const HowItWorks = () => {
                 <p className="text-muted-foreground">Job placement support</p>
               </div>
               <div className="space-y-2">
-                <p className="text-4xl font-bold text-accent">24</p>
+                <p className="text-4xl font-bold text-accent">12</p>
                 <p className="text-muted-foreground">Weeks to career change</p>
               </div>
             </div>
