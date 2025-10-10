@@ -14,7 +14,7 @@ const Home = () => {
               In As Little As 12 Weeks
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-              Without a degree and without quitting their day job.
+              Without a degree and without quitting your day job.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
@@ -22,7 +22,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold text-xl px-12 py-8 shadow-xl hover:shadow-2xl transition-all">
                   Apply Now →
                 </Button>
               </a>
