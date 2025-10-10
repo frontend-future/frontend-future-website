@@ -123,6 +123,76 @@ const SuccessStories = () => {
       newSalary: "$85K",
       quote: "I found the recruitment job unfulfilling, but I enjoyed chatting with candidates about what they were building. I realized I could get paid to tap into that sense of accomplishment I felt every time I solved a problem. Money was a motivation, but not the sole one.",
       location: "Remote"
+    },
+    {
+      name: "Carl M.",
+      age: 32,
+      previousRole: "Journalist",
+      previousSalary: "$45K",
+      newRole: "Frontend Developer",
+      newSalary: "$85K",
+      quote: "I worked as a journalist for four years but newspapers didn't support my interest in coding. It took me 14 months of self-learning before I was blessed enough to find a company which took a chance on me. Now I build tools and graphics for an energy company in London.",
+      location: "London, UK"
+    },
+    {
+      name: "Tae'lur A.",
+      age: 26,
+      previousRole: "Waitress",
+      previousSalary: "$22K",
+      newRole: "Frontend Developer",
+      newSalary: "$75K",
+      quote: "I was working minimum wage as a waitress, fed up with being stagnant and treated poorly in customer service. Learning to code while working full-time was hard, but being ambitious and wanting a better life fueled me. I've been able to travel to places I only dreamed of and gave a talk at the World Trade Center.",
+      location: "Remote"
+    },
+    {
+      name: "Andrew K.",
+      age: 28,
+      previousRole: "Starbucks Barista",
+      previousSalary: "$16K",
+      newRole: "Frontend Developer",
+      newSalary: "$110K",
+      quote: "I was 26 working at Starbucks for $8/hour. Life had not gone the way I dreamed. Teaching myself to code was going to be my way out. Now I make six figures working remotely. My salary increased by 625%. The truth is, it's really hard, but it's possible.",
+      location: "Remote"
+    },
+    {
+      name: "Madison K.",
+      age: 24,
+      previousRole: "Model",
+      previousSalary: "$35K",
+      newRole: "Frontend Developer",
+      newSalary: "$105K",
+      quote: "I dropped out of college and people told me I'd spend my life stuck in dead-end low-paying jobs. I was working as a model but it wasn't a promising career. When I learned to code, my whole life changed. Now I work with amazing people, can work from anywhere in the world, and make six figures.",
+      location: "Bay Area"
+    },
+    {
+      name: "Simon B.",
+      age: 35,
+      previousRole: "PhD Student",
+      previousSalary: "$30K",
+      newRole: "Full-Stack Engineer",
+      newSalary: "$95K",
+      quote: "I had three failed attempts at learning to code before it finally clicked during my PhD. I was struggling to transition and find a dev job - it was soul crushing. My focus now is helping new developers avoid that same painful journey. The breakthrough came when I had a real reason to learn.",
+      location: "Warwick, UK"
+    },
+    {
+      name: "Ryan W.",
+      age: 29,
+      previousRole: "IT Helpdesk",
+      previousSalary: "$45K",
+      newRole: "Frontend Developer",
+      newSalary: "$80K",
+      quote: "Before I wrote code professionally I was very bored with my work. After years in IT support I found something I love - programming is a creative discipline where my work has a direct impact on people. The pay is substantially more and the work is much more plentiful.",
+      location: "Ottawa, Canada"
+    },
+    {
+      name: "Guillaume M.",
+      age: 33,
+      previousRole: "Legal Advisor",
+      previousSalary: "$58K",
+      newRole: "Full-Stack Engineer",
+      newSalary: "$100K",
+      quote: "I worked as a lawyer for 6 years but coding was taking most of my free time - evenings, nights, and weekends. Switching careers was tough. You have to put aside your painful years of studies and work experience to start over. But my side projects helped me land a good first job. I haven't looked back.",
+      location: "Luxembourg"
     }
   ];
 
