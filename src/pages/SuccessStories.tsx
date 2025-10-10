@@ -197,7 +197,7 @@ const SuccessStories = () => {
   ];
 
   const stats = [
-    { label: "Average Starting Salary", value: "$128K" },
+    { label: "Typical Starting Salary", value: "$80K-$120K" },
     { label: "People Served", value: "1000+" },
     { label: "Satisfaction Guarantee", value: "100%" }
   ];
