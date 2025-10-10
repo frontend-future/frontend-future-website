@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-lg font-bold text-primary">
-              &lt;Frontend Future/&gt;
+            <span className="text-lg font-bold text-accent">
+              Frontend Future
             </span>
           </Link>
 
