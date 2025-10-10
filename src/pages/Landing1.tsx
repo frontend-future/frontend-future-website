@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Clock, Target, Users, Briefcase, Award, TrendingUp, Code, Rocket, Shield } from "lucide-react";
 import ffLogo from "@/assets/ff-logo.png";
+import HeroDynamicSection from "@/components/HeroDynamicSection";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -192,6 +193,7 @@ export default function Landing1() {
           </div>
         </div>
 
+        <HeroDynamicSection />
       </section>
 
       {/* Why this works */}
