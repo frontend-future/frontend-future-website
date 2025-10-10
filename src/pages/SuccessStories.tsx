@@ -5,64 +5,124 @@ import { Quote } from "lucide-react";
 const SuccessStories = () => {
   const testimonials = [
     {
-      name: "Michael Rodriguez",
-      age: 42,
-      previousRole: "Retail Manager",
-      previousSalary: "$52K",
-      newRole: "Frontend Developer at Tech Startup",
-      newSalary: "$125K",
-      quote: "I thought I was too old to break into tech. Frontend Future proved me wrong. The 1:1 mentorship made all the difference - my mentor helped me overcome every obstacle.",
-      location: "Remote, Texas"
+      name: "Lee Warrick",
+      age: 32,
+      previousRole: "Firefighter & Nurse",
+      previousSalary: "$55K",
+      newRole: "Full-Stack JavaScript Developer",
+      newSalary: "$92K",
+      quote: "I used to dread going back on shift in healthcare. The stress was overwhelming. Now I'm a lot less stressed about work, and most of my struggles have to do with not working too much on my side projects. Programming is empowering.",
+      location: "Ocala, Florida"
     },
     {
-      name: "David Chen",
+      name: "Aaron",
+      age: 28,
+      previousRole: "English Teacher",
+      previousSalary: "$18K",
+      newRole: "Software Engineer at Uber (Remote)",
+      newSalary: "$140K",
+      quote: "I was a broke teacher struggling to save money. From beginning to code it took me about 8 months to land a job at Uber. I put myself in a position where I couldn't fail. Now I work remotely and have the flexibility to work on my own projects.",
+      location: "Remote"
+    },
+    {
+      name: "Annie",
+      age: 29,
+      previousRole: "Designer & Teacher",
+      previousSalary: "$32K",
+      newRole: "Front-End Engineering Lead",
+      newSalary: "$115K",
+      quote: "I was working multiple dead-end jobs in survival mode. It was the darkest period of my life. For the first time in years, I no longer have to think about ordering from the cheapest items on a menu. I got promoted to Front-End Engineering Lead after just 10 months.",
+      location: "Remote"
+    },
+    {
+      name: "Bekah Hawrot Weigel",
+      age: 36,
+      previousRole: "College English Teacher",
+      previousSalary: "$35K",
+      newRole: "Software Developer (Part-Time Remote)",
+      newSalary: "$65K",
+      quote: "As a mom of four, I needed flexibility. I found a job within a week of posting on Twitter. Now I work part-time and remotely. My lunch breaks are with my family. When I'm finished work I'm already home and ready for the next activity.",
+      location: "Remote"
+    },
+    {
+      name: "Laura Roudge",
+      age: 27,
+      previousRole: "Professional Dancer & Comedian",
+      previousSalary: "$22K",
+      newRole: "Full-Stack Software Engineer",
+      newSalary: "$78K",
+      quote: "I was struggling as an artist and became really depressed, questioning the whole purpose of my life. Learning to code gave me a new sense of purpose. It's both one of the hardest and most rewarding things I've done. I surprise myself having dreams about code.",
+      location: "Remote"
+    },
+    {
+      name: "Tom Hirst",
+      age: 22,
+      previousRole: "Recent University Graduate",
+      previousSalary: "$0",
+      newRole: "Freelance WordPress Developer",
+      newSalary: "$120K+",
+      quote: "I worked my way up to six-figures in 2017, seven years after I started. It takes consistent hard and smart work over time. The main thing developers need to know is that it's possible to get there by going down the freelance route.",
+      location: "Remote"
+    },
+    {
+      name: "Patryk Pawlowski",
+      age: 29,
+      previousRole: "Various Jobs",
+      previousSalary: "$28K",
+      newRole: "Full-Stack Developer & Designer",
+      newSalary: "$95K+",
+      quote: "Since I was a kid, I dreamed about having enough freedom to travel. Working as a remote freelancer, I'm able to do it. Thanks to this career, I don't need to stress about money. I'm a minimalist and I managed to buy an apartment with cash.",
+      location: "Remote"
+    },
+    {
+      name: "Johannes",
+      age: 34,
+      previousRole: "Physics Student",
+      previousSalary: "$0",
+      newRole: "Full-Stack JavaScript Contractor",
+      newSalary: "$98K",
+      quote: "I'm in the very lucky position to make six figures while only working 6 or 7 months a year. I have several months of vacation with my family. As a contractor you can make high rates once you have your skills in place and gained some experience.",
+      location: "Remote"
+    },
+    {
+      name: "Justin Zimmerman",
       age: 38,
-      previousRole: "Sales Representative",
-      previousSalary: "$68K",
-      newRole: "Senior Frontend Engineer",
-      newSalary: "$142K",
-      quote: "The guaranteed internship gave me real-world experience. Within 3 weeks of completing the program, I had 5 job offers. Now I work from home and spend more time with my kids.",
-      location: "Remote, California"
+      previousRole: "Hearing Aid Specialist",
+      previousSalary: "$52K",
+      newRole: "Junior Rails Developer",
+      newSalary: "$72K",
+      quote: "I worked in sales for 10 years. The industry was changing and I regretted not pursuing coding earlier. I no longer have to commute an hour in traffic each way. I work from home now - my lunch breaks are with my family and I'm excited to go to work.",
+      location: "Washington D.C. Area"
     },
     {
-      name: "James Thompson",
-      age: 51,
-      previousRole: "Construction Supervisor",
-      previousSalary: "$65K",
-      newRole: "Frontend Developer",
-      newSalary: "$118K",
-      quote: "After 25 years in construction, I was ready for a change but didn't know where to start. The program was intense but manageable alongside my full-time job. Best investment I've ever made.",
-      location: "Remote, Florida"
+      name: "Vincent",
+      age: 27,
+      previousRole: "Office Administrator",
+      previousSalary: "$38K",
+      newRole: "Junior Software Engineer",
+      newSalary: "$54K",
+      quote: "My salary increased by over 40% and I work 100% remotely. I've done warehouse work, office admin, ESL teacher - this job is the first I've ever had where I've been excited to go to work. I no longer dread another boring day.",
+      location: "Remote"
     },
     {
-      name: "Robert Williams",
-      age: 45,
-      previousRole: "Restaurant Manager",
-      previousSalary: "$58K",
-      newRole: "Frontend Developer at E-commerce Company",
-      newSalary: "$135K",
-      quote: "I went from working 60+ hour weeks managing a restaurant to a comfortable remote job with better pay and benefits. The job guarantee wasn't just talk - they delivered.",
-      location: "Remote, New York"
+      name: "Brian Cooney",
+      age: 32,
+      previousRole: "Furniture Maker & Project Manager",
+      previousSalary: "$45K",
+      newRole: "Web Developer",
+      newSalary: "$85K",
+      quote: "After a decade in construction, I was thinking more about the tech world than my current job. That's when I knew I wanted to make the switch. The difference in culture was important - the tech industry shares ideas to raise the bar collectively.",
+      location: "Remote"
     },
     {
-      name: "Tom Anderson",
-      age: 39,
-      previousRole: "Insurance Agent",
-      previousSalary: "$71K",
-      newRole: "Lead Frontend Developer",
-      newSalary: "$156K",
-      quote: "No CS degree, no prior coding experience - just determination. The curriculum is challenging but designed for people like us. Within 6 months, I doubled my income.",
-      location: "Remote, Washington"
-    },
-    {
-      name: "Kevin Martinez",
-      age: 48,
-      previousRole: "Manufacturing Supervisor",
-      previousSalary: "$62K",
-      newRole: "Frontend Engineer at SaaS Company",
-      newSalary: "$128K",
-      quote: "At 48, I thought I'd work in manufacturing until retirement. Now I have a career I'm passionate about, better work-life balance, and financial security I never thought possible.",
-      location: "Remote, Ohio"
+      name: "Cameron Blackwood",
+      age: 25,
+      previousRole: "Technical Recruiter",
+      previousSalary: "$42K",
+      newRole: "Software Engineer",
+      newSalary: "$78K",
+      quote: "I found the recruitment job unfulfilling, but I enjoyed chatting with candidates about what they were building. I realized I could get paid to tap into that sense of accomplishment I felt every time I solved a problem. Money was a motivation, but not the sole one.",
+      location: "Remote"
     }
   ];
 
