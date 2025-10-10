@@ -188,7 +188,7 @@ const SuccessStories = () => {
       name: "Guillaume M.",
       age: 33,
       previousRole: "Legal Advisor",
-      previousSalary: "$58K",
+      previousSalary: "$97K",
       newRole: "Full-Stack Engineer",
       newSalary: "$100K",
       quote: "I worked as a lawyer for 6 years but coding was taking most of my free time - evenings, nights, and weekends. Switching careers was tough. You have to put aside your painful years of studies and work experience to start over. But my side projects helped me land a good first job. I haven't looked back.",
