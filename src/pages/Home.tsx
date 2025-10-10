@@ -116,24 +116,18 @@ const Home = () => {
                 <TableHeader>
                   <TableRow className="bg-muted/50">
                     <TableHead className="w-1/3 font-bold text-foreground"></TableHead>
-                    <TableHead className="w-1/3 font-bold text-foreground text-center">
-                      <div className="flex items-center justify-center gap-2">
-                        <Check className="w-5 h-5 text-accent" />
-                        <span>Frontend Development</span>
-                      </div>
+                    <TableHead className="w-1/3 font-bold text-foreground text-center bg-accent/20">
+                      Frontend Development
                     </TableHead>
                     <TableHead className="w-1/3 font-bold text-foreground text-center">
-                      <div className="flex items-center justify-center gap-2">
-                        <X className="w-5 h-5 text-destructive" />
-                        <span>Other Paths (e.g. Cyber, PM, IT)</span>
-                      </div>
+                      Other Paths (e.g. Cyber, PM, IT)
                     </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-semibold">Time to Break In</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>12 weeks to portfolio + job interviews</span>
@@ -148,7 +142,7 @@ const Home = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-semibold">Proof of Skill</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>Visible portfolio projects you can show employers</span>
@@ -163,7 +157,7 @@ const Home = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-semibold">Remote Lifestyle Fit</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>High % of remote-first roles</span>
@@ -178,7 +172,7 @@ const Home = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-semibold">Income Potential</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>$80K–$120K starting → $150K+ within a few years</span>
@@ -193,7 +187,7 @@ const Home = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-semibold">Barrier to Entry</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>No degree required, skills &gt; pedigree</span>
@@ -208,7 +202,7 @@ const Home = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-semibold">Family & Freedom Friendly</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>Control schedule, more time for travel/kids/health</span>
@@ -223,7 +217,7 @@ const Home = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-semibold">Guaranteed Path</TableCell>
-                    <TableCell className="text-center">
+                    <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                         <span>Mentorship + insider referrals + job guarantee</span>
