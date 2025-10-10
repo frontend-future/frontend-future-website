@@ -22,8 +22,8 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">
-              &lt;Frontend Future/&gt;
+            <span className="text-xl font-bold">
+              &lt;<span className="text-accent">Frontend Future</span>/&gt;
             </span>
           </Link>
 

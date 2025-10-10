@@ -11,7 +11,7 @@ const Home = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Learn How To Code And Land A{" "}
               <span className="text-accent">6-Figure Remote Job</span>{" "}
-              In 12-Weeks
+              In As Little As 12 Weeks
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
               Join career changers aged 35-55 who've gone from $40-70K ceilings to $100K+ remote tech careers
@@ -48,9 +48,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
                 <Briefcase className="w-8 h-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold">Job Guarantee</h3>
+              <h3 className="text-xl font-semibold">Internship Guarantee</h3>
               <p className="text-muted-foreground">
-                We guarantee you land a frontend developer role
+                Break out of the 2 years experience trap and cruise into your first role
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-3">
