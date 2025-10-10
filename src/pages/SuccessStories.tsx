@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 const SuccessStories = () => {
   const testimonials = [
     {
-      name: "Lee Warrick",
+      name: "Lee W.",
       age: 32,
       previousRole: "Firefighter & Nurse",
       previousSalary: "$55K",
@@ -35,7 +35,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Bekah Hawrot Weigel",
+      name: "Bekah",
       age: 36,
       previousRole: "College English Teacher",
       previousSalary: "$35K",
@@ -45,7 +45,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Laura Roudge",
+      name: "Laura R.",
       age: 27,
       previousRole: "Professional Dancer & Comedian",
       previousSalary: "$22K",
@@ -55,7 +55,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Tom Hirst",
+      name: "Tom H.",
       age: 22,
       previousRole: "Recent University Graduate",
       previousSalary: "$0",
@@ -65,7 +65,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Patryk Pawlowski",
+      name: "Patryk P.",
       age: 29,
       previousRole: "Various Jobs",
       previousSalary: "$28K",
@@ -85,7 +85,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Justin Zimmerman",
+      name: "Justin Z.",
       age: 38,
       previousRole: "Hearing Aid Specialist",
       previousSalary: "$52K",
@@ -105,7 +105,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Brian Cooney",
+      name: "Brian C.",
       age: 32,
       previousRole: "Furniture Maker & Project Manager",
       previousSalary: "$45K",
@@ -115,7 +115,7 @@ const SuccessStories = () => {
       location: "Remote"
     },
     {
-      name: "Cameron Blackwood",
+      name: "Cameron B.",
       age: 25,
       previousRole: "Technical Recruiter",
       previousSalary: "$42K",
