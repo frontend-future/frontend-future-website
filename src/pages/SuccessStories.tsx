@@ -6,7 +6,7 @@ const SuccessStories = () => {
   const testimonials = [
     {
       name: "Lee W.",
-      age: 32,
+      age: 42,
       previousRole: "Firefighter & Nurse",
       previousSalary: "$55K",
       newRole: "Full-Stack JavaScript Developer",
@@ -16,7 +16,7 @@ const SuccessStories = () => {
     },
     {
       name: "Aaron",
-      age: 28,
+      age: 31,
       previousRole: "English Teacher",
       previousSalary: "$18K",
       newRole: "Software Engineer at Uber (Remote)",
@@ -32,11 +32,11 @@ const SuccessStories = () => {
       newRole: "Front-End Engineering Lead",
       newSalary: "$115K",
       quote: "I was working multiple dead-end jobs in survival mode. It was the darkest period of my life. For the first time in years, I no longer have to think about ordering from the cheapest items on a menu. I got promoted to Front-End Engineering Lead after just 10 months.",
-      location: "Remote"
+      location: "Toronto, Canada"
     },
     {
       name: "Bekah",
-      age: 36,
+      age: 38,
       previousRole: "College English Teacher",
       previousSalary: "$35K",
       newRole: "Software Developer (Part-Time Remote)",
@@ -66,7 +66,7 @@ const SuccessStories = () => {
     },
     {
       name: "Patryk P.",
-      age: 29,
+      age: 35,
       previousRole: "Various Jobs",
       previousSalary: "$28K",
       newRole: "Full-Stack Developer & Designer",
@@ -76,7 +76,7 @@ const SuccessStories = () => {
     },
     {
       name: "Johannes",
-      age: 34,
+      age: 47,
       previousRole: "Physics Student",
       previousSalary: "$0",
       newRole: "Full-Stack JavaScript Contractor",
@@ -86,7 +86,7 @@ const SuccessStories = () => {
     },
     {
       name: "Justin Z.",
-      age: 38,
+      age: 41,
       previousRole: "Hearing Aid Specialist",
       previousSalary: "$52K",
       newRole: "Junior Rails Developer",
@@ -96,7 +96,7 @@ const SuccessStories = () => {
     },
     {
       name: "Vincent",
-      age: 27,
+      age: 28,
       previousRole: "Office Administrator",
       previousSalary: "$38K",
       newRole: "Junior Software Engineer",
@@ -106,13 +106,13 @@ const SuccessStories = () => {
     },
     {
       name: "Brian C.",
-      age: 32,
+      age: 34,
       previousRole: "Furniture Maker & Project Manager",
       previousSalary: "$45K",
       newRole: "Web Developer",
       newSalary: "$90K",
       quote: "After a decade in construction, I was thinking more about the tech world than my current job. That's when I knew I wanted to make the switch. The difference in culture was important - the tech industry shares ideas to raise the bar collectively.",
-      location: "Remote"
+      location: "London, UK"
     },
     {
       name: "Cameron B.",
