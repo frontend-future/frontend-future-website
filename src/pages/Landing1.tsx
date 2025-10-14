@@ -5,6 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import ffLogo from "@/assets/ff-logo.png";
 import HeroDynamicSection from "@/components/HeroDynamicSection";
 import SalaryChart from "@/components/SalaryChart";
+import YouTubeChannelSection from "@/components/YouTubeChannelSection";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -135,8 +136,7 @@ export default function Landing1() {
         </div>
         <a
           href={TYPEFORM_URL}
-          className="hidden sm:inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg transition-all"
-          style={{ backgroundColor: ACCENT, color: "#00131a" }}
+          className="hidden sm:inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg transition-all bg-[#00bfff] text-slate-900 hover:bg-[#0095cc]"
         >
           <Rocket className="w-4 h-4" />
           Check eligibility
@@ -356,6 +356,14 @@ export default function Landing1() {
 
       {/* Salary Data Chart */}
       <SalaryChart />
+
+      {/* YouTube Channel Section */}
+      <YouTubeChannelSection
+        handle="@frontendfuture"
+        heading="From our YouTube channel"
+        subheading="Real career transformation stories and frontend development tutorials."
+        maxResults={12}
+      />
 
       {/* Comparison Table */}
       <section className="mx-auto max-w-6xl px-4 py-10">
