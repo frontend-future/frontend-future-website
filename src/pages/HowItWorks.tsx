@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Code, Layout, Smartphone, Briefcase, FileCheck, Monitor, Users } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const HowItWorks = () => {
   const steps = [
@@ -44,14 +45,26 @@ const HowItWorks = () => {
 
   return (
     <div className="w-full">
+      <Helmet>
+        <title>How It Works: 12-Week Frontend Developer Bootcamp | Frontend Future</title>
+        <meta name="description" content="Discover our proven 12-week curriculum from HTML to React with guaranteed internship. Learn frontend development with 1:1 mentorship and land your dream remote job." />
+        <meta name="keywords" content="frontend bootcamp curriculum, coding bootcamp structure, learn react, javascript course, web development training" />
+        <link rel="canonical" href="https://frontendfuture.pro/how-it-works" />
+        
+        <meta property="og:title" content="How It Works: 12-Week Frontend Developer Bootcamp" />
+        <meta property="og:description" content="From HTML basics to React mastery in 12 weeks. Guaranteed internship included. 1:1 mentorship throughout your journey." />
+      </Helmet>
       {/* Header Section */}
-      <section className="bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white py-20">
+      <section className="bg-slate-50 py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold">
-              Your 12-Week Path to a <span className="text-accent">Six-Figure Career</span>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+              Your proven roadmap to success
+            </p>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Your 12-Week Path to a <span className="underline decoration-sky-500 decoration-2">Six-Figure Career</span>
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-xl text-slate-700">
               A structured, proven curriculum with guaranteed internship designed specifically for career changers
             </p>
           </div>

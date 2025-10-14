@@ -1,12 +1,36 @@
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>About Frontend Future: Transform Careers Into Tech | Frontend Future</title>
+        <meta name="description" content="Learn about Frontend Future's mission to help career changers aged 35-55 break into high-paying tech careers. Average graduate salary: $128K remote." />
+        <meta name="keywords" content="frontend future story, coding bootcamp mission, career change bootcamp, tech career transformation" />
+        <link rel="canonical" href="https://frontendfuture.pro/about" />
+        
+        <meta property="og:title" content="About Frontend Future: Transform Careers Into Tech" />
+        <meta property="og:description" content="Helping career changers aged 35-55 land $128K average remote frontend developer jobs. True 1:1 mentorship." />
+      </Helmet>
+      {/* Header Section */}
+      <section className="bg-slate-50 py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+              Our mission and story
+            </p>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              About <span className="underline decoration-sky-500 decoration-2">Frontend Future</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto space-y-8">
-            <h1 className="text-4xl md:text-5xl font-bold">About Frontend Future</h1>
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>

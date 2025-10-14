@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const SuccessStories = () => {
   const testimonials = [
@@ -204,14 +205,26 @@ const SuccessStories = () => {
 
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Success Stories: Career Changers Earning $80K-$140K Remote | Frontend Future</title>
+        <meta name="description" content="Read real testimonials from career changers who landed $80K-$140K remote frontend developer jobs. From teachers to engineers to freelancers earning $100K+." />
+        <meta name="keywords" content="frontend developer salary, coding bootcamp reviews, career change success stories, remote developer testimonials" />
+        <link rel="canonical" href="https://frontendfuture.pro/success-stories" />
+        
+        <meta property="og:title" content="Success Stories: Career Changers Earning $80K-$140K Remote" />
+        <meta property="og:description" content="Meet graduates who transformed their careers. From firefighters to teachers - now earning $80K-$140K as remote frontend developers." />
+      </Helmet>
       {/* Header Section */}
-      <section className="bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white py-20">
+      <section className="bg-slate-50 py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold">
-              Real People, <span className="text-accent">Real Results</span>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+              Proven transformations
+            </p>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Real People, <span className="underline decoration-sky-500 decoration-2">Real Results</span>
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-xl text-slate-700">
               Meet the students who transformed their careers and lives
             </p>
           </div>

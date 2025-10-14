@@ -146,17 +146,14 @@ export default function Landing1() {
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl items-start gap-10 px-4 pb-6 pt-2 lg:grid-cols-2">
         <div>
-          <p className="mb-3 text-sm text-slate-600">
-            Ex-Amazon–led mentorship for working professionals
+          <p className="text-[11px] font-semibold uppercase tracking-wider bg-sky-50 inline-block rounded-full px-3 py-1 text-center mb-3" style={{ color: ACCENT }}>
+            Ditch the commute and work from anywhere
           </p>
           <h1 className="text-4xl font-extrabold leading-tight md:text-5xl">
-            Train with us. Build real web work. <span style={{ color: ACCENT }}>Land a remote frontend developer job.</span>
+            <span className="underline decoration-2" style={{ textDecorationColor: ACCENT }}>Learn How To Code</span> And Land A <span className="underline decoration-2" style={{ textDecorationColor: ACCENT }}>6-Figure Remote Job</span> In <span className="underline decoration-2" style={{ textDecorationColor: ACCENT }}>12-Weeks</span>
           </h1>
           <p className="mt-4 text-xl font-semibold text-slate-700">
-            Learn the work people see and click.
-          </p>
-          <p className="mt-3 text-base text-slate-600">
-            In just 12 weeks, you'll design, build, and ship real-world projects that match what hiring managers look for.
+            Without a degree and without quitting your day job.
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">

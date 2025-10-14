@@ -1,18 +1,40 @@
 import { Button } from "@/components/ui/button";
 import { Mail, MessageSquare } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Contact Us: Get Your Questions Answered | Frontend Future</title>
+        <meta name="description" content="Have questions about our frontend bootcamp? Contact Frontend Future for admissions info, curriculum details, and career guidance. Response within 24 hours." />
+        <meta name="keywords" content="frontend bootcamp contact, coding bootcamp inquiry, bootcamp admissions, career change questions" />
+        <link rel="canonical" href="https://frontendfuture.pro/contact" />
+        
+        <meta property="og:title" content="Contact Us: Get Your Questions Answered" />
+        <meta property="og:description" content="Contact Frontend Future for bootcamp information, admissions, and career guidance." />
+      </Helmet>
+      {/* Header Section */}
+      <section className="bg-slate-50 py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+              We're here to help
+            </p>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              <span className="underline decoration-sky-500 decoration-2">Get In Touch</span>
+            </h1>
+            <p className="text-xl text-slate-700">
+              Have questions? We're here to help you make an informed decision.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Options */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold">Get In Touch</h1>
-              <p className="text-xl text-muted-foreground">
-                Have questions? We're here to help you make an informed decision.
-              </p>
-            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 border rounded-lg space-y-4 hover:shadow-lg transition-shadow">

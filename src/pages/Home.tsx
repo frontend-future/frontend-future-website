@@ -1,20 +1,58 @@
 import { Button } from "@/components/ui/button";
 import { Check, Code, Briefcase, TrendingUp, X } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Learn to Code & Land a 6-Figure Remote Job in 12 Weeks | Frontend Future</title>
+        <meta name="description" content="Transform your career with Frontend Future's 12-week bootcamp. 1:1 mentorship, guaranteed internship, and $100K+ remote developer jobs. No degree required. Apply now!" />
+        <meta name="keywords" content="frontend developer bootcamp, learn to code, remote developer job, career change coding, bootcamp with job guarantee, frontend development course" />
+        <link rel="canonical" href="https://frontendfuture.pro/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Learn to Code & Land a 6-Figure Remote Job in 12 Weeks" />
+        <meta property="og:description" content="12-week bootcamp for career changers. 1:1 mentorship, guaranteed internship, $100K+ remote salaries. No degree required." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://frontendfuture.pro/" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Learn to Code & Land a 6-Figure Remote Job in 12 Weeks" />
+        <meta name="twitter:description" content="Transform your career with Frontend Future. 1:1 mentorship, guaranteed internship, $100K+ remote developer jobs." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "Frontend Future",
+            "description": "Frontend development bootcamp with guaranteed internship and job placement support",
+            "url": "https://frontendfuture.pro",
+            "offers": {
+              "@type": "Offer",
+              "category": "Frontend Development Bootcamp",
+              "price": "5000",
+              "priceCurrency": "USD"
+            }
+          })}
+        </script>
+      </Helmet>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white py-24 md:py-32">
+      <section className="relative bg-slate-50 py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Learn How To Code And Land A{" "}
-              <span className="text-accent">6-Figure Remote Job</span>{" "}
-              In As Little As 12 Weeks
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+              Ditch the commute and work from anywhere
+            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+              <span className="underline decoration-sky-500 decoration-2">Learn How To Code</span> And Land A{" "}
+              <span className="underline decoration-sky-500 decoration-2">6-Figure Remote Job</span>{" "}
+              In <span className="underline decoration-sky-500 decoration-2">12-Weeks</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-700 font-semibold max-w-2xl mx-auto">
               Without a degree and without quitting your day job.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
