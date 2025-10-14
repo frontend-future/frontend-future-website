@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Code, Layout, Smartphone, Briefcase, FileCheck, Monitor, Users } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import HowItWorksDynamicSection from "@/components/HowItWorksDynamicSection";
 
 const HowItWorks = () => {
   const steps = [
@@ -57,16 +58,21 @@ const HowItWorks = () => {
       {/* Header Section */}
       <section className="bg-slate-50 py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
-              Your proven roadmap to success
-            </p>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Your 12-Week Path to a <span className="underline decoration-sky-500 decoration-2">Six-Figure Career</span>
-            </h1>
-            <p className="text-xl text-slate-700">
-              A structured, proven curriculum with guaranteed internship designed specifically for career changers
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="space-y-6">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+                  Your proven roadmap to success
+                </p>
+                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                  Your 12-Week Path to a <span className="underline decoration-sky-500 decoration-2">Six-Figure Career</span>
+                </h1>
+                <p className="text-xl text-slate-700">
+                  A structured, proven curriculum with guaranteed internship designed specifically for career changers
+                </p>
+              </div>
+              <HowItWorksDynamicSection />
+            </div>
           </div>
         </div>
       </section>
