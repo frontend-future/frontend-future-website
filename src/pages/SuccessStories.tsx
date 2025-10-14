@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import SalaryChart from "@/components/SalaryChart";
 
 const SuccessStories = () => {
   const testimonials = [
@@ -283,33 +284,8 @@ const SuccessStories = () => {
         </div>
       </section>
 
-      {/* Salary Potential */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Your Future Salary Potential
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Frontend developer salaries continue to grow with experience
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="p-6 space-y-2">
-                <p className="text-sm text-muted-foreground">Entry Level (0-2 years)</p>
-                <p className="text-3xl font-bold text-accent">$80K-$120K</p>
-              </Card>
-              <Card className="p-6 space-y-2">
-                <p className="text-sm text-muted-foreground">Mid Level (2-5 years)</p>
-                <p className="text-3xl font-bold text-accent">$120K-$180K</p>
-              </Card>
-              <Card className="p-6 space-y-2">
-                <p className="text-sm text-muted-foreground">Senior Level (5+ years)</p>
-                <p className="text-3xl font-bold text-accent">$180K-$300K+</p>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Salary Data Chart */}
+      <SalaryChart />
 
       {/* CTA Section */}
       <section className="py-20">
