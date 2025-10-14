@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet-async";
+import FAQDynamicSection from "@/components/FAQDynamicSection";
 
 const FAQ = () => {
   const faqs = [
@@ -65,16 +66,21 @@ const FAQ = () => {
       {/* Header Section */}
       <section className="bg-slate-50 py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
-              Everything you need to know
-            </p>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              <span className="underline decoration-sky-500 decoration-2">Frequently Asked Questions</span>
-            </h1>
-            <p className="text-xl text-slate-700">
-              Get answers to common questions about the program
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="space-y-6">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+                  Everything you need to know
+                </p>
+                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                  <span className="underline decoration-sky-500 decoration-2">Frequently Asked Questions</span>
+                </h1>
+                <p className="text-xl text-slate-700">
+                  Get answers to common questions about the program
+                </p>
+              </div>
+              <FAQDynamicSection />
+            </div>
           </div>
         </div>
       </section>

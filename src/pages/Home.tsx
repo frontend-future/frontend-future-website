@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Check, Code, Briefcase, TrendingUp, X } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Helmet } from "react-helmet-async";
+import HomeDynamicSection from "@/components/HomeDynamicSection";
 
 const Home = () => {
   return (
@@ -43,28 +44,33 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative bg-slate-50 py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
-              Ditch the commute and work from anywhere
-            </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              <span className="underline decoration-sky-500 decoration-2">Learn How To Code</span> And Land A{" "}
-              <span className="underline decoration-sky-500 decoration-2">6-Figure Remote Job</span>{" "}
-              In <span className="underline decoration-sky-500 decoration-2">12-Weeks</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-700 font-semibold max-w-2xl mx-auto">
-              Without a degree and without quitting your day job.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="https://start.frontendfuture.pro/landing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold text-xl px-12 py-8 shadow-xl hover:shadow-2xl transition-all">
-                  Apply Now →
-                </Button>
-              </a>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="space-y-8">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
+                  Ditch the commute and work from anywhere
+                </p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                  <span className="underline decoration-sky-500 decoration-2">Learn How To Code</span> And Land A{" "}
+                  <span className="underline decoration-sky-500 decoration-2">6-Figure Remote Job</span>{" "}
+                  In <span className="underline decoration-sky-500 decoration-2">12-Weeks</span>
+                </h1>
+                <p className="text-xl md:text-2xl text-slate-700 font-semibold">
+                  Without a degree and without quitting your day job.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://start.frontendfuture.pro/landing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold text-xl px-12 py-8 shadow-xl hover:shadow-2xl transition-all">
+                      Apply Now →
+                    </Button>
+                  </a>
+                </div>
+              </div>
+              <HomeDynamicSection />
             </div>
           </div>
         </div>
