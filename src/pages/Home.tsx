@@ -31,13 +31,7 @@ const Home = () => {
             "@type": "EducationalOrganization",
             "name": "Frontend Future",
             "description": "Frontend development bootcamp with guaranteed internship and job placement support",
-            "url": "https://frontendfuture.pro",
-            "offers": {
-              "@type": "Offer",
-              "category": "Frontend Development Bootcamp",
-              "price": "5000",
-              "priceCurrency": "USD"
-            }
+            "url": "https://frontendfuture.pro"
           })}
         </script>
       </Helmet>

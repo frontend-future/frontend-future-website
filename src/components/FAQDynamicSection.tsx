@@ -49,33 +49,48 @@ function PanelTopQuestions() {
   );
 }
 
-function PanelInvestment() {
+function PanelDegreeComparison() {
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-bold text-slate-900 text-center">Investment & ROI</h3>
+      <h3 className="text-xl font-bold text-slate-900 text-center">vs. Traditional Degree</h3>
       <div className="space-y-4">
         <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="p-4 rounded-xl bg-white border border-slate-200"
+          className="p-4 rounded-xl bg-red-50 border border-red-200"
         >
-          <div className="text-sm text-slate-600 mb-2">Program Investment</div>
-          <div className="text-3xl font-bold" style={{ color: ACCENT }}>$5,000</div>
-          <div className="text-xs text-slate-500 mt-1">Financing available</div>
+          <div className="text-sm font-bold text-red-900 mb-2">4-Year Degree</div>
+          <div className="space-y-2 text-xs text-red-700">
+            <div>• 20x more expensive</div>
+            <div>• 4+ years full-time commitment</div>
+            <div>• Can't work during studies</div>
+            <div>• Outdated curriculum</div>
+          </div>
         </motion.div>
         <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.1 }}
-          className="p-4 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200"
+          className="p-4 rounded-xl bg-green-50 border border-green-200"
         >
-          <div className="text-sm text-green-700 mb-2">Average Salary After</div>
-          <div className="text-3xl font-bold text-green-600">$128K</div>
-          <div className="text-xs text-green-600 mt-1">Pays for itself in weeks</div>
+          <div className="text-sm font-bold text-green-900 mb-2">Our Program</div>
+          <div className="space-y-2 text-xs text-green-700">
+            <div>• Fraction of the cost</div>
+            <div>• 12 weeks part-time</div>
+            <div>• Keep your current job</div>
+            <div>• Industry-current skills</div>
+          </div>
         </motion.div>
-        <div className="text-center p-3 rounded-xl" style={{ backgroundColor: `${ACCENT}15` }}>
-          <div className="text-sm font-semibold" style={{ color: ACCENT }}>25x ROI in Year 1</div>
-        </div>
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="text-center p-3 rounded-xl"
+          style={{ backgroundColor: `${ACCENT}15` }}
+        >
+          <div className="text-2xl font-bold" style={{ color: ACCENT }}>Same Jobs</div>
+          <div className="text-xs text-slate-600">Companies care about skills, not degrees</div>
+        </motion.div>
       </div>
     </div>
   );
@@ -177,7 +192,7 @@ function PanelAgeBreakdown() {
 
 const PANELS = [
   { key: "questions", Component: PanelTopQuestions, icon: HelpCircle, label: "Top Q's" },
-  { key: "investment", Component: PanelInvestment, icon: DollarSign, label: "Investment" },
+  { key: "comparison", Component: PanelDegreeComparison, icon: DollarSign, label: "vs Degree" },
   { key: "time", Component: PanelTimeCommitment, icon: Clock, label: "Time" },
   { key: "age", Component: PanelAgeBreakdown, icon: Users, label: "Ages" }
 ];

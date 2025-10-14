@@ -43,8 +43,8 @@ const FAQ = () => {
       answer: "Yes - 98% of our graduates work fully remote. Frontend development is one of the most remote-friendly careers in tech. Companies worldwide hire frontend developers remotely because the work is entirely digital. You'll build your portfolio with remote work in mind, and we specifically target remote-friendly companies in our placement support."
     },
     {
-      question: "What's the investment, and do you offer financing?",
-      answer: "The program is a significant investment in your future, but consider the ROI: our graduates average $128K salaries, compared to the $40-70K most were earning before. That's a 2x-3x return in year one alone. We offer multiple financing options including income share agreements and payment plans to make the program accessible. The investment pays for itself within months of landing your new role."
+      question: "How does this compare to a traditional degree?",
+      answer: "A traditional 4-year degree costs 20x more and requires full-time commitment for 4+ years. Our program is 12 weeks, part-time, and you can keep your current job. You'll learn only what employers actually need, not outdated theory. Plus, companies care about skills and portfolio projects, not where you went to school. Our graduates land the same roles as CS grads, but in a fraction of the time and cost."
     },
     {
       question: "Am I too old to become a developer?",
@@ -56,12 +56,12 @@ const FAQ = () => {
     <div className="w-full">
       <Helmet>
         <title>FAQ: Frontend Developer Bootcamp Questions Answered | Frontend Future</title>
-        <meta name="description" content="Get answers about our frontend bootcamp: job guarantee, curriculum, 1:1 mentorship, financing options, and career outcomes. 100% placement rate for graduates." />
-        <meta name="keywords" content="coding bootcamp faq, frontend bootcamp questions, job guarantee bootcamp, bootcamp financing, learn to code faq" />
+        <meta name="description" content="Get answers about our frontend bootcamp: job guarantee, curriculum, 1:1 mentorship, and career outcomes. 100% placement rate for graduates." />
+        <meta name="keywords" content="coding bootcamp faq, frontend bootcamp questions, job guarantee bootcamp, learn to code faq" />
         <link rel="canonical" href="https://frontendfuture.pro/faq" />
         
         <meta property="og:title" content="FAQ: Frontend Developer Bootcamp Questions Answered" />
-        <meta property="og:description" content="Everything you need to know about our 12-week bootcamp. Job guarantee, 1:1 mentorship, financing, and more." />
+        <meta property="og:description" content="Everything you need to know about our 12-week bootcamp. Job guarantee, 1:1 mentorship, and more." />
       </Helmet>
       {/* Header Section */}
       <section className="bg-slate-50 py-16 md:py-20">

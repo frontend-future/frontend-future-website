@@ -91,7 +91,7 @@ function CTABanner() {
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <h3 className="text-2xl font-bold text-[#00131a]">Ready to see if you fit?</h3>
-          <p className="text-[#00131a]/80">Takes 2 minutes. Employed people only. Tuition $5,000.</p>
+          <p className="text-[#00131a]/80">Takes 2 minutes. Employed people only.</p>
         </div>
         <a
           href={TYPEFORM_URL}

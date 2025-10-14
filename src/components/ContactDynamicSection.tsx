@@ -121,7 +121,7 @@ function PanelOfficeHours() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4" style={{ color: ACCENT }} />
-                <span className="text-xs text-slate-600">Admissions & financing</span>
+                <span className="text-xs text-slate-600">Program details & admissions</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4" style={{ color: ACCENT }} />
@@ -156,9 +156,9 @@ function PanelWhyReachOut() {
           transition={{ delay: 0.1 }}
           className="p-4 rounded-xl bg-white border border-slate-200"
         >
-          <div className="font-semibold text-slate-900 mb-2 text-sm">Learn About Financing</div>
+          <div className="font-semibold text-slate-900 mb-2 text-sm">Apply to Get Started</div>
           <div className="text-xs text-slate-600 leading-relaxed">
-            We offer payment plans and income share agreements to make the program accessible
+            Start your application and we'll discuss all program details on your consultation call
           </div>
         </motion.div>
         <motion.div
