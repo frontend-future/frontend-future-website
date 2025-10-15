@@ -6,6 +6,7 @@ import ffLogo from "@/assets/ff-logo.png";
 import HeroDynamicSection from "@/components/HeroDynamicSection";
 import SalaryChart from "@/components/SalaryChart";
 import YouTubeChannelSection from "@/components/YouTubeChannelSection";
+import JourneyTimeline from "@/components/JourneyTimeline";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -248,51 +249,8 @@ export default function Landing1() {
         </div>
       </section>
 
-      {/* 12-Week Roadmap */}
-      <section className="mx-auto max-w-6xl px-4 py-10">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-4 text-2xl font-bold">12-Week Roadmap</h3>
-          <div className="space-y-3 text-slate-700">
-            <p>
-              <span className="font-semibold text-slate-900">Weeks 1–3:</span> Refresh fundamentals. Build a fast, conversion-optimized product page.
-            </p>
-            <p>
-              <span className="font-semibold text-slate-900">Weeks 4–7:</span> Develop a small web app with login, dashboard, and real-time data.
-            </p>
-            <p>
-              <span className="font-semibold text-slate-900">Weeks 8–12:</span> Optimize performance, document your work, and begin targeted outreach.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* After graduation */}
-      <section className="mx-auto max-w-6xl px-4 py-10">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <div className="flex items-start gap-3 mb-4">
-            <Rocket className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
-            <h3 className="text-xl font-bold">After graduation:</h3>
-          </div>
-          <ul className="space-y-3 text-slate-700">
-            <li className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>Resume, LinkedIn & portfolio built with you</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>1-on-1 interview prep and strategy</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>Support sending your first applications</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>Pay-talk guidance when offers come</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+      {/* Interactive Journey Timeline */}
+      <JourneyTimeline />
 
       {/* Who It's For */}
       <section className="mx-auto max-w-6xl px-4 py-10">
