@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Youtube } from "lucide-react";
+import ffLogo from "@/assets/ff-logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={ffLogo} alt="FrontendFuture Logo" className="w-10 h-10 rounded-full" />
             <span className="text-lg font-bold text-accent">
               FrontendFuture
             </span>
