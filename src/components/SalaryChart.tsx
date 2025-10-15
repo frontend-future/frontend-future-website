@@ -95,48 +95,48 @@ export default function SalaryChart() {
     <section className="mx-auto max-w-6xl px-4 py-10">
       <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl md:p-10">
         {/* Header */}
-        <div className="mb-6 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-medium mb-4" style={{ borderColor: ACCENT, color: ACCENT, backgroundColor: `${ACCENT}15` }}>
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            Verified by levels.fyi, Google & Indeed
+        <div className="mb-4 md:mb-6 text-center">
+          <div className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] md:text-xs font-medium mb-3" style={{ borderColor: ACCENT, color: ACCENT, backgroundColor: `${ACCENT}15` }}>
+            <CheckCircle2 className="w-3 h-3 md:w-3.5 md:h-3.5" />
+            Verified by levels.fyi & Indeed
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">
-            Web Development (Front-End) Salary
+          <h2 className="text-xl md:text-4xl font-extrabold text-slate-900 mb-1 md:mb-2">
+            Web Dev Salary
           </h2>
-          <p className="text-sm text-slate-600 uppercase tracking-wide">SOFTWARE ENGINEER</p>
+          <p className="text-[10px] md:text-sm text-slate-600 uppercase tracking-wide">SOFTWARE ENGINEER</p>
         </div>
 
         {/* Main Stats */}
         <motion.div
-          className="mb-8 text-center"
+          className="mb-6 md:mb-8 text-center"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="inline-block rounded-2xl p-6" style={{ backgroundColor: `${ACCENT}10` }}>
-            <div className="text-5xl md:text-6xl font-extrabold mb-2" style={{ color: ACCENT }}>
-              $161,500
+          <div className="inline-block rounded-2xl p-4 md:p-6" style={{ backgroundColor: `${ACCENT}10` }}>
+            <div className="text-3xl md:text-6xl font-extrabold mb-1 md:mb-2" style={{ color: ACCENT }}>
+              $161.5K
             </div>
-            <div className="text-sm font-semibold text-slate-700 uppercase tracking-wider">
-              Median Total Compensation
+            <div className="text-[10px] md:text-sm font-semibold text-slate-700 uppercase tracking-wider">
+              Median Total Comp
             </div>
           </div>
         </motion.div>
 
         {/* Percentile Breakdown */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mb-6 md:mb-8">
           {salaryData.map((item, idx) => (
             <motion.div
               key={item.name}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
-              className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center"
+              className="rounded-xl border border-slate-200 bg-slate-50 p-3 md:p-4 text-center"
             >
-              <div className="text-2xl font-bold mb-1" style={{ color: item.color }}>
+              <div className="text-base md:text-2xl font-bold mb-0.5 md:mb-1" style={{ color: item.color }}>
                 ${item.value}K
               </div>
-              <div className="text-xs text-slate-600 font-medium">{item.name}</div>
+              <div className="text-[10px] md:text-xs text-slate-600 font-medium">{item.name}</div>
             </motion.div>
           ))}
         </div>
@@ -146,17 +146,17 @@ export default function SalaryChart() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="mb-8 rounded-xl border border-slate-200 bg-slate-50 p-6"
+          className="mb-6 md:mb-8 rounded-xl border border-slate-200 bg-slate-50 p-3 md:p-6"
         >
-          <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-            <TrendingUp className="w-5 h-5" style={{ color: ACCENT }} />
-            Salary Distribution
+          <h3 className="text-sm md:text-lg font-bold text-slate-900 mb-3 md:mb-4 flex items-center gap-1.5 md:gap-2">
+            <TrendingUp className="w-4 h-4 md:w-5 md:h-5" style={{ color: ACCENT }} />
+            Distribution
           </h3>
-          <ResponsiveContainer width="100%" height={280}>
-            <BarChart data={salaryData} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+          <ResponsiveContainer width="100%" height={220}>
+            <BarChart data={salaryData} margin={{ top: 10, right: 10, bottom: 10, left: 10 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-              <XAxis dataKey="name" tick={{ fill: "#64748b", fontSize: 12 }} />
-              <YAxis tick={{ fill: "#64748b", fontSize: 12 }} tickFormatter={(value) => `$${value}K`} />
+              <XAxis dataKey="name" tick={{ fill: "#64748b", fontSize: 10 }} />
+              <YAxis tick={{ fill: "#64748b", fontSize: 10 }} tickFormatter={(value) => `$${value}K`} />
               <Tooltip content={<CustomTooltip />} cursor={{ fill: "rgba(0, 191, 255, 0.05)" }} />
               <Bar dataKey="value" radius={[8, 8, 0, 0]}>
                 {salaryData.map((entry, index) => (
@@ -174,21 +174,56 @@ export default function SalaryChart() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="rounded-xl border border-slate-200 overflow-hidden"
         >
-          <div className="bg-slate-900 px-6 py-3">
-            <h3 className="text-base font-bold text-white flex items-center gap-2">
-              <MapPin className="w-4 h-4" style={{ color: ACCENT }} />
-              Real Compensation Data
+          <div className="bg-slate-900 px-4 md:px-6 py-2 md:py-3">
+            <h3 className="text-sm md:text-base font-bold text-white flex items-center gap-1.5 md:gap-2">
+              <MapPin className="w-3.5 h-3.5 md:w-4 md:h-4" style={{ color: ACCENT }} />
+              Real Comp Data
             </h3>
           </div>
-          <div className="overflow-x-auto">
+          
+          {/* Mobile Card Layout */}
+          <div className="md:hidden divide-y divide-slate-100">
+            {companyData.map((row, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.7 + idx * 0.05, duration: 0.3 }}
+                className="p-3 hover:bg-slate-50 transition-colors"
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <div>
+                    <div className="flex items-center gap-1.5 mb-0.5">
+                      <span className="text-sm font-bold text-slate-900">{row.company}</span>
+                      {row.verified && (
+                        <CheckCircle2 className="w-3 h-3 flex-shrink-0" style={{ color: ACCENT }} />
+                      )}
+                    </div>
+                    <div className="text-[10px] text-slate-500">{row.location}</div>
+                  </div>
+                  <div className="text-base font-bold text-right" style={{ color: ACCENT }}>
+                    {row.compensation}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-[10px] text-slate-600">
+                  <span className="font-semibold">{row.level}</span>
+                  <span>•</span>
+                  <span>{row.experience}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow className="bg-slate-50">
-                  <TableHead className="font-bold text-slate-900">Company</TableHead>
-                  <TableHead className="font-bold text-slate-900">Level</TableHead>
-                  <TableHead className="font-bold text-slate-900">Experience</TableHead>
-                  <TableHead className="font-bold text-slate-900 text-right">Total Comp</TableHead>
-                  <TableHead className="font-bold text-slate-900 text-right">Base | Stock | Bonus</TableHead>
+                  <TableHead className="font-bold text-slate-900 text-sm">Company</TableHead>
+                  <TableHead className="font-bold text-slate-900 text-sm">Level</TableHead>
+                  <TableHead className="font-bold text-slate-900 text-sm">Experience</TableHead>
+                  <TableHead className="font-bold text-slate-900 text-right text-sm">Total Comp</TableHead>
+                  <TableHead className="font-bold text-slate-900 text-right text-sm">Base | Stock | Bonus</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>

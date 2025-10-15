@@ -246,7 +246,72 @@ export default function Landing1() {
       {/* Comparison Table */}
       <section className="mx-auto max-w-6xl px-4 py-8">
         <h3 className="mb-4 text-lg md:text-2xl font-bold">Why Frontend Development Wins</h3>
-        <div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+        
+        {/* Mobile Card Layout */}
+        <div className="md:hidden space-y-3">
+          {[
+            {
+              title: "Time to Break In",
+              frontend: "12 weeks to portfolio + interviews",
+              other: "12–24 months certs/MBAs"
+            },
+            {
+              title: "Proof of Skill",
+              frontend: "Internship + portfolio",
+              other: "Certs & buzzwords only"
+            },
+            {
+              title: "Remote Lifestyle",
+              frontend: "High % remote-first roles",
+              other: "Mostly on-site/hybrid"
+            },
+            {
+              title: "Income Potential",
+              frontend: "$80K–$120K → $150K+",
+              other: "IT: $40K–$60K, PM: years"
+            },
+            {
+              title: "Barrier to Entry",
+              frontend: "No degree, skills > pedigree",
+              other: "Degree, MBA, clearance"
+            },
+            {
+              title: "Family & Freedom",
+              frontend: "Control schedule & location",
+              other: "Commutes & stress"
+            },
+            {
+              title: "Guaranteed Path",
+              frontend: "Mentorship + job guarantee",
+              other: "Figure it out yourself"
+            }
+          ].map((item, idx) => (
+            <div key={idx} className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+              <div className="bg-slate-50 px-3 py-2 border-b border-slate-200">
+                <h4 className="text-sm font-bold text-slate-900">{item.title}</h4>
+              </div>
+              <div className="p-3 space-y-2.5">
+                <div className="flex items-start gap-2 rounded-lg p-2" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                  <div>
+                    <div className="text-[10px] font-semibold mb-0.5" style={{ color: ACCENT }}>Frontend Dev</div>
+                    <div className="text-xs text-slate-900">{item.frontend}</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2 rounded-lg p-2">
+                  <X className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-[10px] font-semibold text-slate-500 mb-0.5">Other Paths</div>
+                    <div className="text-xs text-slate-600">{item.other}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Table Layout */}
+        <div className="hidden md:block rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
           <Table>
             <TableHeader>
               <TableRow className="bg-slate-50">
