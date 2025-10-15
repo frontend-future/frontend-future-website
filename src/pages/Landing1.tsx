@@ -7,6 +7,8 @@ import HeroDynamicSection from "@/components/HeroDynamicSection";
 import SalaryChart from "@/components/SalaryChart";
 import YouTubeChannelSection from "@/components/YouTubeChannelSection";
 import JourneyTimeline from "@/components/JourneyTimeline";
+import WhoItsForSection from "@/components/WhoItsForSection";
+import WhyFrontendSection from "@/components/WhyFrontendSection";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -26,92 +28,74 @@ const ACCENT = "#00bfff";
 const TYPEFORM_URL = "#eligibility"; // TODO
 const MICRO_VSL = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&mute=1"; // TODO
 
-function CTAButton({ children }: { children: React.ReactNode }) {
-  return (
-    <a
-      href={TYPEFORM_URL}
-      className="cta-btn group inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base font-semibold text-[#00131a] shadow transition-transform duration-150 will-change-transform"
-    >
+function CTAButton({
+  children
+}: {
+  children: React.ReactNode;
+}) {
+  return <a href={TYPEFORM_URL} className="cta-btn group inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base font-semibold text-[#00131a] shadow transition-transform duration-150 will-change-transform">
       <span className="transition-transform duration-150 group-hover:-translate-y-0.5">{children}</span>
-      <svg
-        className="h-4 w-4 transition-transform duration-150 group-hover:translate-x-1"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        aria-hidden="true"
-      >
+      <svg className="h-4 w-4 transition-transform duration-150 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
         <path d="M7 3l7 7-7 7" />
       </svg>
-    </a>
-  );
+    </a>;
 }
-
-function FAQItem({ q, a }: { q: string; a: React.ReactNode }) {
+function FAQItem({
+  q,
+  a
+}: {
+  q: string;
+  a: React.ReactNode;
+}) {
   const [open, setOpen] = useState(false);
-  return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4">
+  return <div className="rounded-xl border border-slate-200 bg-white p-4">
       <button onClick={() => setOpen(!open)} className="flex w-full items-center justify-between text-left">
         <span className="font-medium text-slate-900">{q}</span>
-        <svg
-          className={`h-5 w-5 text-slate-600 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-        >
+        <svg className={`h-5 w-5 text-slate-600 transition-transform duration-200 ${open ? "rotate-180" : ""}`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path d="M5 8l5 5 5-5" />
         </svg>
       </button>
       <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="content"
-            initial="collapsed"
-            animate="open"
-            exit="collapsed"
-            variants={{ open: { height: "auto", opacity: 1 }, collapsed: { height: 0, opacity: 0 } }}
-            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden"
-          >
+        {open && <motion.div key="content" initial="collapsed" animate="open" exit="collapsed" variants={{
+        open: {
+          height: "auto",
+          opacity: 1
+        },
+        collapsed: {
+          height: 0,
+          opacity: 0
+        }
+      }} transition={{
+        duration: 0.28,
+        ease: [0.22, 1, 0.36, 1]
+      }} className="overflow-hidden">
             <div className="pt-3 text-sm text-slate-600">{a}</div>
-          </motion.div>
-        )}
+          </motion.div>}
       </AnimatePresence>
-    </div>
-  );
+    </div>;
 }
-
 function CTABanner() {
-  return (
-    <section
-      className="rounded-2xl p-6 md:p-8 shadow-sm"
-      style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgba(0,191,255,0.12), rgba(0,191,255,0.24), rgba(0,191,255,0.12))",
-        backgroundSize: "200% 200%",
-        animation: "shimmer 8s ease-in-out infinite",
-      }}
-    >
+  return <section className="rounded-2xl p-6 md:p-8 shadow-sm" style={{
+    backgroundImage: "linear-gradient(90deg, rgba(0,191,255,0.12), rgba(0,191,255,0.24), rgba(0,191,255,0.12))",
+    backgroundSize: "200% 200%",
+    animation: "shimmer 8s ease-in-out infinite"
+  }}>
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <h3 className="text-2xl font-bold text-[#00131a]">Ready to see if you fit?</h3>
           <p className="text-[#00131a]/80">Takes 2 minutes. Employed people only.</p>
         </div>
-        <a
-          href={TYPEFORM_URL}
-          className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow"
-        >
+        <a href={TYPEFORM_URL} className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow">
           Check eligibility
         </a>
       </div>
-    </section>
-  );
+    </section>;
 }
-
 export default function Landing1() {
   const [showVideo, setShowVideo] = useState(true);
   const showVideoDefault = true; // set false to hide micro‑VSL
 
-  return (
-    <main className="min-h-screen bg-slate-50 font-sans text-slate-900">
+  return <main className="min-h-screen bg-slate-50 font-sans text-slate-900">
       <style>{`
         /* CTA button gradient + hover shifts */
         .cta-btn{background-image:linear-gradient(90deg,#00bfff,#00bfff);background-color:#00bfff}
@@ -124,34 +108,24 @@ export default function Landing1() {
       `}</style>
 
       {/* Header */}
-      <header className="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img src={ffLogo} alt="FrontendFuture Logo" className="w-12 h-12 rounded-full" />
-          <div className="flex flex-col">
-            <span className="text-xl font-extrabold text-slate-900">FrontendFuture</span>
-            <span className="text-xs text-slate-600 flex items-center gap-1">
-              <Award className="w-3 h-3" style={{ color: ACCENT }} />
-              Ex-Amazon led
-            </span>
-          </div>
-        </div>
-        <a
-          href={TYPEFORM_URL}
-          className="hidden sm:inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg transition-all bg-[#00bfff] text-slate-900 hover:bg-[#0095cc]"
-        >
-          <Rocket className="w-4 h-4" />
-          Check eligibility
-        </a>
-      </header>
+      
 
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl items-start gap-10 px-4 pb-6 pt-2 lg:grid-cols-2">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wider bg-sky-50 inline-block rounded-full px-3 py-1 text-center mb-3" style={{ color: ACCENT }}>
+          <p className="text-[11px] font-semibold uppercase tracking-wider bg-sky-50 inline-block rounded-full px-3 py-1 text-center mb-3" style={{
+          color: ACCENT
+        }}>
             Ditch the commute and work from anywhere
           </p>
           <h1 className="text-4xl font-extrabold leading-tight md:text-5xl">
-            <span className="underline decoration-2" style={{ textDecorationColor: ACCENT }}>Learn How To Code</span> And Land A <span className="underline decoration-2" style={{ textDecorationColor: ACCENT }}>6-Figure Remote Job</span> In <span className="underline decoration-2" style={{ textDecorationColor: ACCENT }}>12-Weeks</span>
+            <span className="underline decoration-2" style={{
+            textDecorationColor: ACCENT
+          }}>Learn How To Code</span> And Land A <span className="underline decoration-2" style={{
+            textDecorationColor: ACCENT
+          }}>6-Figure Remote Job</span> In <span className="underline decoration-2" style={{
+            textDecorationColor: ACCENT
+          }}>12-Weeks</span>
           </h1>
           <p className="mt-4 text-xl font-semibold text-slate-700">
             Without a degree and without quitting your day job.
@@ -159,34 +133,32 @@ export default function Landing1() {
 
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">
             <span className="inline-flex items-center gap-1.5">
-              <Target className="w-4 h-4" style={{ color: ACCENT }} />
+              <Target className="w-4 h-4" style={{
+              color: ACCENT
+            }} />
               Flexible schedule
             </span>
             <span>•</span>
             <span className="inline-flex items-center gap-1.5">
-              <Clock className="w-4 h-4" style={{ color: ACCENT }} />
+              <Clock className="w-4 h-4" style={{
+              color: ACCENT
+            }} />
               6–10 hours per week
             </span>
             <span>•</span>
             <span className="inline-flex items-center gap-1.5">
-              <Shield className="w-4 h-4" style={{ color: ACCENT }} />
+              <Shield className="w-4 h-4" style={{
+              color: ACCENT
+            }} />
               Job-guarantee mentorship*
             </span>
           </div>
 
           <div className="mt-6">
-            <a
-              href={TYPEFORM_URL}
-              className="cta-btn group inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base font-semibold text-[#00131a] shadow transition-transform duration-150 will-change-transform"
-            >
+            <a href={TYPEFORM_URL} className="cta-btn group inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-base font-semibold text-[#00131a] shadow transition-transform duration-150 will-change-transform">
               <Rocket className="w-5 h-5" />
               <span className="transition-transform duration-150 group-hover:-translate-y-0.5">See if I qualify</span>
-              <svg
-                className="h-4 w-4 transition-transform duration-150 group-hover:translate-x-1"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
+              <svg className="h-4 w-4 transition-transform duration-150 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M7 3l7 7-7 7" />
               </svg>
             </a>
@@ -200,7 +172,9 @@ export default function Landing1() {
       <section className="mx-auto max-w-6xl px-4 py-10">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
           <div className="flex items-start gap-3 mb-3">
-            <TrendingUp className="w-7 h-7 flex-shrink-0" style={{ color: ACCENT }} />
+            <TrendingUp className="w-7 h-7 flex-shrink-0" style={{
+            color: ACCENT
+          }} />
             <div>
               <h3 className="text-2xl font-bold">Why this works</h3>
             </div>
@@ -220,28 +194,36 @@ export default function Landing1() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
             <div className="flex items-start gap-3 mb-2">
-              <Code className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <Code className="w-5 h-5 flex-shrink-0" style={{
+              color: ACCENT
+            }} />
               <h4 className="font-semibold text-slate-900">Real projects.</h4>
             </div>
             <div className="text-sm leading-relaxed text-slate-600">No tutorials. You'll work with real limits, specs, and performance targets—just like an actual job.</div>
           </div>
           <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
             <div className="flex items-start gap-3 mb-2">
-              <Users className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <Users className="w-5 h-5 flex-shrink-0" style={{
+              color: ACCENT
+            }} />
               <h4 className="font-semibold text-slate-900">Weekly 1-on-1 mentorship.</h4>
             </div>
             <div className="text-sm leading-relaxed text-slate-600">Short calls. Clear feedback. Every week you'll know exactly what to improve next.</div>
           </div>
           <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
             <div className="flex items-start gap-3 mb-2">
-              <Briefcase className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <Briefcase className="w-5 h-5 flex-shrink-0" style={{
+              color: ACCENT
+            }} />
               <h4 className="font-semibold text-slate-900">Career packaging.</h4>
             </div>
             <div className="text-sm leading-relaxed text-slate-600">We help you showcase your projects, rewrite your resume, and reach hiring managers directly.</div>
           </div>
           <div className="group relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-lg hover:border-[#00bfff]">
             <div className="flex items-start gap-3 mb-2">
-              <Shield className="w-5 h-5 flex-shrink-0" style={{ color: ACCENT }} />
+              <Shield className="w-5 h-5 flex-shrink-0" style={{
+              color: ACCENT
+            }} />
               <h4 className="font-semibold text-slate-900">Job-guarantee mentorship.</h4>
             </div>
             <div className="text-sm leading-relaxed text-slate-600">Complete your milestones and outreach plan—if you don't get paid interviews, we refund or extend your mentorship per terms.</div>
@@ -252,65 +234,11 @@ export default function Landing1() {
       {/* Interactive Journey Timeline */}
       <JourneyTimeline />
 
-      {/* Who It's For */}
-      <section className="mx-auto max-w-6xl px-4 py-10">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <div className="flex items-start gap-3 mb-4">
-            <Target className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
-            <h3 className="text-2xl font-bold">Who It's For</h3>
-          </div>
-          <div className="space-y-3 text-slate-700">
-            <p className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>Professionals who want remote web work while keeping their current job</span>
-            </p>
-            <p className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>People ready to commit 6–10 hours per week to a proven roadmap</span>
-            </p>
-            <p className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <span>Doers who value mentorship and real-world proof over theory</span>
-            </p>
-            <p className="mt-4 text-sm">
-              <span className="font-semibold">Not for:</span> unemployed applicants, full-time students, or anyone unable to commit weekly hours.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Who It's For - New Dynamic Section */}
+      <WhoItsForSection />
 
-      {/* Why Frontend Development */}
-      <section className="mx-auto max-w-6xl px-4 py-10">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h3 className="mb-6 text-2xl font-bold">Why Frontend Development?</h3>
-          <div className="grid gap-4">
-            <div className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
-              <p className="text-slate-700">High demand with remote opportunities worldwide</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
-              <p className="text-slate-700">Six-figure salaries standard in the industry</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
-              <p className="text-slate-700">No degree required - skills matter more than credentials</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
-              <p className="text-slate-700">Perfect for career changers at any age</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
-              <p className="text-slate-700">Work-life balance with flexible schedules</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
-              <p className="text-slate-700">Future-proof career with continuous growth</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Why Frontend Development - New Dynamic Section */}
+      <WhyFrontendSection />
 
       {/* Salary Data Chart */}
       <SalaryChart />
@@ -321,7 +249,7 @@ export default function Landing1() {
         heading="From our YouTube channel"
         subheading="Real career transformation stories and frontend development tutorials."
         maxResults={12}
-      /> */}
+       /> */}
 
       {/* Comparison Table */}
       <section className="mx-auto max-w-6xl px-4 py-10">
@@ -331,7 +259,9 @@ export default function Landing1() {
             <TableHeader>
               <TableRow className="bg-slate-50">
                 <TableHead className="w-1/3 font-bold text-slate-900"></TableHead>
-                <TableHead className="w-1/3 font-bold text-slate-900 text-center" style={{ backgroundColor: "rgba(0,191,255,0.1)" }}>
+                <TableHead className="w-1/3 font-bold text-slate-900 text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.1)"
+              }}>
                   Frontend Development
                 </TableHead>
                 <TableHead className="w-1/3 font-bold text-slate-900 text-center">
@@ -342,9 +272,13 @@ export default function Landing1() {
             <TableBody>
               <TableRow>
                 <TableCell className="font-semibold">Time to Break In</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>12 weeks to portfolio + job interviews</span>
                   </div>
                 </TableCell>
@@ -357,9 +291,13 @@ export default function Landing1() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Proof of Skill</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>Guaranteed Internship experience + portfolio</span>
                   </div>
                 </TableCell>
@@ -372,9 +310,13 @@ export default function Landing1() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Remote Lifestyle Fit</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>High % of remote-first roles</span>
                   </div>
                 </TableCell>
@@ -387,9 +329,13 @@ export default function Landing1() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Income Potential</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>$80K–$120K starting → $150K+ within a few years</span>
                   </div>
                 </TableCell>
@@ -402,9 +348,13 @@ export default function Landing1() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Barrier to Entry</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>No degree required, skills &gt; pedigree</span>
                   </div>
                 </TableCell>
@@ -417,9 +367,13 @@ export default function Landing1() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Family & Freedom Friendly</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>Control schedule, more time for travel/kids/health</span>
                   </div>
                 </TableCell>
@@ -432,9 +386,13 @@ export default function Landing1() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Guaranteed Path</TableCell>
-                <TableCell className="text-center" style={{ backgroundColor: "rgba(0,191,255,0.05)" }}>
+                <TableCell className="text-center" style={{
+                backgroundColor: "rgba(0,191,255,0.05)"
+              }}>
                   <div className="flex items-start justify-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
+                    color: ACCENT
+                  }} />
                     <span>Mentorship + insider referrals + job guarantee</span>
                   </div>
                 </TableCell>
@@ -454,61 +412,30 @@ export default function Landing1() {
       <section className="mx-auto max-w-6xl px-4 py-10">
         <h3 className="mb-6 text-2xl font-bold">FAQs</h3>
         <div className="grid gap-4 md:grid-cols-2">
-          <FAQItem 
-            q="How does your program guarantee a job?" 
-            a="We guarantee job placement because we've built a proven system. You'll complete a guaranteed internship during the program, building real-world experience and references. We provide unlimited interview prep, resume reviews, and direct introductions to our hiring partners. We don't stop supporting you until you land a role - it's that simple. Our track record speaks for itself with a 100% placement rate." 
-          />
-          <FAQItem 
-            q="What is Frontend Future's student success rate?" 
-            a="100% of our students who complete the program land frontend developer roles. Our average graduate salary is $128K, with most securing remote positions. We track every graduate's progress and maintain these statistics publicly. The combination of 1:1 mentorship, guaranteed internship, and unlimited job support means our students succeed where others struggle." 
-          />
-          <FAQItem 
-            q="What do you really mean by one-on-one mentorship?" 
-            a="Unlike bootcamps with 30+ students per instructor, you get dedicated 1:1 time with an experienced frontend developer. Your mentor knows your name, your goals, and your learning style. Sessions are customized to your pace - if you need extra time on React, you get it. If you grasp JavaScript quickly, we move faster. You're never competing for attention or waiting for others to catch up." 
-          />
-          <FAQItem 
-            q="How long will it take to land a job after I complete the training?" 
-            a="Most graduates receive offers within 4-8 weeks of completing the program. Some even secure positions before finishing, thanks to the internship connections. We provide unlimited job search support, so there's no time limit. You'll have ongoing access to interview prep, application reviews, and direct introductions to companies actively hiring." 
-          />
-          <FAQItem 
-            q="What if I'm a complete beginner with no degree?" 
-            a="Perfect - most of our students start exactly where you are. You don't need a degree, prior coding experience, or technical background. The curriculum is designed specifically for complete beginners who are motivated to change careers. We start with the absolute basics and build systematically. Your dedication and work ethic matter far more than your educational background. Companies care about skills, not degrees." 
-          />
-          <FAQItem 
-            q="I'm working full-time. Can I still do this?" 
-            a="Yes, though it requires commitment. The program is intensive and demands 20-30 hours per week. Most students maintain full-time jobs and complete coursework in evenings and weekends. The 1:1 mentorship structure gives you flexibility to schedule sessions around your work. Many of our success stories are from people who did exactly this - kept their job for financial stability while building their new career." 
-          />
-          <FAQItem 
-            q="Is 12 weeks really enough time to learn frontend development?" 
-            a="Absolutely. We're not teaching you everything about web development - we're teaching you exactly what employers need for entry-level frontend roles. The curriculum is laser-focused on HTML, CSS, JavaScript, and React - the core skills that land jobs. Plus, the guaranteed internship gives you real-world application of these skills. You'll be job-ready, not just classroom-ready." 
-          />
-          <FAQItem 
-            q="Can I work remotely as a frontend developer?" 
-            a="Yes - 98% of our graduates work fully remote. Frontend development is one of the most remote-friendly careers in tech. Companies worldwide hire frontend developers remotely because the work is entirely digital. You'll build your portfolio with remote work in mind, and we specifically target remote-friendly companies in our placement support." 
-          />
+          <FAQItem q="How does your program guarantee a job?" a="We guarantee job placement because we've built a proven system. You'll complete a guaranteed internship during the program, building real-world experience and references. We provide unlimited interview prep, resume reviews, and direct introductions to our hiring partners. We don't stop supporting you until you land a role - it's that simple. Our track record speaks for itself with a 100% placement rate." />
+          <FAQItem q="What is Frontend Future's student success rate?" a="100% of our students who complete the program land frontend developer roles. Our average graduate salary is $128K, with most securing remote positions. We track every graduate's progress and maintain these statistics publicly. The combination of 1:1 mentorship, guaranteed internship, and unlimited job support means our students succeed where others struggle." />
+          <FAQItem q="What do you really mean by one-on-one mentorship?" a="Unlike bootcamps with 30+ students per instructor, you get dedicated 1:1 time with an experienced frontend developer. Your mentor knows your name, your goals, and your learning style. Sessions are customized to your pace - if you need extra time on React, you get it. If you grasp JavaScript quickly, we move faster. You're never competing for attention or waiting for others to catch up." />
+          <FAQItem q="How long will it take to land a job after I complete the training?" a="Most graduates receive offers within 4-8 weeks of completing the program. Some even secure positions before finishing, thanks to the internship connections. We provide unlimited job search support, so there's no time limit. You'll have ongoing access to interview prep, application reviews, and direct introductions to companies actively hiring." />
+          <FAQItem q="What if I'm a complete beginner with no degree?" a="Perfect - most of our students start exactly where you are. You don't need a degree, prior coding experience, or technical background. The curriculum is designed specifically for complete beginners who are motivated to change careers. We start with the absolute basics and build systematically. Your dedication and work ethic matter far more than your educational background. Companies care about skills, not degrees." />
+          <FAQItem q="I'm working full-time. Can I still do this?" a="Yes, though it requires commitment. The program is intensive and demands 20-30 hours per week. Most students maintain full-time jobs and complete coursework in evenings and weekends. The 1:1 mentorship structure gives you flexibility to schedule sessions around your work. Many of our success stories are from people who did exactly this - kept their job for financial stability while building their new career." />
+          <FAQItem q="Is 12 weeks really enough time to learn frontend development?" a="Absolutely. We're not teaching you everything about web development - we're teaching you exactly what employers need for entry-level frontend roles. The curriculum is laser-focused on HTML, CSS, JavaScript, and React - the core skills that land jobs. Plus, the guaranteed internship gives you real-world application of these skills. You'll be job-ready, not just classroom-ready." />
+          <FAQItem q="Can I work remotely as a frontend developer?" a="Yes - 98% of our graduates work fully remote. Frontend development is one of the most remote-friendly careers in tech. Companies worldwide hire frontend developers remotely because the work is entirely digital. You'll build your portfolio with remote work in mind, and we specifically target remote-friendly companies in our placement support." />
         </div>
       </section>
 
       {/* CTA banner with shimmer */}
       <section className="mx-auto max-w-6xl px-4 pb-16">
-        <section
-          className="rounded-2xl p-6 md:p-8 shadow-sm"
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, rgba(0,191,255,0.12), rgba(0,191,255,0.24), rgba(0,191,255,0.12))",
-            backgroundSize: "200% 200%",
-            animation: "shimmer 8s ease-in-out infinite",
-          }}
-        >
+        <section className="rounded-2xl p-6 md:p-8 shadow-sm" style={{
+        backgroundImage: "linear-gradient(90deg, rgba(0,191,255,0.12), rgba(0,191,255,0.24), rgba(0,191,255,0.12))",
+        backgroundSize: "200% 200%",
+        animation: "shimmer 8s ease-in-out infinite"
+      }}>
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
               <h3 className="text-2xl font-bold text-[#00131a]">Ready to see if you qualify?</h3>
               <p className="text-[#00131a]/80">Takes 2 minutes. Working professionals only.</p>
             </div>
-            <a
-              href={TYPEFORM_URL}
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow hover:shadow-lg transition-all"
-            >
+            <a href={TYPEFORM_URL} className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow hover:shadow-lg transition-all">
               <Rocket className="w-5 h-5" />
               Check Eligibility
             </a>
@@ -526,6 +453,5 @@ export default function Landing1() {
           © 2025 Turbo Scale, LLC — FrontendFuture · <a href="/terms" className="underline">Terms</a> · <a href="/privacy" className="underline">Privacy</a> · <a href="/accessibility" className="underline">Accessibility</a> · <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="underline">Watch more on YouTube</a>
         </div>
       </footer>
-    </main>
-  );
+    </main>;
 }
