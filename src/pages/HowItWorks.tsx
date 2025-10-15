@@ -133,6 +133,17 @@ const HowItWorks = () => {
                 <p className="text-xs md:text-base text-muted-foreground">Weeks to career change</p>
               </div>
             </div>
+            <div className="pt-4">
+              <a
+                href="https://start.frontendfuture.pro/landing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
+                  Start Your Journey →
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
