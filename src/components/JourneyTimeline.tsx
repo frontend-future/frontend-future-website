@@ -98,15 +98,15 @@ export default function JourneyTimeline() {
   const [activeStep, setActiveStep] = useState(0);
   
   useEffect(() => {
-    // Load Typeform embed script with https
+    // Load Typeform embed script
     const script = document.createElement('script');
-    script.src = 'https://embed.typeform.com/next/embed.js';
+    script.src = '//embed.typeform.com/next/embed.js';
     script.async = true;
-    document.head.appendChild(script);
+    document.body.appendChild(script);
     
     return () => {
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
       }
     };
   }, []);
@@ -261,20 +261,11 @@ export default function JourneyTimeline() {
                 <span className="hidden sm:inline text-xs">Back</span>
               </button>
 
-              {isFinalStep ? <button 
-                data-tf-popup="01K6Y7Y8CMPZE5YYWS6SM4HMDG"
-                data-tf-opacity="100"
-                data-tf-size="100"
-                data-tf-iframe-props="title=Apply Now"
-                data-tf-medium="snippet"
-                className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" 
-                style={{
-                  backgroundColor: ACCENT
-                }}
-              >
-                  <span>🚀</span>
-                  <span>Start Now</span>
-                </button> : <button onClick={handleNext} className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
+              {isFinalStep ? <div 
+                data-tf-live="01K6Y7Y8CMPZE5YYWS6SM4HMDG"
+                className="flex-1"
+                style={{ minHeight: '500px' }}
+              ></div> : <button onClick={handleNext} className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
               backgroundColor: ACCENT
             }}>
                   <span className="text-xs md:text-base">Next</span>
