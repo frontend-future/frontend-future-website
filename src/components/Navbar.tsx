@@ -44,17 +44,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            
-            {/* Apply Now CTA */}
-            <a
-              href="https://start.frontendfuture.pro/landing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="accent" className="font-semibold shadow-md hover:shadow-lg transition-all">
-                Apply Now →
-              </Button>
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -88,17 +77,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="https://start.frontendfuture.pro/landing"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block"
-            >
-              <Button variant="accent" className="w-full font-semibold">
-                Apply Now →
-              </Button>
-            </a>
           </div>
         )}
       </div>
