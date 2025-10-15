@@ -7,8 +7,6 @@ import HeroDynamicSection from "@/components/HeroDynamicSection";
 import SalaryChart from "@/components/SalaryChart";
 import YouTubeChannelSection from "@/components/YouTubeChannelSection";
 import JourneyTimeline from "@/components/JourneyTimeline";
-import WhoItsForSection from "@/components/WhoItsForSection";
-import WhyFrontendSection from "@/components/WhyFrontendSection";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -233,12 +231,6 @@ export default function Landing1() {
 
       {/* Interactive Journey Timeline */}
       <JourneyTimeline />
-
-      {/* Who It's For - New Dynamic Section */}
-      <WhoItsForSection />
-
-      {/* Why Frontend Development - New Dynamic Section */}
-      <WhyFrontendSection />
 
       {/* Salary Data Chart */}
       <SalaryChart />
