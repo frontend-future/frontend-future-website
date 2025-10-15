@@ -217,18 +217,18 @@ const SuccessStories = () => {
         <meta property="og:description" content="Meet graduates who transformed their careers. From firefighters to teachers - now earning $80K-$140K as remote frontend developers." />
       </Helmet>
       {/* Header Section */}
-      <section className="bg-slate-50 py-16 md:py-20">
+      <section className="bg-slate-50 py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div className="space-y-6">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+              <div className="space-y-4 md:space-y-6">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
                   Proven transformations
                 </p>
-                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                   Real People, <span className="underline decoration-sky-500 decoration-2">Real Results</span>
                 </h1>
-                <p className="text-xl text-slate-700">
+                <p className="text-base md:text-xl text-slate-700">
                   Meet the students who transformed their careers and lives
                 </p>
               </div>
@@ -239,13 +239,13 @@ const SuccessStories = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-10 md:py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center space-y-2">
-                <p className="text-3xl md:text-4xl font-bold text-accent">{stat.value}</p>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
+              <div key={index} className="text-center space-y-1 md:space-y-2">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent">{stat.value}</p>
+                <p className="text-xs md:text-sm text-muted-foreground">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -253,21 +253,21 @@ const SuccessStories = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto space-y-8">
+          <div className="max-w-6xl mx-auto space-y-6 md:space-y-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <Quote className="w-8 h-8 text-accent flex-shrink-0" />
-                    <div className="flex-1 space-y-4">
-                      <p className="text-lg italic leading-relaxed">
+              <Card key={index} className="p-4 md:p-8 hover:shadow-lg transition-shadow">
+                <div className="space-y-4 md:space-y-6">
+                  <div className="flex items-start gap-3 md:gap-4">
+                    <Quote className="w-6 h-6 md:w-8 md:h-8 text-accent flex-shrink-0" />
+                    <div className="flex-1 space-y-3 md:space-y-4">
+                      <p className="text-sm md:text-lg italic leading-relaxed">
                         "{testimonial.quote}"
                       </p>
-                      <div className="space-y-2">
-                        <p className="font-bold text-lg">{testimonial.name}, {testimonial.age}</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                      <div className="space-y-1.5 md:space-y-2">
+                        <p className="font-bold text-base md:text-lg">{testimonial.name}, {testimonial.age}</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 text-xs md:text-sm">
                           <div>
                             <p className="text-muted-foreground">Before:</p>
                             <p className="font-medium">{testimonial.previousRole}</p>
@@ -279,7 +279,7 @@ const SuccessStories = () => {
                             <p className="text-accent font-bold">{testimonial.newSalary}/year</p>
                           </div>
                         </div>
-                        <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">{testimonial.location}</p>
                       </div>
                     </div>
                   </div>
@@ -294,16 +294,16 @@ const SuccessStories = () => {
       <SalaryChart />
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
+          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
               You Could Be Next
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground">
               Join hundreds of career changers who've successfully made the transition
             </p>
-            <div className="pt-6">
+            <div className="pt-4 md:pt-6">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"

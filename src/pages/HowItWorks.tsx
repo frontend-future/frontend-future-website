@@ -56,18 +56,18 @@ const HowItWorks = () => {
         <meta property="og:description" content="From HTML basics to React mastery in 12 weeks. Guaranteed internship included. 1:1 mentorship throughout your journey." />
       </Helmet>
       {/* Header Section */}
-      <section className="bg-slate-50 py-16 md:py-20">
+      <section className="bg-slate-50 py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div className="space-y-6">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+              <div className="space-y-4 md:space-y-6">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
                   Your proven roadmap to success
                 </p>
-                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                   Your 12-Week Path to a <span className="underline decoration-sky-500 decoration-2">Six-Figure Career</span>
                 </h1>
-                <p className="text-xl text-slate-700">
+                <p className="text-base md:text-xl text-slate-700">
                   A structured, proven curriculum with guaranteed internship designed specifically for career changers
                 </p>
               </div>
@@ -78,25 +78,25 @@ const HowItWorks = () => {
       </section>
 
       {/* Program Structure */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto space-y-8">
+          <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
-                <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
-                  <div className="flex flex-col md:flex-row gap-6">
+                <Card key={index} className="p-4 md:p-8 hover:shadow-lg transition-shadow">
+                  <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
-                        <Icon className="w-8 h-8 text-accent" />
+                      <div className="w-12 h-12 md:w-16 md:h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                        <Icon className="w-6 h-6 md:w-8 md:h-8 text-accent" />
                       </div>
                     </div>
-                    <div className="flex-1 space-y-3">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                        <h3 className="text-2xl font-bold">{step.title}</h3>
-                        <span className="text-accent font-semibold">{step.weeks}</span>
+                    <div className="flex-1 space-y-2 md:space-y-3">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-2">
+                        <h3 className="text-lg md:text-2xl font-bold">{step.title}</h3>
+                        <span className="text-accent font-semibold text-sm md:text-base">{step.weeks}</span>
                       </div>
-                      <p className="text-muted-foreground text-lg leading-relaxed">
+                      <p className="text-muted-foreground text-sm md:text-lg leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -109,27 +109,27 @@ const HowItWorks = () => {
       </section>
 
       {/* One-on-One Mentorship */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold">
+          <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
               True One-on-One Mentorship
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
               Unlike other bootcamps with large cohorts, you get dedicated 1:1 time with an experienced frontend developer. Your mentor knows your name, tracks your progress, and customizes lessons to your learning style. You're never just a number in a class.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-              <div className="space-y-2">
-                <p className="text-4xl font-bold text-accent">1:1</p>
-                <p className="text-muted-foreground">Personal mentorship</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 pt-4 md:pt-8">
+              <div className="space-y-1 md:space-y-2">
+                <p className="text-2xl md:text-4xl font-bold text-accent">1:1</p>
+                <p className="text-xs md:text-base text-muted-foreground">Personal mentorship</p>
               </div>
-              <div className="space-y-2">
-                <p className="text-4xl font-bold text-accent">100%</p>
-                <p className="text-muted-foreground">Job placement support</p>
+              <div className="space-y-1 md:space-y-2">
+                <p className="text-2xl md:text-4xl font-bold text-accent">100%</p>
+                <p className="text-xs md:text-base text-muted-foreground">Job placement support</p>
               </div>
-              <div className="space-y-2">
-                <p className="text-4xl font-bold text-accent">12</p>
-                <p className="text-muted-foreground">Weeks to career change</p>
+              <div className="space-y-1 md:space-y-2">
+                <p className="text-2xl md:text-4xl font-bold text-accent">12</p>
+                <p className="text-xs md:text-base text-muted-foreground">Weeks to career change</p>
               </div>
             </div>
           </div>
@@ -137,16 +137,16 @@ const HowItWorks = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
+          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
               Ready to Start Your Journey?
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground">
               See how our graduates transformed their careers
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"

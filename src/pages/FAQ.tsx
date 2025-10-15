@@ -64,18 +64,18 @@ const FAQ = () => {
         <meta property="og:description" content="Everything you need to know about our 12-week bootcamp. Job guarantee, 1:1 mentorship, and more." />
       </Helmet>
       {/* Header Section */}
-      <section className="bg-slate-50 py-16 md:py-20">
+      <section className="bg-slate-50 py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div className="space-y-6">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+              <div className="space-y-4 md:space-y-6">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
                   Everything you need to know
                 </p>
-                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                   <span className="underline decoration-sky-500 decoration-2">Frequently Asked Questions</span>
                 </h1>
-                <p className="text-xl text-slate-700">
+                <p className="text-base md:text-xl text-slate-700">
                   Get answers to common questions about the program
                 </p>
               </div>
@@ -86,16 +86,16 @@ const FAQ = () => {
       </section>
 
       {/* FAQ Content */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-accent">
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-4 md:px-6">
+                  <AccordionTrigger className="text-left text-sm md:text-lg font-semibold hover:text-accent">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                  <AccordionContent className="text-muted-foreground leading-relaxed pt-2 text-xs md:text-base">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -106,16 +106,16 @@ const FAQ = () => {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
+          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
               Still Have Questions?
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground">
               We're here to help you make an informed decision
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6">
               <a
                 href="https://start.frontendfuture.pro/landing"
                 target="_blank"
@@ -134,25 +134,25 @@ const FAQ = () => {
       </section>
 
       {/* Trust Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl font-bold">Why Frontend Future?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="space-y-3">
-                <p className="text-4xl font-bold text-accent">1:1</p>
-                <p className="font-semibold">True Personal Mentorship</p>
-                <p className="text-sm text-muted-foreground">Not a crowded classroom</p>
+          <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
+            <h2 className="text-xl md:text-3xl font-bold">Why Frontend Future?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              <div className="space-y-2 md:space-y-3">
+                <p className="text-2xl md:text-4xl font-bold text-accent">1:1</p>
+                <p className="text-sm md:text-base font-semibold">True Personal Mentorship</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Not a crowded classroom</p>
               </div>
-              <div className="space-y-3">
-                <p className="text-4xl font-bold text-accent">100%</p>
-                <p className="font-semibold">Job Guarantee</p>
-                <p className="text-sm text-muted-foreground">We succeed when you do</p>
+              <div className="space-y-2 md:space-y-3">
+                <p className="text-2xl md:text-4xl font-bold text-accent">100%</p>
+                <p className="text-sm md:text-base font-semibold">Job Guarantee</p>
+                <p className="text-xs md:text-sm text-muted-foreground">We succeed when you do</p>
               </div>
-              <div className="space-y-3">
-                <p className="text-4xl font-bold text-accent">12</p>
-                <p className="font-semibold">Weeks to New Career</p>
-                <p className="text-sm text-muted-foreground">Intensive, focused training</p>
+              <div className="space-y-2 md:space-y-3">
+                <p className="text-2xl md:text-4xl font-bold text-accent">12</p>
+                <p className="text-sm md:text-base font-semibold">Weeks to New Career</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Intensive, focused training</p>
               </div>
             </div>
           </div>

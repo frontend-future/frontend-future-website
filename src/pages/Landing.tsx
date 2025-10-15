@@ -139,23 +139,23 @@ export default function Landing() {
             <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 block mx-auto md:inline-block rounded-full px-3 py-1 text-center">
               Ditch the commute and work from anywhere
             </p>
-            <h1 className="mt-3 text-[28px] md:text-5xl font-extrabold leading-tight">
+            <h1 className="mt-3 text-xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
               <span className="underline decoration-sky-500 decoration-2">Learn How To Code</span> And Land A <span className="underline decoration-sky-500 decoration-2">6-Figure Remote Job</span> In <span className="underline decoration-sky-500 decoration-2">12-Weeks</span>
             </h1>
-            <p className="mt-3 text-base md:text-lg text-slate-700 font-semibold">
+            <p className="mt-3 text-sm md:text-base lg:text-lg text-slate-700 font-semibold">
               Without a degree and quitting your day job.
             </p>
-            <ul className="mt-5 space-y-2 text-sm md:text-base">
-              <li className="flex gap-3">
-                <span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />
+            <ul className="mt-5 space-y-2 text-xs md:text-sm lg:text-base">
+              <li className="flex gap-2 md:gap-3">
+                <span className="mt-1.5 md:mt-2 h-1.5 w-1.5 md:h-2 md:w-2 rounded-full bg-emerald-500 flex-shrink-0" />
                 <span><strong>Land $120k+ remote roles</strong> without years of experience or starting from scratch.</span>
               </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />
+              <li className="flex gap-2 md:gap-3">
+                <span className="mt-1.5 md:mt-2 h-1.5 w-1.5 md:h-2 md:w-2 rounded-full bg-emerald-500 flex-shrink-0" />
                 <span><strong>Guaranteed internship</strong> so you graduate with job experience, not just a certificate.</span>
               </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />
+              <li className="flex gap-2 md:gap-3">
+                <span className="mt-1.5 md:mt-2 h-1.5 w-1.5 md:h-2 md:w-2 rounded-full bg-emerald-500 flex-shrink-0" />
                 <span><strong>DFY hiring profile</strong> (resume + LinkedIn + cover letter) built for you so you're guaranteed to get offers that are worth your time.</span>
               </li>
             </ul>
@@ -163,9 +163,9 @@ export default function Landing() {
 
           {/* VSL */}
           <div>
-            <div className="mb-3 text-center">
-              <p className="text-sm font-semibold text-slate-900">👇 Watch This Short Video First</p>
-              <p className="text-xs text-slate-600 mt-1">See how we help you land $120k+ remote roles</p>
+            <div className="mb-2 md:mb-3 text-center">
+              <p className="text-xs md:text-sm font-semibold text-slate-900">👇 Watch This Short Video First</p>
+              <p className="text-[10px] md:text-xs text-slate-600 mt-1">See how we help you land $120k+ remote roles</p>
             </div>
             <div id="video" className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-black/90">
               <div className="wistia_responsive_padding" style={{

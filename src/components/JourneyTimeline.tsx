@@ -233,7 +233,7 @@ export default function JourneyTimeline() {
                 <span className="hidden sm:inline text-xs">Back</span>
               </button>
 
-              {isFinalStep ? <a href="#eligibility" className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
+              {isFinalStep ? <a href="https://start.frontendfuture.pro/landing" target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
               backgroundColor: ACCENT
             }}>
                   <span>🚀</span>

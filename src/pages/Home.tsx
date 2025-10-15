@@ -44,12 +44,12 @@ const Home = () => {
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-700 bg-sky-50 inline-block rounded-full px-3 py-1">
                   Ditch the commute and work from anywhere
                 </p>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                   <span className="underline decoration-sky-500 decoration-2">Learn How To Code</span> And Land A{" "}
                   <span className="underline decoration-sky-500 decoration-2">6-Figure Remote Job</span>{" "}
                   In <span className="underline decoration-sky-500 decoration-2">12-Weeks</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-slate-700 font-semibold">
+                <p className="text-base md:text-xl lg:text-2xl text-slate-700 font-semibold">
                   Without a degree and without quitting your day job.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -58,7 +58,7 @@ const Home = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold text-xl px-12 py-8 shadow-xl hover:shadow-2xl transition-all">
+                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold text-base md:text-xl px-8 md:px-12 py-6 md:py-8 shadow-xl hover:shadow-2xl transition-all">
                       Apply Now →
                     </Button>
                   </a>
@@ -71,33 +71,33 @@ const Home = () => {
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-10 md:py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="flex flex-col items-center text-center space-y-3">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
-                <Code className="w-8 h-8 text-accent" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+            <div className="flex flex-col items-center text-center space-y-2">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                <Code className="w-6 h-6 md:w-8 md:h-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold">12-Week Program</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-base md:text-xl font-semibold">12-Week Program</h3>
+              <p className="text-xs md:text-base text-muted-foreground">
                 Intensive training from HTML to React with guaranteed internship
               </p>
             </div>
-            <div className="flex flex-col items-center text-center space-y-3">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
-                <Briefcase className="w-8 h-8 text-accent" />
+            <div className="flex flex-col items-center text-center space-y-2">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                <Briefcase className="w-6 h-6 md:w-8 md:h-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold">Internship Guarantee</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-base md:text-xl font-semibold">Internship Guarantee</h3>
+              <p className="text-xs md:text-base text-muted-foreground">
                 Break out of the 2 years experience trap and cruise into your first role
               </p>
             </div>
-            <div className="flex flex-col items-center text-center space-y-3">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
-                <TrendingUp className="w-8 h-8 text-accent" />
+            <div className="flex flex-col items-center text-center space-y-2">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 md:w-8 md:h-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold">$100K+ Average</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-base md:text-xl font-semibold">$100K+ Average</h3>
+              <p className="text-xs md:text-base text-muted-foreground">
                 Frontend developers average six-figure salaries in remote roles
               </p>
             </div>
@@ -106,13 +106,13 @@ const Home = () => {
       </section>
 
       {/* Why Frontend Development */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-8 md:mb-12">
               Why Frontend Development?
             </h2>
-            <div className="grid gap-6">
+            <div className="grid gap-4 md:gap-6">
               {[
                 "High demand with remote opportunities worldwide",
                 "Six-figure salaries standard in the industry",
@@ -121,9 +121,9 @@ const Home = () => {
                 "Work-life balance with flexible schedules",
                 "Future-proof career with continuous growth"
               ].map((benefit, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-lg">{benefit}</p>
+                <div key={index} className="flex items-start space-x-2 md:space-x-3">
+                  <Check className="w-4 h-4 md:w-6 md:h-6 text-accent flex-shrink-0 mt-0.5 md:mt-1" />
+                  <p className="text-sm md:text-lg">{benefit}</p>
                 </div>
               ))}
             </div>
