@@ -357,13 +357,13 @@ export default function Landing1() {
       {/* Salary Data Chart */}
       <SalaryChart />
 
-      {/* YouTube Channel Section */}
-      <YouTubeChannelSection
+      {/* YouTube Channel Section - Hidden until ready to upload */}
+      {/* <YouTubeChannelSection
         handle="@frontendfuture"
         heading="From our YouTube channel"
         subheading="Real career transformation stories and frontend development tutorials."
         maxResults={12}
-      />
+      /> */}
 
       {/* Comparison Table */}
       <section className="mx-auto max-w-6xl px-4 py-10">
