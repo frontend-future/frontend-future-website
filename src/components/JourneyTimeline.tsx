@@ -156,22 +156,18 @@ export default function JourneyTimeline() {
       {/* Main Content Card */}
       <AnimatePresence mode="wait">
         <motion.div key={currentStep.id} initial={{
-        opacity: 0,
-        y: 20
+        opacity: 0
       }} animate={{
-        opacity: 1,
-        y: 0
+        opacity: 1
       }} exit={{
-        opacity: 0,
-        y: -20
+        opacity: 0
       }} transition={{
-        duration: 0.4,
-        ease: [0.22, 1, 0.36, 1]
+        duration: 0.3
       }} className="rounded-2xl border-2 border-slate-200 bg-white shadow-xl overflow-hidden">
           {/* Card Header */}
-          <div className="bg-gradient-to-br from-[#00bfff]/10 via-white to-white p-4 md:p-8 border-b border-slate-100">
-            <div className="flex items-start gap-2 mb-2">
-              <span className="text-3xl md:text-5xl">{currentStep.emoji}</span>
+          <div className="bg-gradient-to-br from-[#00bfff]/10 via-white to-white p-3 md:p-8 border-b border-slate-100">
+            <div className="flex items-start gap-2 mb-1">
+              <span className="text-2xl md:text-5xl">{currentStep.emoji}</span>
               <div className="flex-1">
                 <div className="inline-block px-2 py-0.5 rounded-full bg-white border border-[#00bfff]/30 mb-1">
                   <span className="text-[10px] md:text-sm font-bold" style={{
@@ -180,48 +176,40 @@ export default function JourneyTimeline() {
                     {currentStep.phase}
                   </span>
                 </div>
-                <h3 className="text-lg md:text-3xl font-bold mb-0.5">{currentStep.title}</h3>
-                <p className="text-sm md:text-lg text-slate-600 font-medium">{currentStep.subtitle}</p>
+                <h3 className="text-base md:text-3xl font-bold mb-0.5 leading-tight">{currentStep.title}</h3>
+                <p className="text-xs md:text-lg text-slate-600 font-medium">{currentStep.subtitle}</p>
               </div>
             </div>
           </div>
 
           {/* Card Body */}
-          <div className="p-4 md:p-8 space-y-3 md:space-y-6">
+          <div className="p-3 md:p-8 space-y-2.5 md:space-y-6">
             {/* Description */}
-            <p className="text-sm md:text-lg text-slate-700 leading-snug">
+            <p className="text-xs md:text-lg text-slate-700 leading-relaxed">
               {currentStep.description}
             </p>
 
             {/* Highlights */}
             <div>
-              <h4 className="text-sm md:text-lg font-bold text-slate-900 mb-2 md:mb-4 flex items-center gap-1.5">
-                <span className="text-base md:text-xl">✨</span>
+              <h4 className="text-xs md:text-lg font-bold text-slate-900 mb-1.5 md:mb-4 flex items-center gap-1">
+                <span className="text-sm md:text-xl">✨</span>
                 <span>What you'll do:</span>
               </h4>
-              <ul className="space-y-2">
-                {currentStep.highlights.map((highlight, index) => <motion.li key={index} initial={{
-                opacity: 0,
-                x: -10
-              }} animate={{
-                opacity: 1,
-                x: 0
-              }} transition={{
-                delay: index * 0.05
-              }} className="flex items-start gap-2 text-slate-700 leading-snug">
-                    <span className="text-base flex-shrink-0">{highlight.split(" ")[0]}</span>
-                    <span className="text-xs md:text-base">{highlight.split(" ").slice(1).join(" ")}</span>
-                  </motion.li>)}
+              <ul className="space-y-1.5 md:space-y-2">
+                {currentStep.highlights.map((highlight, index) => <li key={index} className="flex items-start gap-1.5 md:gap-2 text-slate-700 leading-relaxed">
+                    <span className="text-sm md:text-base flex-shrink-0">{highlight.split(" ")[0]}</span>
+                    <span className="text-[11px] md:text-base">{highlight.split(" ").slice(1).join(" ")}</span>
+                  </li>)}
               </ul>
             </div>
 
             {/* Outcome Banner */}
-            <div className="rounded-lg bg-gradient-to-r from-[#00bfff]/10 to-[#00bfff]/5 p-3 md:p-5 border-2 border-[#00bfff]/20">
-              <div className="flex items-start gap-1.5 mb-1">
-                <span className="text-base md:text-xl">🎯</span>
-                <h4 className="font-bold text-slate-900 text-sm md:text-base">Result:</h4>
+            <div className="rounded-lg bg-gradient-to-r from-[#00bfff]/10 to-[#00bfff]/5 p-2.5 md:p-5 border-2 border-[#00bfff]/20">
+              <div className="flex items-start gap-1 md:gap-1.5 mb-0.5 md:mb-1">
+                <span className="text-sm md:text-xl">🎯</span>
+                <h4 className="font-bold text-slate-900 text-xs md:text-base">Result:</h4>
               </div>
-              <p className="text-xs md:text-base text-slate-700 leading-snug">{currentStep.outcome}</p>
+              <p className="text-[11px] md:text-base text-slate-700 leading-relaxed">{currentStep.outcome}</p>
             </div>
           </div>
 
