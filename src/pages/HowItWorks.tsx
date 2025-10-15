@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Code, Layout, Smartphone, Briefcase, FileCheck, Monitor, Users } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import HowItWorksDynamicSection from "@/components/HowItWorksDynamicSection";
+import JourneyTimeline from "@/components/JourneyTimeline";
 
 const HowItWorks = () => {
   const steps = [
@@ -136,33 +137,8 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground">
-              See how our graduates transformed their careers
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6">
-              <a
-                href="https://start.frontendfuture.pro/landing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
-                  Apply Now →
-                </Button>
-              </a>
-              <Button size="lg" variant="outline" asChild>
-                <a href="/success-stories">See Success Stories</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Journey Timeline Section */}
+      <JourneyTimeline />
     </div>
   );
 };
