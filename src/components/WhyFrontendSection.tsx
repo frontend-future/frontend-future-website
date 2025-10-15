@@ -1,59 +1,59 @@
-import { CheckCircle2, Globe, TrendingUp, Brain, Clock, Zap, Users } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+
+const ACCENT = "#00bfff";
 
 export default function WhyFrontendSection() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-10">
-      <div className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-purple-500/5 to-pink-500/5 p-8 shadow-sm">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">
-          Why Frontend Development? 💻
-        </h2>
+      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8 hover:shadow-md transition-shadow">
+        <h3 className="mb-6 text-2xl font-bold">Why Frontend Development? 💻</h3>
         
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="flex items-start gap-3 group">
-            <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:scale-110" style={{ color: ACCENT }} />
             <div>
-              <p className="font-semibold">🌎 High demand worldwide</p>
-              <p className="text-sm text-muted-foreground">Remote opportunities everywhere</p>
+              <p className="text-slate-900 font-semibold">🌎 Global demand with remote opportunities</p>
+              <p className="text-sm text-slate-600">Work from anywhere in the world</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-3 group">
-            <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+          <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:scale-110" style={{ color: ACCENT }} />
             <div>
-              <p className="font-semibold">💰 Six-figure salaries</p>
-              <p className="text-sm text-muted-foreground">$80K-$150K+ is standard</p>
+              <p className="text-slate-900 font-semibold">💰 Six-figure salaries standard</p>
+              <p className="text-sm text-slate-600">$80K–$150K+ in the industry</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-3 group">
-            <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+          <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:scale-110" style={{ color: ACCENT }} />
             <div>
-              <p className="font-semibold">🎓 No degree required</p>
-              <p className="text-sm text-muted-foreground">Skills matter more than credentials</p>
+              <p className="text-slate-900 font-semibold">🎓 No degree required</p>
+              <p className="text-sm text-slate-600">Skills matter more than credentials</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-3 group">
-            <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+          <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:scale-110" style={{ color: ACCENT }} />
             <div>
-              <p className="font-semibold">⚡ Quick to master</p>
-              <p className="text-sm text-muted-foreground">12 weeks to job-ready</p>
+              <p className="text-slate-900 font-semibold">⚡ Fast path to mastery</p>
+              <p className="text-sm text-slate-600">Job-ready in just 12 weeks</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-3 group">
-            <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+          <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:scale-110" style={{ color: ACCENT }} />
             <div>
-              <p className="font-semibold">🏖️ Work-life balance</p>
-              <p className="text-sm text-muted-foreground">Flexible schedules & remote work</p>
+              <p className="text-slate-900 font-semibold">🏖️ Work-life balance</p>
+              <p className="text-sm text-slate-600">Flexible schedules, your own hours</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-3 group">
-            <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform group-hover:scale-110" />
+          <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:scale-110" style={{ color: ACCENT }} />
             <div>
-              <p className="font-semibold">🚀 Future-proof career</p>
-              <p className="text-sm text-muted-foreground">Continuous growth & opportunities</p>
+              <p className="text-slate-900 font-semibold">🚀 Future-proof career</p>
+              <p className="text-sm text-slate-600">Continuous growth opportunities</p>
             </div>
           </div>
         </div>
