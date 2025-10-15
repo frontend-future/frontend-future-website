@@ -7,8 +7,6 @@ import HeroDynamicSection from "@/components/HeroDynamicSection";
 import SalaryChart from "@/components/SalaryChart";
 import YouTubeChannelSection from "@/components/YouTubeChannelSection";
 import JourneyTimeline from "@/components/JourneyTimeline";
-import WhoItsForSection from "@/components/WhoItsForSection";
-import WhyFrontendSection from "@/components/WhyFrontendSection";
 
 /**
  * FrontendFuture — Cold Traffic Landing (Lovable-ready)
@@ -254,11 +252,65 @@ export default function Landing1() {
       {/* Interactive Journey Timeline */}
       <JourneyTimeline />
 
-      {/* Who It's For - New Dynamic Section */}
-      <WhoItsForSection />
+      {/* Who It's For */}
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <div className="flex items-start gap-3 mb-4">
+            <Target className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
+            <h3 className="text-2xl font-bold">Who It's For</h3>
+          </div>
+          <div className="space-y-3 text-slate-700">
+            <p className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+              <span>Professionals who want remote web work while keeping their current job</span>
+            </p>
+            <p className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+              <span>People ready to commit 6–10 hours per week to a proven roadmap</span>
+            </p>
+            <p className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
+              <span>Doers who value mentorship and real-world proof over theory</span>
+            </p>
+            <p className="mt-4 text-sm">
+              <span className="font-semibold">Not for:</span> unemployed applicants, full-time students, or anyone unable to commit weekly hours.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Why Frontend Development - New Dynamic Section */}
-      <WhyFrontendSection />
+      {/* Why Frontend Development */}
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <h3 className="mb-6 text-2xl font-bold">Why Frontend Development?</h3>
+          <div className="grid gap-4">
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">High demand with remote opportunities worldwide</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Six-figure salaries standard in the industry</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">No degree required - skills matter more than credentials</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Perfect for career changers at any age</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Work-life balance with flexible schedules</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: ACCENT }} />
+              <p className="text-slate-700">Future-proof career with continuous growth</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Salary Data Chart */}
       <SalaryChart />

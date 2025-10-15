@@ -86,11 +86,19 @@ export default function JourneyTimeline() {
   const handleNext = () => {
     if (activeStep < journeySteps.length - 1) {
       setActiveStep(activeStep + 1);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     }
   };
   const handlePrevious = () => {
     if (activeStep > 0) {
       setActiveStep(activeStep - 1);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     }
   };
   const currentStep = journeySteps[activeStep];
