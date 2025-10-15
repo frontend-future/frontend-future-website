@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, ChevronLeft, Sparkles } from "lucide-react";
+
+// Extend Window interface for Typeform
+declare global {
+  interface Window {
+    tf?: {
+      createPopup: (formId: string, options?: any) => {
+        open: () => void;
+        close: () => void;
+        toggle: () => void;
+      };
+    };
+  }
+}
 const ACCENT = "#00bfff";
 interface JourneyStep {
   id: number;
@@ -92,9 +105,21 @@ export default function JourneyTimeline() {
     document.body.appendChild(script);
     
     return () => {
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
+  
+  const handleTypeformOpen = () => {
+    if (window.tf && window.tf.createPopup) {
+      const { open } = window.tf.createPopup('01K6Y7Y8CMPZE5YYWS6SM4HMDG', {
+        opacity: 100,
+        size: 100
+      });
+      open();
+    }
+  };
   
   const handleNext = () => {
     if (activeStep < journeySteps.length - 1) {
@@ -247,12 +272,7 @@ export default function JourneyTimeline() {
               </button>
 
               {isFinalStep ? <button 
-                data-tf-popup="01K6Y7Y8CMPZE5YYWS6SM4HMDG"
-                data-tf-opacity="100"
-                data-tf-size="100"
-                data-tf-iframe-props="title=Apply Now"
-                data-tf-transitive-search-params
-                data-tf-medium="snippet"
+                onClick={handleTypeformOpen}
                 className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" 
                 style={{
                   backgroundColor: ACCENT
