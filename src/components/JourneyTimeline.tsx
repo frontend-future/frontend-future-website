@@ -98,28 +98,18 @@ export default function JourneyTimeline() {
   const [activeStep, setActiveStep] = useState(0);
   
   useEffect(() => {
-    // Load Typeform embed script
+    // Load Typeform embed script with https
     const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
+    script.src = 'https://embed.typeform.com/next/embed.js';
     script.async = true;
-    document.body.appendChild(script);
+    document.head.appendChild(script);
     
     return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
       }
     };
   }, []);
-  
-  const handleTypeformOpen = () => {
-    if (window.tf && window.tf.createPopup) {
-      const { open } = window.tf.createPopup('01K6Y7Y8CMPZE5YYWS6SM4HMDG', {
-        opacity: 100,
-        size: 100
-      });
-      open();
-    }
-  };
   
   const handleNext = () => {
     if (activeStep < journeySteps.length - 1) {
@@ -272,7 +262,11 @@ export default function JourneyTimeline() {
               </button>
 
               {isFinalStep ? <button 
-                onClick={handleTypeformOpen}
+                data-tf-popup="01K6Y7Y8CMPZE5YYWS6SM4HMDG"
+                data-tf-opacity="100"
+                data-tf-size="100"
+                data-tf-iframe-props="title=Apply Now"
+                data-tf-medium="snippet"
                 className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" 
                 style={{
                   backgroundColor: ACCENT
