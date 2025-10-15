@@ -29,7 +29,7 @@ const App = () => (
         <BrowserRouter>
           <Layout>
             <Routes>
-              <Route path="/" element={<Index />} />
+              <Route path="/" element={<Landing1 />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/success-stories" element={<SuccessStories />} />
               <Route path="/faq" element={<FAQ />} />
@@ -38,7 +38,7 @@ const App = () => (
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/accessibility" element={<Accessibility />} />
-              <Route path="/landing1" element={<Landing1 />} />
+              <Route path="/landing1" element={<Index />} />
               <Route path="/landing" element={<Landing />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
