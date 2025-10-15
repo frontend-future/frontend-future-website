@@ -1,19 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, ChevronLeft, Sparkles } from "lucide-react";
-
-// Extend Window interface for Typeform
-declare global {
-  interface Window {
-    tf?: {
-      createPopup: (formId: string, options?: any) => {
-        open: () => void;
-        close: () => void;
-        toggle: () => void;
-      };
-    };
-  }
-}
 const ACCENT = "#00bfff";
 interface JourneyStep {
   id: number;
@@ -96,21 +83,6 @@ const journeySteps: JourneyStep[] = [{
 }];
 export default function JourneyTimeline() {
   const [activeStep, setActiveStep] = useState(0);
-  
-  useEffect(() => {
-    // Load Typeform embed script
-    const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-    
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-  
   const handleNext = () => {
     if (activeStep < journeySteps.length - 1) {
       setActiveStep(activeStep + 1);
@@ -261,11 +233,12 @@ export default function JourneyTimeline() {
                 <span className="hidden sm:inline text-xs">Back</span>
               </button>
 
-              {isFinalStep ? <div 
-                data-tf-live="01K6Y7Y8CMPZE5YYWS6SM4HMDG"
-                className="flex-1"
-                style={{ minHeight: '500px' }}
-              ></div> : <button onClick={handleNext} className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
+              {isFinalStep ? <a href="#eligibility" className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
+              backgroundColor: ACCENT
+            }}>
+                  <span>🚀</span>
+                  <span>Start Now</span>
+                </a> : <button onClick={handleNext} className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
               backgroundColor: ACCENT
             }}>
                   <span className="text-xs md:text-base">Next</span>
