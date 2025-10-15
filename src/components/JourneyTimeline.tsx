@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, ChevronLeft, Sparkles } from "lucide-react";
 const ACCENT = "#00bfff";
@@ -83,6 +83,19 @@ const journeySteps: JourneyStep[] = [{
 }];
 export default function JourneyTimeline() {
   const [activeStep, setActiveStep] = useState(0);
+  
+  useEffect(() => {
+    // Load Typeform embed script
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  
   const handleNext = () => {
     if (activeStep < journeySteps.length - 1) {
       setActiveStep(activeStep + 1);
@@ -233,12 +246,21 @@ export default function JourneyTimeline() {
                 <span className="hidden sm:inline text-xs">Back</span>
               </button>
 
-              {isFinalStep ? <a href="#eligibility" className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
-              backgroundColor: ACCENT
-            }}>
+              {isFinalStep ? <button 
+                data-tf-popup="01K6Y7Y8CMPZE5YYWS6SM4HMDG"
+                data-tf-opacity="100"
+                data-tf-size="100"
+                data-tf-iframe-props="title=Apply Now"
+                data-tf-transitive-search-params
+                data-tf-medium="snippet"
+                className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" 
+                style={{
+                  backgroundColor: ACCENT
+                }}
+              >
                   <span>🚀</span>
                   <span>Start Now</span>
-                </a> : <button onClick={handleNext} className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
+                </button> : <button onClick={handleNext} className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-[#00131a] shadow-lg transition-all hover:shadow-xl hover:scale-105 text-xs md:text-base" style={{
               backgroundColor: ACCENT
             }}>
                   <span className="text-xs md:text-base">Next</span>
