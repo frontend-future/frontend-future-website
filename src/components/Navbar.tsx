@@ -51,7 +51,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="default" className="bg-accent hover:bg-accent/90 text-white font-semibold shadow-md hover:shadow-lg transition-all">
+              <Button variant="accent" className="font-semibold shadow-md hover:shadow-lg transition-all">
                 Apply Now →
               </Button>
             </a>
@@ -95,7 +95,7 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
               className="block"
             >
-              <Button variant="default" className="w-full bg-accent hover:bg-accent/90 text-white font-semibold">
+              <Button variant="accent" className="w-full font-semibold">
                 Apply Now →
               </Button>
             </a>
