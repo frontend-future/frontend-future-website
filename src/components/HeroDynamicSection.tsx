@@ -45,10 +45,10 @@ function PanelTrackRecord() {
 function PanelWhatYouBuild() {
   return (
     <motion.div key="build" className="grid grid-cols-2 md:grid-cols-4 gap-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <div className="rounded-2xl bg-white/60 border border-white/70 p-4 text-gray-800">Product page</div>
-      <div className="rounded-2xl bg-white/60 border border-white/70 p-4 text-gray-800">Auth + Dashboard</div>
-      <div className="rounded-2xl bg-white/60 border border-white/70 p-4 text-gray-800">Performance Pass</div>
-      <div className="rounded-2xl bg-white/60 border border-white/70 p-4 text-gray-800">Data UX</div>
+      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Product page</div>
+      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Auth + Dashboard</div>
+      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Performance Pass</div>
+      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Data UX</div>
     </motion.div>
   );
 }
