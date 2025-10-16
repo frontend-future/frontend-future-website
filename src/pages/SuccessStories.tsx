@@ -310,7 +310,7 @@ const SuccessStories = () => {
                 rel="noopener noreferrer"
               >
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
-                  Apply Now →
+                  Start Your Journey →
                 </Button>
               </a>
             </div>
