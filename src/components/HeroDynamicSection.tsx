@@ -45,10 +45,10 @@ function PanelTrackRecord() {
 function PanelWhatYouBuild() {
   return (
     <motion.div key="build" className="grid grid-cols-2 md:grid-cols-4 gap-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Product page</div>
-      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Auth + Dashboard</div>
-      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Performance Pass</div>
-      <div className="rounded-2xl bg-white/80 border-2 border-[--accent]/30 p-4 text-gray-900 font-medium shadow-sm">Data UX</div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Product page</div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Auth + Dashboard</div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Performance Pass</div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Data UX</div>
     </motion.div>
   );
 }
@@ -56,15 +56,15 @@ function PanelWhatYouBuild() {
 function PanelHowItWorks() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 shadow-sm">
         <div className="font-semibold text-gray-900">Weeks 1–3: Foundations</div>
         <div className="text-sm text-gray-600">Refresh basics. Ship a fast, converting product page.</div>
       </div>
-      <div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 shadow-sm">
         <div className="font-semibold text-gray-900">Weeks 4–7: App & Data</div>
         <div className="text-sm text-gray-600">Build auth, state, and dashboard with real UX patterns.</div>
       </div>
-      <div>
+      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 shadow-sm">
         <div className="font-semibold text-gray-900">Weeks 8–12: Proof</div>
         <div className="text-sm text-gray-600">Polish, performance pass, and targeted outreach.</div>
       </div>
