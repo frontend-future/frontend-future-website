@@ -89,7 +89,7 @@ export default function HeroDynamicSection() {
     <section className="relative mt-10">
       <div className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/50 backdrop-blur-xl p-5 md:p-7 shadow-xl">
         <div className="space-y-3">
-          <div className="flex items-center gap-2 text-xs font-medium text-gray-600">
+          <div className="flex items-center justify-center gap-2 text-xs font-medium text-gray-600">
             <span>Ex-Amazon–led • Job-guarantee mentorship</span>
           </div>
           <div className="hidden md:flex items-center gap-2 justify-center">
