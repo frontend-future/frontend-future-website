@@ -88,16 +88,16 @@ export default function HeroDynamicSection() {
   return (
     <section className="relative mt-10">
       <div className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/50 backdrop-blur-xl p-5 md:p-7 shadow-xl">
-        <div className="flex items-center justify-between gap-3">
+        <div className="space-y-3">
           <div className="flex items-center gap-2 text-xs font-medium text-gray-600">
             <span>Ex-Amazon–led • Job-guarantee mentorship</span>
           </div>
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-2 justify-center">
             {PANELS.map((p, i) => (
               <button
                 key={p.key}
                 onClick={() => setActive(i)}
-                className={`flex items-center gap-1 rounded-full border px-3 py-1.5 text-sm transition ${
+                className={`flex items-center gap-1 rounded-full border px-3 py-1.5 text-sm transition whitespace-nowrap ${
                   active === i
                     ? "border-[--accent] bg-[--accent]/10 text-gray-900"
                     : "border-gray-200 text-gray-600 hover:bg-gray-50"
