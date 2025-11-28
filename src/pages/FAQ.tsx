@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet-async";
 import FAQDynamicSection from "@/components/FAQDynamicSection";
+import QualifyCTA from "@/components/QualifyCTA";
 
 const FAQ = () => {
   const faqs = [
@@ -133,31 +134,8 @@ const FAQ = () => {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="py-12 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
-            <h2 className="text-xl md:text-3xl font-bold">Why Frontend Future?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <div className="space-y-2 md:space-y-3">
-                <p className="text-2xl md:text-4xl font-bold text-accent">1:1</p>
-                <p className="text-sm md:text-base font-semibold">True Personal Mentorship</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Not a crowded classroom</p>
-              </div>
-              <div className="space-y-2 md:space-y-3">
-                <p className="text-2xl md:text-4xl font-bold text-accent">100%</p>
-                <p className="text-sm md:text-base font-semibold">Job Guarantee</p>
-                <p className="text-xs md:text-sm text-muted-foreground">We succeed when you do</p>
-              </div>
-              <div className="space-y-2 md:space-y-3">
-                <p className="text-2xl md:text-4xl font-bold text-accent">12</p>
-                <p className="text-sm md:text-base font-semibold">Weeks to New Career</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Intensive, focused training</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Qualify CTA */}
+      <QualifyCTA />
     </div>
   );
 };

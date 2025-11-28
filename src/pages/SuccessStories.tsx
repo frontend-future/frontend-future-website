@@ -4,6 +4,7 @@ import { Quote } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import SalaryChart from "@/components/SalaryChart";
 import SuccessStoriesDynamicSection from "@/components/SuccessStoriesDynamicSection";
+import QualifyCTA from "@/components/QualifyCTA";
 
 const SuccessStories = () => {
   const testimonials = [
@@ -293,30 +294,8 @@ const SuccessStories = () => {
       {/* Salary Data Chart */}
       <SalaryChart />
 
-      {/* CTA Section */}
-      <section className="py-12 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
-              You Could Be Next
-            </h2>
-            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground">
-              Join hundreds of career changers who've successfully made the transition
-            </p>
-            <div className="pt-4 md:pt-6">
-              <a
-                href="https://start.frontendfuture.pro/landing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
-                  Start Your Journey →
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Qualify CTA */}
+      <QualifyCTA />
     </div>
   );
 };
