@@ -161,7 +161,7 @@ export default function HeroDynamicSection() {
           </div>
         </div>
 
-        <div className="mt-5 min-h-[240px] md:min-h-[200px]">
+        <div className="mt-5 h-[280px] md:h-[220px] relative">
           <AnimatePresence mode="popLayout">
             <motion.div
               key={PANELS[active].key}
@@ -169,6 +169,7 @@ export default function HeroDynamicSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.35 }}
+              className="absolute inset-0"
             >
               {React.createElement(PANELS[active].Node)}
             </motion.div>
