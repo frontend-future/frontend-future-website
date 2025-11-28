@@ -119,11 +119,9 @@ export default function Landing1() {
           <h1 className="text-2xl font-extrabold leading-tight md:text-5xl">
             <span className="underline decoration-2" style={{
             textDecorationColor: ACCENT
-          }}>Learn How To Code</span> And Land A <span className="underline decoration-2" style={{
+          }}>Learn How to Code</span> and Pursue a <span className="underline decoration-2" style={{
             textDecorationColor: ACCENT
-          }}>6-Figure Remote Job</span> In <span className="underline decoration-2" style={{
-            textDecorationColor: ACCENT
-          }}>12-Weeks</span>
+          }}>Remote 6-Figure Tech Career</span>
           </h1>
           <p className="mt-3 text-base md:text-xl font-semibold text-slate-700">
             Without a degree and without quitting your day job.
