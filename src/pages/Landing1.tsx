@@ -494,7 +494,7 @@ export default function Landing1() {
             </div>
             <a href={TYPEFORM_URL} className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-base font-semibold text-[#00384d] shadow hover:shadow-lg transition-all">
               <Rocket className="w-5 h-5" />
-              Check Eligibility
+              See If I Qualify
             </a>
           </div>
         </section>
