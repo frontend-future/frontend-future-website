@@ -117,11 +117,6 @@ function PanelHowItWorks() {
             <div className="text-sm font-semibold text-gray-900">{step.title}</div>
             <div className="text-xs text-gray-600 mt-0.5">{step.desc}</div>
           </div>
-          {idx < steps.length - 1 && (
-            <div className="flex-shrink-0 pt-2">
-              <ArrowRight size={16} className="text-gray-400" />
-            </div>
-          )}
         </motion.div>
       ))}
     </motion.div>
