@@ -64,7 +64,7 @@ const Contact = () => {
                   Ready to start your transformation?
                 </p>
                 <a
-                  href="https://start.frontendfuture.pro/landing"
+                  href="https://start.frontendfuture.pro/apply"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

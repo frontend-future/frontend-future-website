@@ -54,7 +54,7 @@ const Home = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://start.frontendfuture.pro/landing"
+                    href="https://start.frontendfuture.pro/apply"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
