@@ -107,7 +107,7 @@ export default function Landing1() {
       
 
       {/* Hero */}
-      <section className="mx-auto grid max-w-6xl items-start gap-10 px-4 pb-6 pt-2 lg:grid-cols-2">
+      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-6 pt-2 lg:grid-cols-2">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-wider bg-sky-50 inline-block rounded-full px-3 py-1 text-center mb-3" style={{
           color: ACCENT
