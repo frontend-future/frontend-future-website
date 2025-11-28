@@ -4,6 +4,7 @@ import { Code, Layout, Smartphone, Briefcase, FileCheck, Monitor, Users } from "
 import { Helmet } from "react-helmet-async";
 import HowItWorksDynamicSection from "@/components/HowItWorksDynamicSection";
 import JourneyTimeline from "@/components/JourneyTimeline";
+import QualifyCTA from "@/components/QualifyCTA";
 
 const HowItWorks = () => {
   const steps = [
@@ -150,6 +151,9 @@ const HowItWorks = () => {
 
       {/* Journey Timeline Section */}
       <JourneyTimeline />
+
+      {/* Qualify CTA */}
+      <QualifyCTA />
     </div>
   );
 };

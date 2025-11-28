@@ -3,6 +3,7 @@ import { Check, Code, Briefcase, TrendingUp, X } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Helmet } from "react-helmet-async";
 import HomeDynamicSection from "@/components/HomeDynamicSection";
+import QualifyCTA from "@/components/QualifyCTA";
 
 const Home = () => {
   return (
@@ -275,30 +276,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Transform Your Career?
-            </h2>
-            <p className="text-xl text-white/90">
-              Join hundreds of career changers who've successfully transitioned to high-paying tech careers
-            </p>
-            <div className="pt-6">
-              <a
-                href="https://start.frontendfuture.pro/landing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6">
-                  Apply Now →
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Qualify CTA */}
+      <QualifyCTA />
     </div>
   );
 };
