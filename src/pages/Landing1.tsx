@@ -279,8 +279,8 @@ export default function Landing1() {
               other: "Commutes & stress"
             },
             {
-              title: "Guaranteed Path",
-              frontend: "Mentorship + job guarantee",
+              title: "Proven Path",
+              frontend: "Expert mentors + insider referral system",
               other: "Figure it out yourself"
             }
           ].map((item, idx) => (
@@ -440,7 +440,7 @@ export default function Landing1() {
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-semibold">Guaranteed Path</TableCell>
+                <TableCell className="font-semibold">Proven Path</TableCell>
                 <TableCell className="text-center" style={{
                 backgroundColor: "rgba(0,191,255,0.05)"
               }}>
@@ -448,7 +448,7 @@ export default function Landing1() {
                     <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
                     color: ACCENT
                   }} />
-                    <span>Mentorship + insider referrals + job guarantee</span>
+                    <span>Expert mentors + insider referral system</span>
                   </div>
                 </TableCell>
                 <TableCell className="text-center text-slate-600">

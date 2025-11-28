@@ -254,11 +254,11 @@ const Home = () => {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-semibold">Guaranteed Path</TableCell>
+                    <TableCell className="font-semibold">Proven Path</TableCell>
                     <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span>Mentorship + insider referrals + job guarantee</span>
+                        <span>Expert mentors + insider referral system</span>
                       </div>
                     </TableCell>
                     <TableCell className="text-center text-muted-foreground">
