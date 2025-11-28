@@ -139,14 +139,14 @@ export default function Landing1() {
               <Clock className="w-3 h-3 md:w-4 md:h-4" style={{
               color: ACCENT
             }} />
-              10 hrs/wk Online
+              10 hrs/wk online
             </span>
             <span>•</span>
             <span className="inline-flex items-center gap-1">
               <Shield className="w-3 h-3 md:w-4 md:h-4" style={{
               color: ACCENT
             }} />
-              Money-back Guarantee
+              Money-back guarantee
             </span>
           </div>
 
@@ -249,13 +249,13 @@ export default function Landing1() {
         <div className="md:hidden space-y-3">
           {[
             {
-              title: "Time to Break In",
-              frontend: "12 weeks to portfolio + interviews",
+              title: "Time to Learn",
+              frontend: "12 weeks to skills + begin applying",
               other: "12–24 months certs/MBAs"
             },
             {
               title: "Proof of Skill",
-              frontend: "Internship + portfolio",
+              frontend: "Graduate with experience + portfolio",
               other: "Certs & buzzwords only"
             },
             {
@@ -326,7 +326,7 @@ export default function Landing1() {
             </TableHeader>
             <TableBody>
               <TableRow>
-                <TableCell className="font-semibold">Time to Break In</TableCell>
+                <TableCell className="font-semibold">Time to Learn</TableCell>
                 <TableCell className="text-center" style={{
                 backgroundColor: "rgba(0,191,255,0.05)"
               }}>
@@ -334,7 +334,7 @@ export default function Landing1() {
                     <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
                     color: ACCENT
                   }} />
-                    <span>12 weeks to portfolio + job interviews</span>
+                    <span>12 weeks to skills + begin applying</span>
                   </div>
                 </TableCell>
                 <TableCell className="text-center text-slate-600">
@@ -353,7 +353,7 @@ export default function Landing1() {
                     <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{
                     color: ACCENT
                   }} />
-                    <span>Guaranteed Internship experience + portfolio</span>
+                    <span>Graduate with experience + portfolio</span>
                   </div>
                 </TableCell>
                 <TableCell className="text-center text-slate-600">
