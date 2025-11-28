@@ -164,11 +164,11 @@ const Home = () => {
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="font-semibold">Time to Break In</TableCell>
+                    <TableCell className="font-semibold">Time to Learn</TableCell>
                     <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span>12 weeks to portfolio + job interviews</span>
+                        <span>12 weeks to skills + begin applying</span>
                       </div>
                     </TableCell>
                     <TableCell className="text-center text-muted-foreground">
@@ -183,7 +183,7 @@ const Home = () => {
                     <TableCell className="text-center bg-accent/10">
                       <div className="flex items-start justify-center gap-2">
                         <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span>Guaranteed Internship experience + portfolio</span>
+                        <span>Graduate with experience + portfolio</span>
                       </div>
                     </TableCell>
                     <TableCell className="text-center text-muted-foreground">
