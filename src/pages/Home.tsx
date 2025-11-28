@@ -46,9 +46,8 @@ const Home = () => {
                   Ditch the commute and work from anywhere
                 </p>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-                  <span className="underline decoration-sky-500 decoration-2">Learn How To Code</span> And Land A{" "}
-                  <span className="underline decoration-sky-500 decoration-2">6-Figure Remote Job</span>{" "}
-                  In <span className="underline decoration-sky-500 decoration-2">12-Weeks</span>
+                  <span className="underline decoration-sky-500 decoration-2">Learn How to Code</span> and Pursue a{" "}
+                  <span className="underline decoration-sky-500 decoration-2">Remote 6-Figure Tech Career</span>
                 </h1>
                 <p className="text-base md:text-xl lg:text-2xl text-slate-700 font-semibold">
                   Without a degree and without quitting your day job.
