@@ -151,10 +151,10 @@ export default function Landing1() {
           </div>
 
           <div className="mt-5">
-            <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="cta-btn group inline-flex items-center gap-2 rounded-xl px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base font-semibold text-[#00131a] shadow transition-transform duration-150 will-change-transform">
+            <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="cta-btn group inline-flex items-center gap-2 rounded-xl px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base font-semibold text-white shadow transition-shadow duration-200 hover:shadow-lg">
               <Rocket className="w-4 h-4 md:w-5 md:h-5" />
-              <span className="transition-transform duration-150 group-hover:-translate-y-0.5">See if I qualify</span>
-              <svg className="h-3 w-3 md:h-4 md:w-4 transition-transform duration-150 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <span>See if I qualify</span>
+              <svg className="h-3 w-3 md:h-4 md:w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M7 3l7 7-7 7" />
               </svg>
             </a>
