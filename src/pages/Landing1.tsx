@@ -23,7 +23,7 @@ import JourneyTimeline from "@/components/JourneyTimeline";
  */
 
 const ACCENT = "#00bfff";
-const TYPEFORM_URL = "https://start.frontendfuture.pro/landing";
+const TYPEFORM_URL = "https://start.frontendfuture.pro/apply";
 const MICRO_VSL = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&mute=1"; // TODO
 
 function CTAButton({

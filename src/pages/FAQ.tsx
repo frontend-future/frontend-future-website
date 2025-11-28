@@ -118,7 +118,7 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6">
               <a
-                href="https://start.frontendfuture.pro/landing"
+                href="https://start.frontendfuture.pro/apply"
                 target="_blank"
                 rel="noopener noreferrer"
               >
