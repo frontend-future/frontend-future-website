@@ -141,14 +141,14 @@ export default function Landing1() {
               <Clock className="w-3 h-3 md:w-4 md:h-4" style={{
               color: ACCENT
             }} />
-              6–10 hrs/wk
+              10 hrs/wk Online
             </span>
             <span>•</span>
             <span className="inline-flex items-center gap-1">
               <Shield className="w-3 h-3 md:w-4 md:h-4" style={{
               color: ACCENT
             }} />
-              Job-guarantee
+              Money-back Guarantee
             </span>
           </div>
 
@@ -204,7 +204,7 @@ export default function Landing1() {
               <Users className="w-4 h-4 flex-shrink-0" style={{
               color: ACCENT
             }} />
-              <h4 className="text-sm font-semibold text-slate-900">Weekly 1-on-1 mentorship.</h4>
+              <h4 className="text-sm font-semibold text-slate-900">Weekly Personalized Guidance</h4>
             </div>
             <div className="text-xs leading-relaxed text-slate-600">Short calls. Clear feedback. Every week you'll know exactly what to improve next.</div>
           </div>
@@ -222,9 +222,9 @@ export default function Landing1() {
               <Shield className="w-4 h-4 flex-shrink-0" style={{
               color: ACCENT
             }} />
-              <h4 className="text-sm font-semibold text-slate-900">Job-guarantee mentorship.</h4>
+              <h4 className="text-sm font-semibold text-slate-900">Job Hunt Support</h4>
             </div>
-            <div className="text-xs leading-relaxed text-slate-600">Complete your milestones and outreach plan—if you don't get paid interviews, we refund or extend your mentorship per terms.</div>
+            <div className="text-xs leading-relaxed text-slate-600">We don't just teach you then drop you in the deep end—we guide you every step of the way through your job search.</div>
           </div>
         </div>
       </section>

@@ -126,7 +126,7 @@ function PanelWhyRemote() {
 function PanelGuarantee() {
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-bold text-slate-900 text-center">Our Job Guarantee</h3>
+      <h3 className="text-xl font-bold text-slate-900 text-center">Our Money-Back Guarantee</h3>
       <div className="space-y-4">
         <motion.div
           initial={{ y: 10, opacity: 0 }}
