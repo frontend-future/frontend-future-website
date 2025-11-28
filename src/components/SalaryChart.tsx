@@ -98,7 +98,7 @@ export default function SalaryChart() {
         <div className="mb-4 md:mb-6 text-center">
           <div className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] md:text-xs font-medium mb-3" style={{ borderColor: ACCENT, color: ACCENT, backgroundColor: `${ACCENT}15` }}>
             <CheckCircle2 className="w-3 h-3 md:w-3.5 md:h-3.5" />
-            Verified by levels.fyi & Indeed
+            Verified by levels.fyi
           </div>
           <h2 className="text-xl md:text-4xl font-extrabold text-slate-900 mb-1 md:mb-2">
             Web Dev Salary
