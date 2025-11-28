@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TrendingUp, LayoutDashboard, Map } from "lucide-react";
+import { TrendingUp, LayoutDashboard, Map, CheckCircle2, Globe, Code, FolderGit2, ArrowRight } from "lucide-react";
 
 const ACCENT = "#00bfff";
 const PANEL_DURATION_MS = 5200;
@@ -29,58 +29,101 @@ function BulletPoint({ children }: { children: React.ReactNode }) {
 }
 
 function PanelTrackRecord() {
+  const items = [
+    { title: "Real, portfolio-ready projects", desc: "Students build actual products they can show employers, not tutorials." },
+    { title: "Consistent expert support", desc: "Weekly mentor guidance so you never stay stuck or confused." },
+    { title: "Personalized job-search direction", desc: "Clear steps based on your background, goals, and pace." }
+  ];
+
   return (
     <motion.div key="track" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <BulletPoint>
-        <strong>Real, portfolio-ready projects</strong>
-        <br />Students build actual products they can show employers, not tutorials.
-      </BulletPoint>
-      <BulletPoint>
-        <strong>Consistent expert support</strong>
-        <br />Weekly mentor guidance so you never stay stuck or confused.
-      </BulletPoint>
-      <BulletPoint>
-        <strong>Personalized job-search direction</strong>
-        <br />Clear steps based on your background, goals, and pace.
-      </BulletPoint>
+      {items.map((item, idx) => (
+        <motion.div
+          key={idx}
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: idx * 0.1, duration: 0.4 }}
+          className="flex items-start gap-3 rounded-xl bg-white/60 p-3 border border-white/80"
+        >
+          <div className="flex-shrink-0 mt-0.5">
+            <CheckCircle2 size={18} style={{ color: ACCENT }} />
+          </div>
+          <div>
+            <div className="text-sm font-semibold text-gray-900">{item.title}</div>
+            <div className="text-xs text-gray-600 mt-0.5">{item.desc}</div>
+          </div>
+        </motion.div>
+      ))}
     </motion.div>
   );
 }
 
 function PanelWhatYouBuild() {
+  const projects = [
+    { icon: Globe, title: "A clean, professional website", desc: "Your first project shows you can create and ship something real." },
+    { icon: Code, title: "A multi-page web app", desc: "A functional product with navigation, logic, and interactive features." },
+    { icon: FolderGit2, title: "A polished portfolio + GitHub", desc: "Your work clearly organized and ready for employers to review." }
+  ];
+
   return (
-    <motion.div key="build" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <BulletPoint>
-        <strong>A clean, professional website</strong>
-        <br />Your first project shows you can create and ship something real.
-      </BulletPoint>
-      <BulletPoint>
-        <strong>A multi-page web app</strong>
-        <br />A functional product with navigation, logic, and interactive features.
-      </BulletPoint>
-      <BulletPoint>
-        <strong>A polished portfolio + GitHub</strong>
-        <br />Your work clearly organized and ready for employers to review.
-      </BulletPoint>
+    <motion.div key="build" className="grid grid-cols-1 md:grid-cols-3 gap-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      {projects.map((project, idx) => (
+        <motion.div
+          key={idx}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: idx * 0.1, duration: 0.4 }}
+          className="rounded-xl bg-white/60 p-4 border border-white/80 text-center"
+        >
+          <div className="flex justify-center mb-2">
+            <div className="rounded-full bg-[--accent]/10 p-2">
+              <project.icon size={20} style={{ color: ACCENT }} />
+            </div>
+          </div>
+          <div className="text-sm font-semibold text-gray-900 mb-1">{project.title}</div>
+          <div className="text-xs text-gray-600">{project.desc}</div>
+        </motion.div>
+      ))}
     </motion.div>
   );
 }
 
 function PanelHowItWorks() {
+  const steps = [
+    { num: "1", title: "Step-by-step guided curriculum", desc: "A clear path from complete beginner to job-ready fundamentals." },
+    { num: "2", title: "Weekly accountability + reviews", desc: "Stay on track with feedback, correction, and direct support." },
+    { num: "3", title: "Final job-search preparation", desc: "Portfolio, GitHub, resume, and a simple plan tailored for career-changers." }
+  ];
+
   return (
-    <motion.div key="how" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <BulletPoint>
-        <strong>Step-by-step guided curriculum</strong>
-        <br />A clear path from complete beginner to job-ready fundamentals.
-      </BulletPoint>
-      <BulletPoint>
-        <strong>Weekly accountability + reviews</strong>
-        <br />Stay on track with feedback, correction, and direct support.
-      </BulletPoint>
-      <BulletPoint>
-        <strong>Final job-search preparation</strong>
-        <br />Portfolio, GitHub, resume, and a simple plan tailored for career-changers.
-      </BulletPoint>
+    <motion.div key="how" className="space-y-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      {steps.map((step, idx) => (
+        <motion.div
+          key={idx}
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: idx * 0.1, duration: 0.4 }}
+          className="flex items-start gap-3"
+        >
+          <div className="flex-shrink-0">
+            <div 
+              className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold"
+              style={{ backgroundColor: ACCENT }}
+            >
+              {step.num}
+            </div>
+          </div>
+          <div className="flex-1 pt-1">
+            <div className="text-sm font-semibold text-gray-900">{step.title}</div>
+            <div className="text-xs text-gray-600 mt-0.5">{step.desc}</div>
+          </div>
+          {idx < steps.length - 1 && (
+            <div className="flex-shrink-0 pt-2">
+              <ArrowRight size={16} className="text-gray-400" />
+            </div>
+          )}
+        </motion.div>
+      ))}
     </motion.div>
   );
 }
@@ -103,7 +146,7 @@ export default function HeroDynamicSection() {
       <div className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/50 backdrop-blur-xl p-5 md:p-7 shadow-xl">
         <div className="space-y-3">
           <div className="flex items-center justify-center gap-2 text-xs font-medium text-gray-600">
-            <span>What to expect</span>
+            <span>Here's what you can expect</span>
           </div>
           <div className="hidden md:flex items-center gap-2 justify-center">
             {PANELS.map((p, i) => (
@@ -123,7 +166,7 @@ export default function HeroDynamicSection() {
           </div>
         </div>
 
-        <div className="mt-5 min-h-[200px] md:min-h-[180px]">
+        <div className="mt-5 min-h-[240px] md:min-h-[200px]">
           <AnimatePresence mode="popLayout">
             <motion.div
               key={PANELS[active].key}
