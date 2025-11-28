@@ -96,7 +96,7 @@ function PanelHowItWorks() {
   ];
 
   return (
-    <motion.div key="how" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    <motion.div key="how" className="space-y-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       {steps.map((step, idx) => (
         <motion.div
           key={idx}
