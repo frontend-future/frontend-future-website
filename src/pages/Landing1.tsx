@@ -95,11 +95,9 @@ export default function Landing1() {
 
   return <main className="min-h-screen bg-slate-50 font-sans text-slate-900">
       <style>{`
-        /* CTA button gradient + hover shifts */
+        /* CTA button gradient */
         .cta-btn{background-image:linear-gradient(90deg,#00bfff,#00bfff);background-color:#00bfff}
         .cta-btn:hover{background-image:linear-gradient(90deg,#00bfff,#0095cc)}
-        .cta-btn:hover span{transform:translateY(-2px)}
-        .cta-btn:hover svg{transform:translateX(4px)}
 
         /* Shimmer for CTA banner */
         @keyframes shimmer{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
