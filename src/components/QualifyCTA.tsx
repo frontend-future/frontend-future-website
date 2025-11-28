@@ -24,13 +24,13 @@ const QualifyCTA = () => {
                 </p>
               </div>
               <a
-                href="https://start.frontendfuture.pro/landing"
+                href="https://start.frontendfuture.pro/apply"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-semibold shadow hover:shadow-lg whitespace-nowrap">
                   <Rocket className="w-5 h-5" />
-                  See If I Qualify
+                  Apply Now
                 </Button>
               </a>
             </div>
