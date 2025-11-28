@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Users, Hammer, Clock3 } from "lucide-react";
+import { TrendingUp, LayoutDashboard, Map } from "lucide-react";
 
 const ACCENT = "#00bfff";
 const PANEL_DURATION_MS = 5200;
@@ -14,68 +14,81 @@ function useAutoRotate({ count, duration }: { count: number; duration: number })
   return [idx, setIdx] as const;
 }
 
-function Stat({ label, value, suffix = "" }: { label: string; value: number; suffix?: string }) {
+function BulletPoint({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 px-5 py-4 flex flex-col gap-1 shadow-sm"
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45 }}
+      className="flex items-start gap-2"
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4 }}
     >
-      <div className="text-3xl font-extrabold tracking-tight text-gray-900">
-        {value}
-        <span className="text-[--accent]">{suffix}</span>
-      </div>
-      <div className="text-xs text-gray-600 font-medium">{label}</div>
+      <div className="mt-1 h-1.5 w-1.5 rounded-full bg-[--accent] flex-shrink-0" />
+      <p className="text-sm text-gray-700 leading-relaxed">{children}</p>
     </motion.div>
   );
 }
 
 function PanelTrackRecord() {
   return (
-    <motion.div key="track" className="grid grid-cols-2 md:grid-cols-4 gap-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <Stat label="projects shipped by grads" value={3120} />
-      <Stat label="avg. weekly mentor calls" value={2} suffix="x" />
-      <Stat label="hiring manager intros" value={3} suffix="+" />
-      <Stat label="countries represented" value={27} />
+    <motion.div key="track" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <BulletPoint>
+        <strong>Real, portfolio-ready projects</strong>
+        <br />Students build actual products they can show employers, not tutorials.
+      </BulletPoint>
+      <BulletPoint>
+        <strong>Consistent expert support</strong>
+        <br />Weekly mentor guidance so you never stay stuck or confused.
+      </BulletPoint>
+      <BulletPoint>
+        <strong>Personalized job-search direction</strong>
+        <br />Clear steps based on your background, goals, and pace.
+      </BulletPoint>
     </motion.div>
   );
 }
 
 function PanelWhatYouBuild() {
   return (
-    <motion.div key="build" className="grid grid-cols-2 md:grid-cols-4 gap-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Product page</div>
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Auth + Dashboard</div>
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Performance Pass</div>
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 text-gray-900 font-medium shadow-sm">Data UX</div>
+    <motion.div key="build" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <BulletPoint>
+        <strong>A clean, professional website</strong>
+        <br />Your first project shows you can create and ship something real.
+      </BulletPoint>
+      <BulletPoint>
+        <strong>A multi-page web app</strong>
+        <br />A functional product with navigation, logic, and interactive features.
+      </BulletPoint>
+      <BulletPoint>
+        <strong>A polished portfolio + GitHub</strong>
+        <br />Your work clearly organized and ready for employers to review.
+      </BulletPoint>
     </motion.div>
   );
 }
 
 function PanelHowItWorks() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 shadow-sm">
-        <div className="font-semibold text-gray-900">Weeks 1–3: Foundations</div>
-        <div className="text-sm text-gray-600">Refresh basics. Ship a fast, converting product page.</div>
-      </div>
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 shadow-sm">
-        <div className="font-semibold text-gray-900">Weeks 4–7: App & Data</div>
-        <div className="text-sm text-gray-600">Build auth, state, and dashboard with real UX patterns.</div>
-      </div>
-      <div className="rounded-2xl bg-white/40 backdrop-blur border border-white/60 p-4 shadow-sm">
-        <div className="font-semibold text-gray-900">Weeks 8–12: Proof</div>
-        <div className="text-sm text-gray-600">Polish, performance pass, and targeted outreach.</div>
-      </div>
-    </div>
+    <motion.div key="how" className="space-y-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <BulletPoint>
+        <strong>Step-by-step guided curriculum</strong>
+        <br />A clear path from complete beginner to job-ready fundamentals.
+      </BulletPoint>
+      <BulletPoint>
+        <strong>Weekly accountability + reviews</strong>
+        <br />Stay on track with feedback, correction, and direct support.
+      </BulletPoint>
+      <BulletPoint>
+        <strong>Final job-search preparation</strong>
+        <br />Portfolio, GitHub, resume, and a simple plan tailored for career-changers.
+      </BulletPoint>
+    </motion.div>
   );
 }
 
 const PANELS = [
-  { key: "track", label: "Track record", Node: PanelTrackRecord, Icon: Users },
-  { key: "build", label: "What you'll build", Node: PanelWhatYouBuild, Icon: Hammer },
-  { key: "how", label: "How it works", Node: PanelHowItWorks, Icon: Clock3 },
+  { key: "track", label: "Track Record", Node: PanelTrackRecord, Icon: TrendingUp },
+  { key: "build", label: "What You'll Build", Node: PanelWhatYouBuild, Icon: LayoutDashboard },
+  { key: "how", label: "How It Works", Node: PanelHowItWorks, Icon: Map },
 ];
 
 export default function HeroDynamicSection() {
@@ -90,7 +103,7 @@ export default function HeroDynamicSection() {
       <div className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/50 backdrop-blur-xl p-5 md:p-7 shadow-xl">
         <div className="space-y-3">
           <div className="flex items-center justify-center gap-2 text-xs font-medium text-gray-600">
-            <span>Ex-Amazon–led • Job Hunt Support</span>
+            <span>What to expect</span>
           </div>
           <div className="hidden md:flex items-center gap-2 justify-center">
             {PANELS.map((p, i) => (
@@ -110,7 +123,7 @@ export default function HeroDynamicSection() {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 min-h-[200px] md:min-h-[180px]">
           <AnimatePresence mode="popLayout">
             <motion.div
               key={PANELS[active].key}
