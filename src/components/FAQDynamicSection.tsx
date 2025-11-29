@@ -15,39 +15,6 @@ function useAutoRotate(count: number, durationMs: number = 5000) {
   return [index, setIndex] as const;
 }
 
-function PanelTopQuestions() {
-  const questions = [
-    { q: "Job guarantee?", a: "100% placement rate" },
-    { q: "Need a degree?", a: "Nope, skills matter" },
-    { q: "How long?", a: "12 weeks intensive" },
-    { q: "Work full-time?", a: "Yes, flexible schedule" }
-  ];
-
-  return (
-    <div className="space-y-6">
-      <h3 className="text-xl font-bold text-slate-900 text-center">Most Asked Questions</h3>
-      <div className="space-y-3">
-        {questions.map((item, idx) => (
-          <motion.div
-            key={idx}
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: idx * 0.1 }}
-            className="p-4 rounded-xl bg-white border border-slate-200"
-          >
-            <div className="flex items-start gap-3">
-              <HelpCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: ACCENT }} />
-              <div>
-                <div className="text-sm font-bold text-slate-900">{item.q}</div>
-                <div className="text-xs text-slate-600 mt-1">{item.a}</div>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 function PanelDegreeComparison() {
   return (
@@ -191,7 +158,6 @@ function PanelAgeBreakdown() {
 }
 
 const PANELS = [
-  { key: "questions", Component: PanelTopQuestions, icon: HelpCircle, label: "Top Q's" },
   { key: "comparison", Component: PanelDegreeComparison, icon: DollarSign, label: "vs Degree" },
   { key: "time", Component: PanelTimeCommitment, icon: Clock, label: "Time" },
   { key: "age", Component: PanelAgeBreakdown, icon: Users, label: "Ages" }
