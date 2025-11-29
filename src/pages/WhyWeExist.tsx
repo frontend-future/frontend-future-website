@@ -177,7 +177,7 @@ const WhyWeExist = () => {
               </p>
 
               <p className="text-base md:text-lg leading-relaxed font-semibold mt-8">
-                That is why this program exists.
+                That is why Frontend Future exists.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
