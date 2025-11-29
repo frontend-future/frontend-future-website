@@ -91,8 +91,8 @@ function PanelTimeCommitment() {
             <Users className="w-6 h-6 text-white" />
           </div>
           <div>
-            <div className="text-sm font-bold text-slate-900">1:1 Mentorship</div>
-            <div className="text-xs text-slate-600">Schedule fits your life</div>
+            <div className="text-sm font-bold text-slate-900">Weekly Live Mentor-Led Sessions</div>
+            <div className="text-xs text-slate-600">Get answers, feedback, and guidance in real time each week</div>
           </div>
         </motion.div>
         <motion.div
