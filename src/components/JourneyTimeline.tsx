@@ -109,7 +109,7 @@ export default function JourneyTimeline() {
         }}>Visualize Your Journey</span>
         </div>
         <h2 className="text-xl md:text-4xl font-bold mb-1">
-          Zero to $120K+ Remote Dev
+          Zero to Remote Dev
         </h2>
         <p className="text-sm md:text-lg text-slate-600 max-w-2xl mx-auto">
           👇 Click through each step
