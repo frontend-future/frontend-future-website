@@ -138,8 +138,8 @@ function PanelSupport() {
         >
           <Clock className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
           <div>
-            <div className="font-semibold text-slate-900 text-sm">24/7 Community Support</div>
-            <div className="text-xs text-slate-600 mt-1">Private Slack with fellow students & alumni</div>
+            <div className="font-semibold text-slate-900 text-sm">Private Slack Support</div>
+            <div className="text-xs text-slate-600 mt-1">Get 1:1 support from successful devs</div>
           </div>
         </motion.div>
         <motion.div
@@ -150,7 +150,7 @@ function PanelSupport() {
         >
           <TrendingUp className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
           <div>
-            <div className="font-semibold text-slate-900 text-sm">Career Coaching</div>
+            <div className="font-semibold text-slate-900 text-sm">Career Support</div>
             <div className="text-xs text-slate-600 mt-1">Resume, LinkedIn, interview prep included</div>
           </div>
         </motion.div>
