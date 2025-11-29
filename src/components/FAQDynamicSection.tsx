@@ -77,7 +77,7 @@ function PanelTimeCommitment() {
             <Clock className="w-6 h-6 text-white" />
           </div>
           <div>
-            <div className="text-sm font-bold text-slate-900">20-30 hours/week</div>
+            <div className="text-sm font-bold text-slate-900">10-20 hours/week</div>
             <div className="text-xs text-slate-600">Evening & weekend friendly</div>
           </div>
         </motion.div>
