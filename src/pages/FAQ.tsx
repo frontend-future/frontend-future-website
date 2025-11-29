@@ -12,44 +12,40 @@ import QualifyCTA from "@/components/QualifyCTA";
 const FAQ = () => {
   const faqs = [
     {
-      question: "How does your program guarantee a job?",
-      answer: "We guarantee job placement because we've built a proven system. You'll complete a guaranteed internship during the program, building real-world experience and references. We provide unlimited interview prep, resume reviews, and direct introductions to our hiring partners. We don't stop supporting you until you land a role - it's that simple. Our track record speaks for itself with a 100% placement rate."
+      question: "What kind of results do students get with this program?",
+      answer: "Students who commit to the process develop the exact frontend skills used in roles that typically pay $80,000 to $120,000 in the industry. You learn the same technologies, build the same types of projects, and work with the same tools that real teams use every day. By the end of the program, you will have a portfolio that shows you can build modern interfaces, solve practical problems, and contribute to real-world applications. These are the skills that sit at the starting point of higher paying opportunities in tech. If you stay consistent and follow the roadmap, you put yourself on a path where roles with stronger pay, better flexibility, and more stability become possible over time."
     },
     {
-      question: "What is Frontend Future's student success rate?",
-      answer: "100% of our students who complete the program land frontend developer roles. Our average graduate salary is $128K, with most securing remote positions. We track every graduate's progress and maintain these statistics publicly. The combination of 1:1 mentorship, guaranteed internship, and unlimited job support means our students succeed where others struggle."
+      question: "What does mentorship and support look like?",
+      answer: "You get real human support throughout the program. We run weekly mentor-led sessions where you can ask questions, get feedback, and work through challenges in real time. You also get access to a private Slack channel where you can get help whenever you are stuck. You always know exactly what to do next, and you always have support when you need it."
     },
     {
-      question: "What do you really mean by one-on-one mentorship?",
-      answer: "Unlike bootcamps with 30+ students per instructor, you get dedicated 1:1 time with an experienced frontend developer. Your mentor knows your name, your goals, and your learning style. Sessions are customized to your pace - if you need extra time on React, you get it. If you grasp JavaScript quickly, we move faster. You're never competing for attention or waiting for others to catch up."
+      question: "How long does it usually take to be ready to apply for jobs?",
+      answer: "You can learn the core frontend skills in twelve focused weeks when you follow a clear plan. That gives you the foundation you need to start building real projects, polishing your portfolio, and preparing to apply with confidence. Everyone moves at a different pace depending on their schedule and consistency. What matters is that you keep building the skills that matter and maintain steady progress. We guide you through both the learning phase and the transition into the job search so you never feel lost."
     },
     {
-      question: "How long will it take to land a job after I complete the training?",
-      answer: "Most graduates receive offers within 4-8 weeks of completing the program. Some even secure positions before finishing, thanks to the internship connections. We provide unlimited job search support, so there's no time limit. You'll have ongoing access to interview prep, application reviews, and direct introductions to companies actively hiring."
+      question: "Can I start if I have no degree or experience?",
+      answer: "Yes. Many people who switch into tech start with no degree or technical background. What matters is consistency and the willingness to follow the roadmap. Many tech teams today focus on skills and real work, not formal credentials. If you can commit to steady learning each week, you can build the foundation needed to pursue a tech career."
     },
     {
-      question: "What if I'm a complete beginner with no degree?",
-      answer: "Perfect - most of our students start exactly where you are. You don't need a degree, prior coding experience, or technical background. The curriculum is designed specifically for complete beginners who are motivated to change careers. We start with the absolute basics and build systematically. Your dedication and work ethic matter far more than your educational background. Companies care about skills, not degrees."
+      question: "Can I do this while working full-time?",
+      answer: "Yes. The program is designed for adults with full-time jobs and real responsibilities. The curriculum and weekly support are structured so you can learn during evenings, weekends, or whenever your schedule allows. If you stay consistent, you will keep making progress even with a demanding job."
     },
     {
-      question: "I'm working full-time. Can I still do this?",
-      answer: "Yes, though it requires commitment. The program is intensive and demands 20-30 hours per week. Most students maintain full-time jobs and complete coursework in evenings and weekends. The 1:1 mentorship structure gives you flexibility to schedule sessions around your work. Many of our success stories are from people who did exactly this - kept their job for financial stability while building their new career."
+      question: "Is twelve weeks enough time to learn frontend development?",
+      answer: "Twelve weeks is enough time to build a strong foundation when you follow a focused plan. You will not learn everything there is to know about frontend development in twelve weeks, but you will learn the core skills needed to start building real projects. After the twelve weeks, you continue improving with our guidance while expanding your portfolio."
     },
     {
-      question: "Is 12 weeks really enough time to learn frontend development?",
-      answer: "Absolutely. We're not teaching you everything about web development - we're teaching you exactly what employers need for entry-level frontend roles. The curriculum is laser-focused on HTML, CSS, JavaScript, and React - the core skills that land jobs. Plus, the guaranteed internship gives you real-world application of these skills. You'll be job-ready, not just classroom-ready."
-    },
-    {
-      question: "Can I work remotely as a frontend developer?",
-      answer: "Yes - 98% of our graduates work fully remote. Frontend development is one of the most remote-friendly careers in tech. Companies worldwide hire frontend developers remotely because the work is entirely digital. You'll build your portfolio with remote work in mind, and we specifically target remote-friendly companies in our placement support."
+      question: "Are remote frontend jobs realistic?",
+      answer: "Yes. Frontend development is one of the most remote-friendly areas of tech because the work is fully digital. Remote roles are competitive but entirely possible when you have strong skills and a portfolio that shows real work. We design your projects and submissions with remote-friendly companies in mind so you can present yourself well when the time comes to apply."
     },
     {
       question: "How does this compare to a traditional degree?",
-      answer: "A traditional 4-year degree costs 20x more and requires full-time commitment for 4+ years. Our program is 12 weeks, part-time, and you can keep your current job. You'll learn only what employers actually need, not outdated theory. Plus, companies care about skills and portfolio projects, not where you went to school. Our graduates land the same roles as CS grads, but in a fraction of the time and cost."
+      answer: "Degrees focus on theory and take years to complete. Frontend Future focuses entirely on practical skills and real projects that employers care about. You learn by building, not by studying for exams, and you can keep your job while you learn. Many successful developers today come from non-degree paths. What matters most is your skill and your portfolio."
     },
     {
-      question: "Am I too old to become a developer?",
-      answer: "No. Our average student is 35-55 years old. Tech companies value maturity, work ethic, and life experience - qualities you've developed in your current career. Age discrimination concerns are overblown for remote positions where skills matter most. Several of our top success stories are students in their late 40s and early 50s who are now thriving in their new careers."
+      question: "Am I too old to switch into tech?",
+      answer: "No. Many people start tech careers in their thirties, forties, and fifties. Companies value reliability, communication, problem solving, and life experience. These strengths often come from the careers you have already lived. Age is not a barrier to learning these skills. If you stay consistent, you can make real progress at any stage of life."
     }
   ];
 
