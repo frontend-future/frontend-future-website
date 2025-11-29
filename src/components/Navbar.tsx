@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img src={ffLogo} alt="FrontendFuture Logo" className="w-10 h-10 rounded-full" />
-            <span className="text-xl font-bold text-accent">
+            <span className="text-xl font-bold text-foreground">
               FrontendFuture
             </span>
           </Link>
