@@ -193,7 +193,7 @@ export default function FAQDynamicSection() {
         })}
       </div>
 
-      <div className="relative min-h-[380px]">
+      <div className="relative h-[380px] overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIndex}
