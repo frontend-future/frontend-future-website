@@ -79,7 +79,7 @@ function PanelSkills() {
     { name: "HTML & CSS", weeks: "1-4", level: 100 },
     { name: "JavaScript", weeks: "5-7", level: 100 },
     { name: "React", weeks: "8-10", level: 100 },
-    { name: "Portfolio Projects", weeks: "11-12", level: 100 }
+    { name: "Real Project Experience", weeks: "11-12", level: 100 }
   ];
 
   return (
