@@ -38,7 +38,7 @@ function PanelJourney() {
     { week: "Week 1", title: "First Website Live", icon: Code, complete: true },
     { week: "Week 4", title: "Interactive Apps", icon: Zap, complete: true },
     { week: "Week 8", title: "React Mastery", icon: Target, complete: true },
-    { week: "Week 12", title: "Job Ready", icon: Briefcase, complete: false }
+    { week: "Week 12", title: "Industry-Ready Skills", icon: Briefcase, complete: false }
   ];
 
   return (
