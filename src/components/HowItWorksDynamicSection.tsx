@@ -73,30 +73,6 @@ function PanelJourney() {
   );
 }
 
-function PanelResults() {
-  return (
-    <div className="space-y-6">
-      <h3 className="text-xl font-bold text-slate-900 text-center">Real Outcomes</h3>
-      <div className="grid grid-cols-2 gap-4">
-        <Stat label="Avg. Starting Salary" value="$120k" suffix="+" />
-        <Stat label="Time to First Offer" value="8" suffix=" weeks" />
-        <Stat label="Job Placement Rate" value="94" suffix="%" />
-        <Stat label="Career Changers" value="87" suffix="%" />
-      </div>
-      <motion.div
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3 }}
-        className="mt-4 p-4 rounded-xl bg-gradient-to-br from-sky-50 to-blue-50 border border-sky-200"
-      >
-        <p className="text-sm text-slate-700 text-center italic">
-          "I went from retail management to a $130k remote developer role in 14 weeks."
-        </p>
-        <p className="text-xs text-slate-600 text-center mt-2 font-semibold">— Sarah M., Frontend Developer @ Shopify</p>
-      </motion.div>
-    </div>
-  );
-}
 
 function PanelSkills() {
   const skills = [
@@ -185,7 +161,6 @@ function PanelSupport() {
 
 const PANELS = [
   { key: "journey", Component: PanelJourney, icon: Target, label: "Your Journey" },
-  { key: "results", Component: PanelResults, icon: TrendingUp, label: "Results" },
   { key: "skills", Component: PanelSkills, icon: Code, label: "Skills" },
   { key: "support", Component: PanelSupport, icon: Award, label: "Support" }
 ];
