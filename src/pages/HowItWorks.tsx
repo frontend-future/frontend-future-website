@@ -142,7 +142,7 @@ const HowItWorks = () => {
                 <p className="text-xs md:text-base text-muted-foreground">Learn the skills</p>
               </div>
               <div className="space-y-1 md:space-y-2">
-                <p className="text-2xl md:text-4xl font-bold text-accent">Guided Path</p>
+                <p className="text-2xl md:text-4xl font-bold text-accent">Proven Path</p>
                 <p className="text-xs md:text-base text-muted-foreground">Never guess your next step</p>
               </div>
             </div>
