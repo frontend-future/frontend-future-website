@@ -67,10 +67,10 @@ const HowItWorks = () => {
                   Your proven roadmap to success
                 </p>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-                  Your 12-Week Path to a <span className="underline decoration-sky-500 decoration-2">Six-Figure Career</span>
+                  Your Path to a Remote <span className="underline decoration-sky-500 decoration-2">Six-Figure Tech Career</span>
                 </h1>
                 <p className="text-base md:text-xl text-slate-700">
-                  A structured, proven curriculum with guaranteed internship designed specifically for career changers
+                  A structured, proven curriculum designed specifically for working adults wanting to change careers
                 </p>
               </div>
               <HowItWorksDynamicSection />
