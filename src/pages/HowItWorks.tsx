@@ -148,7 +148,7 @@ const HowItWorks = () => {
             </div>
             <div className="pt-4">
               <a
-                href="https://start.frontendfuture.pro/landing"
+                href="https://start.frontendfuture.pro/apply"
                 target="_blank"
                 rel="noopener noreferrer"
               >
