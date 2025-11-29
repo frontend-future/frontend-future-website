@@ -138,7 +138,7 @@ function PanelSupport() {
         >
           <Clock className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
           <div>
-            <div className="font-semibold text-slate-900 text-sm">Private Slack Support</div>
+            <div className="font-semibold text-slate-900 text-sm">Private Slack Channel</div>
             <div className="text-xs text-slate-600 mt-1">Get 1:1 dev support</div>
           </div>
         </motion.div>
