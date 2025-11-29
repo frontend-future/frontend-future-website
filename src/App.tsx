@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import HowItWorks from "./pages/HowItWorks";
 import SuccessStories from "./pages/SuccessStories";
+import WhyWeExist from "./pages/WhyWeExist";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/" element={<Landing1 />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/success-stories" element={<SuccessStories />} />
+              <Route path="/why-we-exist" element={<WhyWeExist />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
