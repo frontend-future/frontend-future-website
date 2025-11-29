@@ -40,7 +40,7 @@ function PanelDegreeComparison() {
           transition={{ delay: 0.1 }}
           className="p-4 rounded-xl bg-green-50 border border-green-200"
         >
-          <div className="text-sm font-bold text-green-900 mb-2">Our Program</div>
+          <div className="text-sm font-bold text-green-900 mb-2">Frontend Future</div>
           <div className="space-y-2 text-xs text-green-700">
             <div>• Fraction of the cost</div>
             <div>• 12 weeks part-time</div>
