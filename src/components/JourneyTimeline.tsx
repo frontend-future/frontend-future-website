@@ -142,7 +142,7 @@ export default function JourneyTimeline() {
       </div>
 
       {/* Mobile-Optimized Step Pills */}
-      <div className="mb-3 overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide">
+      <div className="mb-3 overflow-x-auto pb-2 pt-2 -mx-4 px-4 scrollbar-hide">
         <div className="flex gap-1.5 min-w-max md:justify-center">
           {journeySteps.map((step, index) => <button key={step.id} onClick={() => setActiveStep(index)} className={`flex-shrink-0 flex flex-col items-center gap-1 rounded-lg border-2 px-2 py-1.5 transition-all ${index === activeStep ? "border-[#00bfff] bg-[#00bfff]/10 shadow-lg scale-105" : index < activeStep ? "border-slate-300 bg-white shadow-sm" : "border-slate-200 bg-slate-50"}`}>
               <span className="text-xl">{step.emoji}</span>
