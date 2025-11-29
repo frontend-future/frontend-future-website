@@ -122,28 +122,28 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      {/* One-on-One Mentorship */}
+      {/* Support Section */}
       <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
             <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
-              True One-on-One Mentorship
+              Support Every Step of the Way
             </h2>
             <p className="text-sm md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
-              Unlike other bootcamps with large cohorts, you get dedicated 1:1 time with an experienced frontend developer. Your mentor knows your name, tracks your progress, and customizes lessons to your learning style. You're never just a number in a class.
+              Traditional bootcamps dump you into huge cohorts with little direction. Here, you get consistent support from an experienced developer who makes sure you always know what to do next. Clear steps. Clear progress. Real accountability.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 pt-4 md:pt-8">
               <div className="space-y-1 md:space-y-2">
                 <p className="text-2xl md:text-4xl font-bold text-accent">1:1</p>
-                <p className="text-xs md:text-base text-muted-foreground">Personal mentorship</p>
+                <p className="text-xs md:text-base text-muted-foreground">Direct support</p>
               </div>
               <div className="space-y-1 md:space-y-2">
-                <p className="text-2xl md:text-4xl font-bold text-accent">100%</p>
-                <p className="text-xs md:text-base text-muted-foreground">Job placement support</p>
+                <p className="text-2xl md:text-4xl font-bold text-accent">12 Weeks</p>
+                <p className="text-xs md:text-base text-muted-foreground">Learn the skills</p>
               </div>
               <div className="space-y-1 md:space-y-2">
-                <p className="text-2xl md:text-4xl font-bold text-accent">12</p>
-                <p className="text-xs md:text-base text-muted-foreground">Weeks to career change</p>
+                <p className="text-2xl md:text-4xl font-bold text-accent">Guided Path</p>
+                <p className="text-xs md:text-base text-muted-foreground">Never guess your next step</p>
               </div>
             </div>
             <div className="pt-4">
