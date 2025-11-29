@@ -106,33 +106,6 @@ const FAQ = () => {
         </div>
       </section>
 
-      {/* Still Have Questions */}
-      <section className="py-12 md:py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
-              Still Have Questions?
-            </h2>
-            <p className="text-sm md:text-lg lg:text-xl text-muted-foreground">
-              We're here to help you make an informed decision
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6">
-              <a
-                href="https://start.frontendfuture.pro/apply"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
-                  Apply Now →
-                </Button>
-              </a>
-              <Button size="lg" variant="outline" asChild>
-                <a href="/contact">Contact Us</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Qualify CTA */}
       <QualifyCTA />
