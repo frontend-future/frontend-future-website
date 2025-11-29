@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Code, Layout, Smartphone, Briefcase, FileCheck, Monitor, Users } from "lucide-react";
+import { Laptop, FileCode, Zap, Layout, FileCheck, Briefcase, Target, Send } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import HowItWorksDynamicSection from "@/components/HowItWorksDynamicSection";
 import JourneyTimeline from "@/components/JourneyTimeline";
@@ -9,40 +9,52 @@ import QualifyCTA from "@/components/QualifyCTA";
 const HowItWorks = () => {
   const steps = [
     {
-      icon: Monitor,
+      icon: Laptop,
       title: "Setup & Professional Website",
       weeks: "Week 1",
-      description: "Setup your computer for success in frontend development. You'll have built your own professional personal website that you can show to potential employers (yes, even if you've never coded before).",
+      description: "We will set up your computer for coding with beginner friendly AI tools, walk you through writing your first line of code, and help you build and launch your own professional personal website even if you have never coded before.",
     },
     {
-      icon: Code,
+      icon: FileCode,
       title: "HTML & CSS Fundamentals",
-      weeks: "Weeks 2-4",
-      description: "Master the building blocks of web development. Learn to create beautiful, responsive layouts from scratch.",
+      weeks: "Weeks 2–4",
+      description: "Learn the core building blocks of frontend development. You will create clean layouts, responsive pages, and your first professional looking projects that begin shaping your portfolio.",
     },
     {
-      icon: Smartphone,
-      title: "JavaScript Mastery",
-      weeks: "Weeks 5-7",
-      description: "Become proficient in JavaScript - the language that powers modern web applications. Build interactive features and logic.",
+      icon: Zap,
+      title: "JavaScript Foundations",
+      weeks: "Weeks 5–7",
+      description: "This is where coding starts to make sense. You will learn how to add real functionality to your pages with JavaScript so you can build interactive features and start thinking like a real developer.",
     },
     {
       icon: Layout,
       title: "React Development",
-      weeks: "Weeks 8-10",
-      description: "Learn React, the industry-standard framework. Build complex, production-ready applications used by top tech companies. Create portfolio projects you can share with employers.",
+      weeks: "Weeks 8–10",
+      description: "Learn the framework that most modern companies use. You will build components, connect to real data, and create polished, production style projects that show employers you can work with the tools teams actually use.",
     },
     {
       icon: FileCheck,
       title: "Interview Preparation",
-      weeks: "Weeks 11-12",
-      description: "Our team will optimize your LinkedIn, polish your resume, and train you on how to crush your interviews. Start applying to jobs and hearing back from employers.",
+      weeks: "Weeks 11–12",
+      description: "Now you get ready to present yourself like a serious candidate. We will improve your LinkedIn, resume, and portfolio and teach you how to talk about your work clearly so you feel confident in interviews.",
     },
     {
-      icon: Users,
-      title: "Guaranteed Internship",
-      weeks: "Weeks 13-24",
-      description: "The reason most bootcamp grads fail is that they learn the skills but don't have 'proof of experience' to land that first role. We shortcut that by guaranteeing internship experience you can share with future employers.",
+      icon: Briefcase,
+      title: "Work-Like Experience",
+      weeks: "Weeks 13–16",
+      description: "Gain hands-on practice doing the same type of tasks junior developers handle on real teams. You will work through features, fix issues, and follow a simple workflow that gives you work-like experience you can confidently talk about in applications.",
+    },
+    {
+      icon: Target,
+      title: "Job Search System",
+      weeks: "Weeks 17–20",
+      description: "Turn your skills and projects into a clean professional presence. You will package your best work into a simple portfolio, refine your resume, and optimize your online presence so hiring managers can see what you bring to the table.",
+    },
+    {
+      icon: Send,
+      title: "Start Applying With Confidence",
+      weeks: "Weeks 21–24",
+      description: "Follow a beginner friendly application plan designed for career changers. You will learn how to reach out the right way, how to get responses, and how to consistently move toward your first tech opportunity.",
     },
   ];
 
