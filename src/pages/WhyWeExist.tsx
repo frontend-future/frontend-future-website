@@ -35,56 +35,148 @@ const WhyWeExist = () => {
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <div className="space-y-6 text-slate-700">
+            <div className="space-y-4 text-slate-700">
               <p className="text-base md:text-lg leading-relaxed">
-                Most people do not end up on this page because everything in life is perfect. You are here because something is not working anymore.
+                Most people do not end up on this page because everything in life is perfect.
               </p>
               
               <p className="text-base md:text-lg leading-relaxed">
-                Maybe you are tired of the long hours. Maybe the pay has hit a ceiling. Maybe you feel stuck in a role that never changes. Maybe you want more flexibility, more respect, or simply more control over your future.
+                You are here because something is not working anymore.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                And deep down, you know you are capable of more. You just have not had the right path.
+                Maybe you are tired of the long hours.
               </p>
 
-              <p className="text-base md:text-lg leading-relaxed font-semibold">
+              <p className="text-base md:text-lg leading-relaxed">
+                Maybe the pay has hit a ceiling.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Maybe you feel stuck in a role that never changes.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Maybe you want more flexibility, more respect, or simply more control over your future.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                And deep down, you know you are capable of more.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                You just have not had the right path.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed font-semibold mt-8">
                 We built Frontend Future for people exactly like you.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                Not for nineteen-year-olds with endless free time. Not for college kids living in dorms. But for adults with jobs, families, bills, pressures, and responsibilities. People who need a way forward that actually fits their life.
+                Not for nineteen-year-olds with endless free time.
               </p>
 
-              <p className="text-base md:text-lg leading-relaxed font-semibold">
+              <p className="text-base md:text-lg leading-relaxed">
+                Not for college kids living in dorms.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                But for adults with jobs, families, bills, pressures, and responsibilities.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                People who need a way forward that actually fits their life.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed font-semibold mt-8">
                 Here is the truth:
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                Tech is not out of reach. The path has just been hidden.
+                Tech is not out of reach.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                And every year, college becomes less and less of the path. Companies are no longer asking for degrees. Tech CEOs openly say they care about skills, not diplomas. They want people who can build, solve problems, and work on real projects. They do not care where you went to school. They care whether you can do the job.
+                The path has just been hidden.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                This should be good news. It means the door has never been more open for people who want to make a change.
+                And every year, college becomes less and less of the path.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                The problem is that schools still teach people in all the wrong ways. They teach theory instead of real skills. Homework instead of real projects. Lectures instead of practical steps. And when students finish, they still have no idea how to get hired in the real world.
+                Companies are no longer asking for degrees.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                We have been in those classrooms. We have seen the confusion. We have lived the experience of realizing that no one ever taught the part that actually matters.
+                Tech CEOs openly say they care about skills, not diplomas.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                Even with a top computer science education and experience as a teaching assistant, we saw firsthand how little of that knowledge translates to getting hired. Learning coding in a classroom is not the same as doing the work companies expect. Most people discover this too late.
+                They want people who can build, solve problems, and work on real projects.
               </p>
 
-              <p className="text-base md:text-lg leading-relaxed font-semibold">
+              <p className="text-base md:text-lg leading-relaxed">
+                They do not care where you went to school.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                They care whether you can do the job.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                This should be good news.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                It means the door has never been more open for people who want to make a change.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                The problem is that schools still teach people in all the wrong ways.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                They teach theory instead of real skills.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Homework instead of real projects.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Lectures instead of practical steps.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                And when students finish, they still have no idea how to get hired in the real world.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                We have been in those classrooms.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                We have seen the confusion.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                We have lived the experience of realizing that no one ever taught the part that actually matters.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Even with a top computer science education and experience as a teaching assistant, we saw firsthand how little of that knowledge translates to getting hired.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Learning coding in a classroom is not the same as doing the work companies expect.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Most people discover this too late.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed font-semibold mt-8">
                 That is why this program exists.
               </p>
 
@@ -93,30 +185,94 @@ const WhyWeExist = () => {
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                A clear roadmap so you always know exactly what to do next. A support system so you are never stuck or sitting alone on YouTube at two in the morning. A practical skillset built through job-like projects that translate into proof. A realistic pace designed for adults who can give ten to twenty hours a week. And a future with flexibility, comfort, and stability instead of stress and uncertainty.
+                A clear roadmap so you always know exactly what to do next.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                You do not need a degree. You do not need to be naturally gifted. You do not need to quit your job. You do not need thousands of hours.
+                A support system so you are never stuck or sitting alone on YouTube at two in the morning.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                What you need is a path you can follow. A path that actually leads somewhere. And someone to guide you step by step so you do not get lost again.
+                A practical skillset built through job-like projects that translate into proof.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                Frontend development can open doors to remote work, calmer schedules, higher pay ceilings, and real growth. Not overnight. Not magically. But steadily, predictably, one step at a time.
+                A realistic pace designed for adults who can give ten to twenty hours a week.
               </p>
 
-              <p className="text-base md:text-lg leading-relaxed font-semibold">
+              <p className="text-base md:text-lg leading-relaxed">
+                And a future with flexibility, comfort, and stability instead of stress and uncertainty.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                You do not need a degree.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                You do not need to be naturally gifted.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                You do not need to quit your job.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                You do not need thousands of hours.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                What you need is a path you can follow.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                A path that actually leads somewhere.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                And someone to guide you step by step so you do not get lost again.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Frontend development can open doors to remote work, calmer schedules, higher pay ceilings, and real growth.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Not overnight.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Not magically.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                But steadily, predictably, one step at a time.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed font-semibold mt-8">
                 And that is what we exist to give you.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                Not hype. Not fantasies. But a chance. A real one. A chance to build a better future for yourself and the people you care about.
+                Not hype.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
+                Not fantasies.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                But a chance.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                A real one.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                A chance to build a better future for yourself and the people you care about.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed mt-8">
                 If you have ever felt stuck, unseen, overlooked, underpaid, or simply meant for more, this is the path we built for you.
               </p>
             </div>
