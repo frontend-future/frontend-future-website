@@ -32,7 +32,7 @@ const WhyWeExist = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-12 md:py-20">
+      <section className="pt-12 md:pt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="space-y-4 text-slate-700">
