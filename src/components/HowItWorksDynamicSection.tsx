@@ -126,8 +126,8 @@ function PanelSupport() {
         >
           <Award className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
           <div>
-            <div className="font-semibold text-slate-900 text-sm">1:1 Mentor Sessions</div>
-            <div className="text-xs text-slate-600 mt-1">Weekly calls with your dedicated mentor</div>
+            <div className="font-semibold text-slate-900 text-sm">Weekly Live Mentor-Led Sessions</div>
+            <div className="text-xs text-slate-600 mt-1">Get answers, feedback, and guidance in real time each week</div>
           </div>
         </motion.div>
         <motion.div
@@ -139,7 +139,7 @@ function PanelSupport() {
           <Clock className="w-6 h-6 flex-shrink-0" style={{ color: ACCENT }} />
           <div>
             <div className="font-semibold text-slate-900 text-sm">Private Slack Support</div>
-            <div className="text-xs text-slate-600 mt-1">Get 1:1 support from successful devs</div>
+            <div className="text-xs text-slate-600 mt-1">Get 1:1 dev support</div>
           </div>
         </motion.div>
         <motion.div
