@@ -6,6 +6,7 @@ const Enroll = () => {
       <Helmet>
         <title>Enroll | Frontend Future</title>
         <meta name="description" content="Enroll in the Frontend Future program and start your journey to becoming a frontend developer." />
+        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       
       <div className="min-h-screen bg-background pt-20">
