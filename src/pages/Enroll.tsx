@@ -30,7 +30,7 @@ const Enroll = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       
-      <div className="min-h-screen bg-background pt-20">
+      <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-8">
             Your Next Step: Enroll And Get Started
