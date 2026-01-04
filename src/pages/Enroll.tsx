@@ -14,9 +14,6 @@ const Enroll = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-8">
             Your Next Step: Enroll And Get Started
           </h1>
-          <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto">
-            Start your journey to becoming a frontend developer.
-          </p>
         </div>
       </div>
     </>
