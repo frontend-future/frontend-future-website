@@ -47,6 +47,16 @@ const Enroll = () => {
             `}</style>
             {/* @ts-ignore */}
             <wistia-player media-id="s5k8df5vxf" aspect="1.7777777777777777"></wistia-player>
+            
+            <div className="flex justify-center mt-10">
+              <a
+                href="https://start.frontendfuture.pro/apply"
+                className="inline-block px-12 py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                style={{ backgroundColor: '#00BBFF' }}
+              >
+                Enroll Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
