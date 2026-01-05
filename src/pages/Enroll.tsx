@@ -42,7 +42,7 @@ const Enroll = () => {
       ([entry]) => {
         setShowStickyButton(!entry.isIntersecting);
       },
-      { threshold: 0 }
+      { threshold: 0 },
     );
 
     if (mainButtonRef.current) {
@@ -72,11 +72,12 @@ const Enroll = () => {
           <div className="max-w-4xl mx-auto">
             <WistiaPlayer mediaId="s5k8df5vxf" />
 
-            <div className="mt-10">
+            <div className="flex justify-center mt-10">
               <a
                 ref={mainButtonRef}
                 href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
-                className="block w-full py-5 text-xl md:text-2xl font-bold text-white text-center rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+                target="_blank"
+                className="inline-block px-12 py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 style={{ backgroundColor: "#00BBFF" }}
               >
                 Enroll Now
@@ -441,10 +442,11 @@ const Enroll = () => {
           showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
         }`}
       >
-        <div className="max-w-3xl mx-auto">
+        <div className="flex justify-center">
           <a
             href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
-            className="block w-full py-3 text-lg font-bold text-white text-center rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+            target="_blank"
+            className="inline-block px-16 py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
             style={{ backgroundColor: "#00BBFF" }}
           >
             Enroll Now
