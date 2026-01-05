@@ -441,10 +441,10 @@ const Enroll = () => {
           showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
         }`}
       >
-        <div className="flex justify-center">
+        <div className="max-w-3xl mx-auto">
           <a
             href="https://start.frontendfuture.pro/apply"
-            className="inline-block px-16 py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="block w-full py-3 text-lg font-bold text-white text-center rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
             style={{ backgroundColor: "#00BBFF" }}
           >
             Enroll Now
