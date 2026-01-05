@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import usatodayArticle from "@/assets/usatoday-article.png";
 import techbullionArticle from "@/assets/techbullion-article.png";
@@ -14,6 +14,9 @@ import linkedinMessage6 from "@/assets/linkedin-message-6.png";
 import salaryChart from "@/assets/salary-chart.png";
 
 const Enroll = () => {
+  const [showStickyButton, setShowStickyButton] = useState(false);
+  const mainButtonRef = useRef<HTMLAnchorElement>(null);
+
   useEffect(() => {
     // Load Wistia player script
     const playerScript = document.createElement("script");
@@ -32,6 +35,21 @@ const Enroll = () => {
       document.head.removeChild(playerScript);
       document.head.removeChild(embedScript);
     };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowStickyButton(!entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+
+    if (mainButtonRef.current) {
+      observer.observe(mainButtonRef.current);
+    }
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -56,6 +74,7 @@ const Enroll = () => {
 
             <div className="flex justify-center mt-10">
               <a
+                ref={mainButtonRef}
                 href="https://start.frontendfuture.pro/apply"
                 className="inline-block px-12 py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 style={{ backgroundColor: "#00BBFF" }}
@@ -413,6 +432,23 @@ const Enroll = () => {
               </Accordion>
             </div>
           </section>
+        </div>
+      </div>
+
+      {/* Sticky Enroll Button */}
+      <div
+        className={`fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-slate-200 py-3 px-4 transition-all duration-300 ${
+          showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+        }`}
+      >
+        <div className="flex justify-center">
+          <a
+            href="https://start.frontendfuture.pro/apply"
+            className="inline-block px-10 py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            style={{ backgroundColor: "#00BBFF" }}
+          >
+            Enroll Now
+          </a>
         </div>
       </div>
     </>
