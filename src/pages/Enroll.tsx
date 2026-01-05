@@ -72,12 +72,12 @@ const Enroll = () => {
           <div className="max-w-4xl mx-auto">
             <WistiaPlayer mediaId="s5k8df5vxf" />
 
-            <div className="flex justify-center mt-10">
+            <div className="mt-10">
               <a
                 ref={mainButtonRef}
                 href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
                 target="_blank"
-                className="inline-block px-12 py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="block w-full text-center py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 style={{ backgroundColor: "#00BBFF" }}
               >
                 Enroll Now
@@ -442,11 +442,11 @@ const Enroll = () => {
           showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
         }`}
       >
-        <div className="flex justify-center">
+        <div className="max-w-4xl mx-auto">
           <a
             href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
             target="_blank"
-            className="inline-block px-16 py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="block w-full text-center py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
             style={{ backgroundColor: "#00BBFF" }}
           >
             Enroll Now
