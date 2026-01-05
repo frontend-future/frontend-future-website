@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import usatodayArticle from "@/assets/usatoday-article.png";
 import techbullionArticle from "@/assets/techbullion-article.png";
 import hackernoonArticle from "@/assets/hackernoon-article.png";
+import WistiaPlayer from "@/components/WistiaPlayer";
 
 const Enroll = () => {
   useEffect(() => {
@@ -43,16 +44,7 @@ const Enroll = () => {
           </h1>
 
           <div className="max-w-4xl mx-auto">
-            <style>{`
-              wistia-player[media-id='s5k8df5vxf']:not(:defined) {
-                background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/s5k8df5vxf/swatch');
-                display: block;
-                filter: blur(5px);
-                padding-top: 56.25%;
-              }
-            `}</style>
-            {/* @ts-ignore */}
-            <wistia-player media-id="s5k8df5vxf" aspect="1.7777777777777777"></wistia-player>
+            <WistiaPlayer mediaId="s5k8df5vxf" />
 
             <div className="flex justify-center mt-10">
               <a
@@ -158,8 +150,7 @@ const Enroll = () => {
                   What even is frontend development?
                 </h3>
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
-                  <style>{`wistia-player[media-id='5wumegulmo']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/5wumegulmo/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}</style>
-                  <wistia-player media-id="5wumegulmo" seo="false" aspect="1.7777777777777777"></wistia-player>
+                  <WistiaPlayer mediaId="5wumegulmo" seo="false" />
                 </div>
               </div>
 
@@ -169,19 +160,17 @@ const Enroll = () => {
                   Can I really learn coding in 12 weeks?
                 </h3>
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
-                  <style>{`wistia-player[media-id='onfb7b1f2k']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/onfb7b1f2k/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}</style>
-                  <wistia-player media-id="onfb7b1f2k" seo="false" aspect="1.7777777777777777"></wistia-player>
+                  <WistiaPlayer mediaId="onfb7b1f2k" seo="false" />
                 </div>
               </div>
 
               {/* Video 3: Will this work for me if I'm too busy, old, or working full-time? */}
               <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm flex flex-col h-full">
                 <h3 className="text-lg font-bold mb-4 text-sky-600 min-h-[3.5rem] flex items-center">
-                  Will this work for me if I&apos;m too busy, old, or working full-time?
+                  Will this work for me if I'm too busy, old, or working full-time?
                 </h3>
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
-                  <style>{`wistia-player[media-id='0px6u0pvgz']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/0px6u0pvgz/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}</style>
-                  <wistia-player media-id="0px6u0pvgz" seo="false" aspect="1.7777777777777777"></wistia-player>
+                  <WistiaPlayer mediaId="0px6u0pvgz" seo="false" />
                 </div>
               </div>
 
@@ -191,19 +180,17 @@ const Enroll = () => {
                   Do people really get hired without a degree or years of experience?
                 </h3>
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
-                  <style>{`wistia-player[media-id='fjssikinv7']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/fjssikinv7/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}</style>
-                  <wistia-player media-id="fjssikinv7" seo="false" aspect="1.7777777777777777"></wistia-player>
+                  <WistiaPlayer mediaId="fjssikinv7" seo="false" />
                 </div>
               </div>
 
               {/* Video 5: What's the catch? */}
               <div className="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm flex flex-col h-full">
                 <h3 className="text-lg font-bold mb-4 text-sky-600 min-h-[3.5rem] flex items-center">
-                  What&apos;s the catch?
+                  What's the catch?
                 </h3>
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
-                  <style>{`wistia-player[media-id='ngtae1ikgl']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ngtae1ikgl/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}</style>
-                  <wistia-player media-id="ngtae1ikgl" seo="false" aspect="1.7777777777777777"></wistia-player>
+                  <WistiaPlayer mediaId="ngtae1ikgl" seo="false" />
                 </div>
               </div>
 
@@ -213,8 +200,7 @@ const Enroll = () => {
                   How is this different from a bootcamp or Youtube?
                 </h3>
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
-                  <style>{`wistia-player[media-id='q60pz5gyeh']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/q60pz5gyeh/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}</style>
-                  <wistia-player media-id="q60pz5gyeh" seo="false" aspect="1.7777777777777777"></wistia-player>
+                  <WistiaPlayer mediaId="q60pz5gyeh" seo="false" />
                 </div>
               </div>
             </div>
