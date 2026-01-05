@@ -203,105 +203,11 @@ const Enroll = () => {
                   <WistiaPlayer mediaId="q60pz5gyeh" seo="false" />
                 </div>
               </div>
-              {/* Social Proof: Video Testimonials */}
-              <section className="mx-auto max-w-5xl px-4 pb-12">
-                <h3 className="text-2xl md:text-3xl font-extrabold mb-6 text-center">
-                  Here&apos;s what people have to say
-                </h3>
-                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                  <VidCard>
-                    <div
-                      className="wistia_responsive_padding"
-                      style={{ padding: "56.25% 0 0 0", position: "relative" }}
-                    >
-                      <div
-                        className="wistia_responsive_wrapper"
-                        style={{ height: "100%", left: 0, position: "absolute", top: 0, width: "100%" }}
-                      >
-                        <div
-                          className="wistia_embed wistia_async_yf3vz714ok seo=true videoFoam=true"
-                          style={{ height: "100%", position: "relative", width: "100%" }}
-                        >
-                          <div
-                            className="wistia_swatch"
-                            style={{
-                              height: "100%",
-                              left: 0,
-                              opacity: 0,
-                              overflow: "hidden",
-                              position: "absolute",
-                              top: 0,
-                              transition: "opacity 200ms",
-                              width: "100%",
-                            }}
-                          >
-                            <img
-                              src="https://fast.wistia.com/embed/medias/yf3vz714ok/swatch"
-                              style={{ filter: "blur(5px)", height: "100%", objectFit: "contain", width: "100%" }}
-                              alt=""
-                              aria-hidden="true"
-                              onLoad={(e) =>
-                                e.currentTarget.parentElement && (e.currentTarget.parentElement.style.opacity = "1")
-                              }
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </VidCard>
-
-                  <VidCard>
-                    <div
-                      className="wistia_responsive_padding"
-                      style={{ padding: "56.25% 0 0 0", position: "relative" }}
-                    >
-                      <div
-                        className="wistia_responsive_wrapper"
-                        style={{ height: "100%", left: 0, position: "absolute", top: 0, width: "100%" }}
-                      >
-                        <div
-                          className="wistia_embed wistia_async_pjze7gwdvi seo=true videoFoam=true"
-                          style={{ height: "100%", position: "relative", width: "100%" }}
-                        >
-                          <div
-                            className="wistia_swatch"
-                            style={{
-                              height: "100%",
-                              left: 0,
-                              opacity: 0,
-                              overflow: "hidden",
-                              position: "absolute",
-                              top: 0,
-                              transition: "opacity 200ms",
-                              width: "100%",
-                            }}
-                          >
-                            <img
-                              src="https://fast.wistia.com/embed/medias/pjze7gwdvi/swatch"
-                              style={{ filter: "blur(5px)", height: "100%", objectFit: "contain", width: "100%" }}
-                              alt=""
-                              aria-hidden="true"
-                              onLoad={(e) =>
-                                e.currentTarget.parentElement && (e.currentTarget.parentElement.style.opacity = "1")
-                              }
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </VidCard>
-                </div>
-              </section>
-            </div>
           </section>
         </div>
       </div>
     </>
   );
 };
-
-function VidCard({ children }: { children: React.ReactNode }) {
-  return <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-black/90">{children}</div>;
-}
 
 export default Enroll;
