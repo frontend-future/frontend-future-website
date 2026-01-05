@@ -77,7 +77,7 @@ const Enroll = () => {
                     "Frontend Future's AI-integrated curriculum cuts learning time by up to 60%." — <span className="font-semibold text-foreground">USA Today</span>
                   </p>
                   <a
-                    href="https://www.usatoday.com/story/partner/kingnewswire/press-release/2025/12/16/frontend-future-announces-ai-integrated-curriculum-for-frontend-mentorship-program/77147419007/"
+                    href="https://www.usatoday.com/press-release/story/21551/frontend-future-announces-ai-integrated-curriculum-for-frontend-mentorship-program/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
