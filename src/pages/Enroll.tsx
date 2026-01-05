@@ -444,7 +444,7 @@ const Enroll = () => {
         <div className="flex justify-center">
           <a
             href="https://start.frontendfuture.pro/apply"
-            className="inline-block px-10 py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="inline-block px-16 py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
             style={{ backgroundColor: "#00BBFF" }}
           >
             Enroll Now
