@@ -226,18 +226,8 @@ const Enroll = () => {
             </div>
           </section>
 
-          {/* Salary Section */}
-          <section className="mx-auto max-w-4xl px-4 pb-16">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
-              Here's what you could be earning
-            </h2>
-            <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-              <img src={salaryChart} alt="Frontend Software Engineer salary data showing $184,000 median total comp" className="w-full h-auto" />
-            </div>
-          </section>
-
           {/* LinkedIn Messages Section */}
-          <section className="mx-auto max-w-6xl px-4 pb-12">
+          <section className="mx-auto max-w-6xl px-4 pb-16">
             <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
               Here's what your inbox will look like
             </h2>
@@ -260,6 +250,16 @@ const Enroll = () => {
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
                 <img src={linkedinMessage6} alt="LinkedIn job offer message" className="w-full h-auto" />
               </div>
+            </div>
+          </section>
+
+          {/* Salary Section */}
+          <section className="mx-auto max-w-4xl px-4 pb-12">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
+              Here's what you could be earning
+            </h2>
+            <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+              <img src={salaryChart} alt="Frontend Software Engineer salary data showing $184,000 median total comp" className="w-full h-auto" />
             </div>
           </section>
         </div>
