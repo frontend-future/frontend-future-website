@@ -162,14 +162,10 @@ const Enroll = () => {
           </div>
 
           <section className="mx-auto max-w-7xl px-4 pb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
               Got Questions?{" "}
-              <span className="underline decoration-sky-500 decoration-2">Watch These Before Your Call</span>
+              <span className="underline decoration-sky-500 decoration-2">Watch These Helpful Videos</span>
             </h2>
-            <p className="text-center text-slate-600 mb-10 max-w-2xl mx-auto">
-              These quick videos answer the most common questions people have before their qualification call. Watch
-              them now so you can focus on what matters most during your session.
-            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Video 1: What even is frontend development? */}
