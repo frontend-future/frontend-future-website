@@ -207,10 +207,8 @@ const Enroll = () => {
           </section>
 
           {/* Testimonials Section */}
-          <section className="mx-auto max-w-5xl px-4 py-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
-              Here's what people have to say
-            </h2>
+          <section className="mx-auto max-w-5xl px-4 pb-12">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">Here's what people have to say</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90">
                 <WistiaPlayer mediaId="yf3vz714ok" seo="true" />
