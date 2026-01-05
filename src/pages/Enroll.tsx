@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import usatodayArticle from "@/assets/usatoday-article.png";
 import techbullionArticle from "@/assets/techbullion-article.png";
 import hackernoonArticle from "@/assets/hackernoon-article.png";
@@ -255,11 +256,161 @@ const Enroll = () => {
 
           {/* Salary Section */}
           <section className="mx-auto max-w-4xl px-4 pb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
-              Here's what you could be earning
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">Here's what you could be earning</h2>
             <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-              <img src={salaryChart} alt="Frontend Software Engineer salary data showing $184,000 median total comp" className="w-full h-auto" />
+              <img
+                src={salaryChart}
+                alt="Frontend Software Engineer salary data showing $184,000 median total comp"
+                className="w-full h-auto"
+              />
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section id="faq" className="mx-auto max-w-5xl px-4 pb-14">
+            <div className="rounded-2xl bg-white border border-slate-200 p-6 md:p-8">
+              <h4 className="text-lg md:text-2xl font-extrabold mb-6">Frequently Asked Questions</h4>
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem
+                  value="item-0"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">How does your program guarantee a job?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    Once you successfully complete our training program, we provide everything you need to land a
+                    6-figure remote role. This includes: a professionally crafted resume tailored to remote tech
+                    positions, a compelling cover letter template that gets responses, a fully optimized LinkedIn
+                    profile that attracts recruiters, one-on-one career coaching sessions to prepare you for interviews,
+                    and a guaranteed internship that gives you real job experience. We don&apos;t just teach you to
+                    code. We build your entire hiring profile and give you the proven experience that bypasses the
+                    &apos;years of experience required&apos; barrier that stops most beginners.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-1"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">What is Frontend Future&apos;s student success rate?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    Fewer than 5% of our graduates did not secure a tech job. In the US specifically, this success rate
+                    improves even further, where less than 1% of our graduates failed to land a job. This demonstrates
+                    the effectiveness of our curriculum and the 1-on-1 mentorship we provide to ensure students succeed.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-2"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">What do you really mean by one-on-one mentorship?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    One-on-one mentorship means you&apos;ll have personalized support throughout your learning journey.
+                    You&apos;ll meet regularly with a dedicated mentor who will guide you through challenges, offer
+                    feedback, and adjust the curriculum to your learning pace. This ensures you never feel stuck or
+                    overwhelmed.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-3"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">
+                      How long will it take to land a job after I complete the training?
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    Most graduates secure a job within 12 weeks of finishing the program. In fact, it&apos;s possible to
+                    land a job on your very first application and even before graduating, thanks to our comprehensive
+                    portfolio-building projects, personalized mentorship and career support.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-4"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">What if I&apos;m a complete beginner with no degree?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    No problem! Our program is designed for absolute beginners. You&apos;ll start from the basics and
+                    work your way up with hands-on projects. Our one-on-one mentorship ensures you&apos;re supported at
+                    every step, making it easy for anyone to learn, regardless of prior experience. Our program is
+                    designed to help you achieve results, regardless of your starting point. In addition, a degree is
+                    not necessary to become a frontend developer. In fact, major tech companies like Google, Apple, and
+                    IBM have publicly announced that they no longer require candidates to have formal degrees. Instead,
+                    they prioritize skills, experience, and real-world problem-solving abilities. Our program is
+                    designed to give you exactly that—practical, hands-on learning that helps you build a strong
+                    portfolio, often more valuable than a degree in today&apos;s tech job market.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-5"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">I&apos;m working full-time. Can I still do this?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    Yes! Many of our students balance full-time jobs while completing the program. The program is
+                    flexible, and you can study part-time. Our mentors will work around your availability, making sure
+                    you can progress at a comfortable pace without feeling overwhelmed.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-6"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">Is 12 weeks really enough time to learn frontend development?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    Yes, our curriculum is designed to teach you all the essential frontend skills in 12 weeks. With
+                    hands-on projects and personalized mentorship, you&apos;ll gain a deep understanding of frontend
+                    development. Plus, you&apos;ll have lifetime access to course materials, so you can keep refining
+                    your skills even after the program ends.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-7"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">Can I work remotely as a frontend developer?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    Absolutely. Frontend development is one of the most remote-friendly jobs in tech. Many companies
+                    offer remote positions, allowing you to work from anywhere with an internet connection. It&apos;s a
+                    great career path if you value flexibility and work-life balance.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem
+                  value="item-8"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-semibold">Am I too old to start learning frontend development?</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-700 pb-4">
+                    No! Many of our students are career changers in their 40s, 50s, and even 60s. In tech, skills are
+                    more important than age, and with our training, you&apos;ll gain the practical experience and
+                    portfolio to impress employers, regardless of your age.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </section>
         </div>
