@@ -203,6 +203,7 @@ const Enroll = () => {
                   <WistiaPlayer mediaId="q60pz5gyeh" seo="false" />
                 </div>
               </div>
+            </div>
           </section>
         </div>
       </div>
