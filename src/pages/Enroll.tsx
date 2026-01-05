@@ -70,49 +70,58 @@ const Enroll = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* USA Today */}
-              <a
-                href="https://www.usatoday.com/story/partner/kingnewswire/press-release/2025/12/16/frontend-future-announces-ai-integrated-curriculum-for-frontend-mentorship-program/77147419007/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] block"
-              >
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
                 <img src={usatodayArticle} alt="USA Today article about Frontend Future" className="w-full h-48 object-cover object-top" />
-                <div className="p-4">
-                  <p className="text-sm text-muted-foreground">
-                    "Frontend Future's AI-integrated curriculum cuts learning time by up to 60%."
+                <div className="p-6 flex flex-col items-center text-center flex-grow">
+                  <p className="text-muted-foreground mb-6 flex-grow">
+                    "Frontend Future's AI-integrated curriculum cuts learning time by up to 60%." — <span className="font-semibold text-foreground">USA Today</span>
                   </p>
+                  <a
+                    href="https://www.usatoday.com/story/partner/kingnewswire/press-release/2025/12/16/frontend-future-announces-ai-integrated-curriculum-for-frontend-mentorship-program/77147419007/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+                  >
+                    Read Article
+                  </a>
                 </div>
-              </a>
+              </div>
 
               {/* TechBullion */}
-              <a
-                href="https://techbullion.com/why-frontend-developers-have-the-flexibility-most-workers-are-fighting-for/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] block"
-              >
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
                 <img src={techbullionArticle} alt="TechBullion article about Frontend Future" className="w-full h-48 object-cover object-top" />
-                <div className="p-4">
-                  <p className="text-sm text-muted-foreground">
-                    "Frontend Future prepares developers for the flexible, remote-first careers shaping modern tech."
+                <div className="p-6 flex flex-col items-center text-center flex-grow">
+                  <p className="text-muted-foreground mb-6 flex-grow">
+                    "Frontend Future prepares developers for the flexible, remote-first careers shaping modern tech." — <span className="font-semibold text-foreground">TechBullion</span>
                   </p>
+                  <a
+                    href="https://techbullion.com/why-frontend-developers-have-the-flexibility-most-workers-are-fighting-for/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+                  >
+                    Read Article
+                  </a>
                 </div>
-              </a>
+              </div>
 
               {/* HackerNoon */}
-              <a
-                href="https://hackernoon.com/frontend-future-reviews-the-shift-from-degree-first-to-skills-first-hiring-in-2025"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] block"
-              >
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
                 <img src={hackernoonArticle} alt="HackerNoon article about Frontend Future" className="w-full h-48 object-cover object-top" />
-                <div className="p-4">
-                  <p className="text-sm text-muted-foreground">
-                    "Frontend Future is built for the shift from degree-first to skills-first hiring in tech."
+                <div className="p-6 flex flex-col items-center text-center flex-grow">
+                  <p className="text-muted-foreground mb-6 flex-grow">
+                    "Frontend Future is built for the shift from degree-first to skills-first hiring in tech." — <span className="font-semibold text-foreground">HackerNoon</span>
                   </p>
+                  <a
+                    href="https://hackernoon.com/frontend-future-reviews-the-shift-from-degree-first-to-skills-first-hiring-in-2025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+                  >
+                    Read Article
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
