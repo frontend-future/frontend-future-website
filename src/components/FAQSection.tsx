@@ -56,7 +56,7 @@ export function FAQSection() {
             <div className="flex">
               <div className="w-1 bg-amber-400 flex-shrink-0" />
               <div className="flex-1">
-                <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-slate-800 hover:text-slate-800 hover:no-underline px-4 py-4">
+                <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-slate-800 hover:text-slate-800 hover:no-underline px-4 py-5">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600 leading-relaxed px-4 pb-4">
