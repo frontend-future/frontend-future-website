@@ -75,7 +75,7 @@ const Enroll = () => {
             <div className="mt-10">
               <a
                 ref={mainButtonRef}
-                href="https://start.frontendfuture.pro/apply"
+                href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
                 className="block w-full py-5 text-xl md:text-2xl font-bold text-white text-center rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
                 style={{ backgroundColor: "#00BBFF" }}
               >
@@ -443,7 +443,7 @@ const Enroll = () => {
       >
         <div className="max-w-3xl mx-auto">
           <a
-            href="https://start.frontendfuture.pro/apply"
+            href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
             className="block w-full py-3 text-lg font-bold text-white text-center rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
             style={{ backgroundColor: "#00BBFF" }}
           >
