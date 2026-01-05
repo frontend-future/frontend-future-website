@@ -124,6 +124,16 @@ const Enroll = () => {
               </div>
             </div>
           </div>
+
+          {/* Got Questions Section */}
+          <div className="mt-16 mb-8 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Got Questions? <span className="underline decoration-accent decoration-4 underline-offset-4">Watch These Before Your Call</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              These quick videos answer the most common questions people have before their qualification call. Watch them now so you can focus on what matters most during your session.
+            </p>
+          </div>
         </div>
       </div>
     </>
