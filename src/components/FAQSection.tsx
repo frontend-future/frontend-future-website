@@ -43,24 +43,30 @@ export function FAQSection() {
 
   return (
     <section className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-      <div className="mb-8 text-center">
-        <h2 className="text-2xl md:text-4xl font-extrabold">Frequently Asked Questions</h2>
-        <p className="mt-2 text-slate-700">Get answers to common questions about the program</p>
+      <div className="mb-6">
+        <h2 className="text-xl md:text-2xl font-bold text-slate-800">Frequently Asked Questions</h2>
       </div>
-      <div className="rounded-2xl border border-slate-200 shadow-sm bg-white p-4 md:p-6">
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b last:border-0">
-              <AccordionTrigger className="text-left text-base md:text-lg font-semibold hover:text-sky-700">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed pt-2">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+      <Accordion type="single" collapsible className="space-y-3">
+        {faqs.map((faq, index) => (
+          <AccordionItem 
+            key={index} 
+            value={`item-${index}`} 
+            className="border-0 rounded-lg bg-white shadow-sm overflow-hidden"
+          >
+            <div className="flex">
+              <div className="w-1 bg-amber-400 flex-shrink-0" />
+              <div className="flex-1">
+                <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-slate-800 hover:text-slate-800 hover:no-underline px-4 py-4">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-slate-600 leading-relaxed px-4 pb-4">
+                  {faq.answer}
+                </AccordionContent>
+              </div>
+            </div>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </section>
   );
 }
