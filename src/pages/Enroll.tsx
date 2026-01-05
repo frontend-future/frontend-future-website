@@ -4,6 +4,12 @@ import usatodayArticle from "@/assets/usatoday-article.png";
 import techbullionArticle from "@/assets/techbullion-article.png";
 import hackernoonArticle from "@/assets/hackernoon-article.png";
 import WistiaPlayer from "@/components/WistiaPlayer";
+import linkedinMessage1 from "@/assets/linkedin-message-1.png";
+import linkedinMessage2 from "@/assets/linkedin-message-2.png";
+import linkedinMessage3 from "@/assets/linkedin-message-3.png";
+import linkedinMessage4 from "@/assets/linkedin-message-4.png";
+import linkedinMessage5 from "@/assets/linkedin-message-5.png";
+import linkedinMessage6 from "@/assets/linkedin-message-6.png";
 
 const Enroll = () => {
   useEffect(() => {
@@ -202,6 +208,33 @@ const Enroll = () => {
                 <div className="rounded-xl overflow-hidden border border-slate-200 bg-black/90 flex-1">
                   <WistiaPlayer mediaId="q60pz5gyeh" seo="false" />
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* LinkedIn Messages Section */}
+          <section className="mx-auto max-w-6xl px-4 pb-16">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">
+              Here's what your inbox will look like
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <img src={linkedinMessage1} alt="LinkedIn job offer message" className="w-full h-auto" />
+              </div>
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <img src={linkedinMessage2} alt="LinkedIn job offer message" className="w-full h-auto" />
+              </div>
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <img src={linkedinMessage3} alt="LinkedIn job offer message" className="w-full h-auto" />
+              </div>
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <img src={linkedinMessage4} alt="LinkedIn job offer message" className="w-full h-auto" />
+              </div>
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <img src={linkedinMessage5} alt="LinkedIn job offer message" className="w-full h-auto" />
+              </div>
+              <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <img src={linkedinMessage6} alt="LinkedIn job offer message" className="w-full h-auto" />
               </div>
             </div>
           </section>
