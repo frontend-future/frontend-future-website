@@ -72,11 +72,11 @@ const Enroll = () => {
           <div className="max-w-4xl mx-auto">
             <WistiaPlayer mediaId="s5k8df5vxf" />
 
-            <div className="flex justify-center mt-10">
+            <div className="mt-10">
               <a
                 ref={mainButtonRef}
                 href="https://start.frontendfuture.pro/apply"
-                className="inline-block px-12 py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="block w-full py-5 text-xl md:text-2xl font-bold text-white text-center rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
                 style={{ backgroundColor: "#00BBFF" }}
               >
                 Enroll Now
