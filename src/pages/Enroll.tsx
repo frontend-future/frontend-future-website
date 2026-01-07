@@ -12,9 +12,11 @@ import linkedinMessage4 from "@/assets/linkedin-message-4.png";
 import linkedinMessage5 from "@/assets/linkedin-message-5.png";
 import linkedinMessage6 from "@/assets/linkedin-message-6.png";
 import salaryChart from "@/assets/salary-chart.png";
+
 const Enroll = () => {
   const [showStickyButton, setShowStickyButton] = useState(false);
   const mainButtonRef = useRef<HTMLAnchorElement>(null);
+
   useEffect(() => {
     // Load Wistia player script
     const playerScript = document.createElement("script");
@@ -28,26 +30,36 @@ const Enroll = () => {
     embedScript.async = true;
     embedScript.type = "module";
     document.head.appendChild(embedScript);
+
     return () => {
       document.head.removeChild(playerScript);
       document.head.removeChild(embedScript);
     };
   }, []);
+
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setShowStickyButton(!entry.isIntersecting);
-    }, {
-      threshold: 0
-    });
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowStickyButton(!entry.isIntersecting);
+      },
+      { threshold: 0 },
+    );
+
     if (mainButtonRef.current) {
       observer.observe(mainButtonRef.current);
     }
+
     return () => observer.disconnect();
   }, []);
-  return <>
+
+  return (
+    <>
       <Helmet>
         <title>Enroll | Frontend Future</title>
-        <meta name="description" content="Enroll in the Frontend Future program and start your journey to becoming a frontend developer." />
+        <meta
+          name="description"
+          content="Enroll in the Frontend Future program and start your journey to becoming a frontend developer."
+        />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -61,7 +73,15 @@ const Enroll = () => {
             <WistiaPlayer mediaId="s5k8df5vxf" />
 
             <div className="mt-10">
-              
+              <a
+                ref={mainButtonRef}
+                href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
+                target="_blank"
+                className="block w-full text-center py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                style={{ backgroundColor: "#00BBFF" }}
+              >
+                Enroll Now
+              </a>
             </div>
           </div>
 
@@ -72,13 +92,22 @@ const Enroll = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* USA Today */}
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
-                <img src={usatodayArticle} alt="USA Today article about Frontend Future" className="w-full h-48 object-cover object-top" />
+                <img
+                  src={usatodayArticle}
+                  alt="USA Today article about Frontend Future"
+                  className="w-full h-48 object-cover object-top"
+                />
                 <div className="p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-muted-foreground mb-6 flex-grow">
                     "Frontend Future's AI-integrated curriculum cuts learning time by up to 60%." —{" "}
                     <span className="font-semibold text-foreground">USA Today</span>
                   </p>
-                  <a href="https://www.usatoday.com/press-release/story/21551/frontend-future-announces-ai-integrated-curriculum-for-frontend-mentorship-program/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300">
+                  <a
+                    href="https://www.usatoday.com/press-release/story/21551/frontend-future-announces-ai-integrated-curriculum-for-frontend-mentorship-program/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+                  >
                     Read Article
                   </a>
                 </div>
@@ -86,13 +115,22 @@ const Enroll = () => {
 
               {/* TechBullion */}
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
-                <img src={techbullionArticle} alt="TechBullion article about Frontend Future" className="w-full h-48 object-cover object-top" />
+                <img
+                  src={techbullionArticle}
+                  alt="TechBullion article about Frontend Future"
+                  className="w-full h-48 object-cover object-top"
+                />
                 <div className="p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-muted-foreground mb-6 flex-grow">
                     "Frontend Future prepares developers for the flexible, remote-first careers shaping modern tech." —{" "}
                     <span className="font-semibold text-foreground">TechBullion</span>
                   </p>
-                  <a href="https://techbullion.com/why-frontend-developers-have-the-flexibility-most-workers-are-fighting-for/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300">
+                  <a
+                    href="https://techbullion.com/why-frontend-developers-have-the-flexibility-most-workers-are-fighting-for/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+                  >
                     Read Article
                   </a>
                 </div>
@@ -100,13 +138,22 @@ const Enroll = () => {
 
               {/* HackerNoon */}
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
-                <img src={hackernoonArticle} alt="HackerNoon article about Frontend Future" className="w-full h-48 object-cover object-top" />
+                <img
+                  src={hackernoonArticle}
+                  alt="HackerNoon article about Frontend Future"
+                  className="w-full h-48 object-cover object-top"
+                />
                 <div className="p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-muted-foreground mb-6 flex-grow">
                     "Frontend Future is built for the shift from degree-first to skills-first hiring in tech." —{" "}
                     <span className="font-semibold text-foreground">HackerNoon</span>
                   </p>
-                  <a href="https://hackernoon.com/frontend-future-reviews-the-shift-from-degree-first-to-skills-first-hiring-in-2025" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300">
+                  <a
+                    href="https://hackernoon.com/frontend-future-reviews-the-shift-from-degree-first-to-skills-first-hiring-in-2025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+                  >
                     Read Article
                   </a>
                 </div>
@@ -227,7 +274,11 @@ const Enroll = () => {
           <section className="mx-auto max-w-4xl px-4 pb-12">
             <h2 className="text-2xl md:text-3xl font-extrabold mb-10 text-center">Here's what you could be earning</h2>
             <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-              <img src={salaryChart} alt="Frontend Software Engineer salary data showing $184,000 median total comp" className="w-full h-auto" />
+              <img
+                src={salaryChart}
+                alt="Frontend Software Engineer salary data showing $184,000 median total comp"
+                className="w-full h-auto"
+              />
             </div>
           </section>
 
@@ -236,7 +287,10 @@ const Enroll = () => {
             <div className="rounded-2xl bg-white border border-slate-200 p-6 md:p-8">
               <h4 className="text-lg md:text-2xl font-extrabold mb-6">Frequently Asked Questions</h4>
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="item-0" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-0"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">How does your program guarantee a job?</span>
                   </AccordionTrigger>
@@ -251,7 +305,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-1" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-1"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">What is Frontend Future&apos;s student success rate?</span>
                   </AccordionTrigger>
@@ -262,7 +319,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-2" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-2"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">What do you really mean by one-on-one mentorship?</span>
                   </AccordionTrigger>
@@ -274,7 +334,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-3" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-3"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">
                       How long will it take to land a job after I complete the training?
@@ -287,7 +350,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-4" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-4"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">What if I&apos;m a complete beginner with no degree?</span>
                   </AccordionTrigger>
@@ -304,7 +370,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-5" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-5"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">I&apos;m working full-time. Can I still do this?</span>
                   </AccordionTrigger>
@@ -315,7 +384,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-6"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">Is 12 weeks really enough time to learn frontend development?</span>
                   </AccordionTrigger>
@@ -327,7 +399,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-7" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-7"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">Can I work remotely as a frontend developer?</span>
                   </AccordionTrigger>
@@ -338,7 +413,10 @@ const Enroll = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-8" className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors">
+                <AccordionItem
+                  value="item-8"
+                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
+                >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">Am I too old to start learning frontend development?</span>
                   </AccordionTrigger>
@@ -355,11 +433,24 @@ const Enroll = () => {
       </div>
 
       {/* Sticky Enroll Button */}
-      <div className={`fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-slate-200 py-3 px-4 transition-all duration-300 ${showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}>
+      <div
+        className={`fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-slate-200 py-3 px-4 transition-all duration-300 ${
+          showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+        }`}
+      >
         <div className="max-w-4xl mx-auto">
-          
+          <a
+            href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
+            target="_blank"
+            className="block w-full text-center py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            style={{ backgroundColor: "#00BBFF" }}
+          >
+            Enroll Now
+          </a>
         </div>
       </div>
-    </>;
+    </>
+  );
 };
+
 export default Enroll;
