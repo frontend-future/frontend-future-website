@@ -19,11 +19,8 @@ import Landing1 from "./pages/Landing1";
 import Landing from "./pages/Landing";
 import Enroll from "./pages/Enroll";
 import NotFound from "./pages/NotFound";
-
 const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+const App = () => <QueryClientProvider client={queryClient}>
     <HelmetProvider>
       <TooltipProvider>
         <Toaster />
@@ -43,7 +40,7 @@ const App = () => (
               <Route path="/accessibility" element={<Accessibility />} />
               <Route path="/landing1" element={<Index />} />
               <Route path="/landing" element={<Landing />} />
-              <Route path="/enroll" element={<Enroll />} />
+              
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
@@ -51,7 +48,5 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </HelmetProvider>
-  </QueryClientProvider>
-);
-
+  </QueryClientProvider>;
 export default App;
