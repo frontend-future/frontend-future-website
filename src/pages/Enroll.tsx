@@ -14,8 +14,6 @@ import linkedinMessage6 from "@/assets/linkedin-message-6.png";
 import salaryChart from "@/assets/salary-chart.png";
 
 const Enroll = () => {
-  const [showStickyButton, setShowStickyButton] = useState(false);
-  const mainButtonRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     // Load Wistia player script
@@ -37,20 +35,6 @@ const Enroll = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowStickyButton(!entry.isIntersecting);
-      },
-      { threshold: 0 },
-    );
-
-    if (mainButtonRef.current) {
-      observer.observe(mainButtonRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <>
@@ -72,17 +56,6 @@ const Enroll = () => {
           <div className="max-w-4xl mx-auto">
             <WistiaPlayer mediaId="s5k8df5vxf" />
 
-            <div className="mt-10">
-              <a
-                ref={mainButtonRef}
-                href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
-                target="_blank"
-                className="block w-full text-center py-5 text-xl md:text-2xl font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                style={{ backgroundColor: "#00BBFF" }}
-              >
-                Enroll Now
-              </a>
-            </div>
           </div>
 
           {/* As Featured In Section */}
@@ -432,23 +405,6 @@ const Enroll = () => {
         </div>
       </div>
 
-      {/* Sticky Enroll Button */}
-      <div
-        className={`fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-slate-200 py-3 px-4 transition-all duration-300 ${
-          showStickyButton ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-        }`}
-      >
-        <div className="max-w-4xl mx-auto">
-          <a
-            href="https://buy.stripe.com/bJe3cv5PRfCf6nE8QA1sQ0o"
-            target="_blank"
-            className="block w-full text-center py-3 text-lg font-bold text-white rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            style={{ backgroundColor: "#00BBFF" }}
-          >
-            Enroll Now
-          </a>
-        </div>
-      </div>
     </>
   );
 };
