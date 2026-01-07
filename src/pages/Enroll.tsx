@@ -265,38 +265,6 @@ const Enroll = () => {
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
-                    <span className="font-semibold">How does your program guarantee a job?</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-slate-700 pb-4">
-                    Once you successfully complete our training program, we provide everything you need to land a
-                    6-figure remote role. This includes: a professionally crafted resume tailored to remote tech
-                    positions, a compelling cover letter template that gets responses, a fully optimized LinkedIn
-                    profile that attracts recruiters, one-on-one career coaching sessions to prepare you for interviews,
-                    and a guaranteed internship that gives you real job experience. We don&apos;t just teach you to
-                    code. We build your entire hiring profile and give you the proven experience that bypasses the
-                    &apos;years of experience required&apos; barrier that stops most beginners.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem
-                  value="item-1"
-                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline py-4">
-                    <span className="font-semibold">What is Frontend Future&apos;s student success rate?</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-slate-700 pb-4">
-                    Fewer than 5% of our graduates did not secure a tech job. In the US specifically, this success rate
-                    improves even further, where less than 1% of our graduates failed to land a job. This demonstrates
-                    the effectiveness of our curriculum and the 1-on-1 mentorship we provide to ensure students succeed.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem
-                  value="item-2"
-                  className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline py-4">
                     <span className="font-semibold">What do you really mean by one-on-one mentorship?</span>
                   </AccordionTrigger>
                   <AccordionContent className="text-slate-700 pb-4">
@@ -308,7 +276,7 @@ const Enroll = () => {
                 </AccordionItem>
 
                 <AccordionItem
-                  value="item-3"
+                  value="item-1"
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
@@ -324,7 +292,7 @@ const Enroll = () => {
                 </AccordionItem>
 
                 <AccordionItem
-                  value="item-4"
+                  value="item-2"
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
@@ -344,7 +312,7 @@ const Enroll = () => {
                 </AccordionItem>
 
                 <AccordionItem
-                  value="item-5"
+                  value="item-3"
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
@@ -358,7 +326,7 @@ const Enroll = () => {
                 </AccordionItem>
 
                 <AccordionItem
-                  value="item-6"
+                  value="item-4"
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
@@ -373,7 +341,7 @@ const Enroll = () => {
                 </AccordionItem>
 
                 <AccordionItem
-                  value="item-7"
+                  value="item-5"
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
@@ -387,7 +355,7 @@ const Enroll = () => {
                 </AccordionItem>
 
                 <AccordionItem
-                  value="item-8"
+                  value="item-6"
                   className="bg-slate-50 border border-slate-200 rounded-lg px-6 hover:border-sky-500/50 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-4">
